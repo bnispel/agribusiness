@@ -166,7 +166,7 @@ a.button {
   text-transform: uppercase;
   color: #fd8309;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 3px;
   position: relative;
   padding: 0 10px 0 35px;
@@ -227,9 +227,9 @@ a.button_alt:hover {
 
 /* line 103, ../sass/partials/_global.scss */
 .focuspoint_count {
-  font-size: 12.5rem;
+  font-size: 12rem;
   font-family: "Libre Baskerville", Georgia, Times, "Times New Roman", serif;
-  color: rgba(35, 31, 32, 0.2);
+  color: rgba(35, 31, 32, 0.1);
   position: absolute;
   top: 0;
   left: 0;
@@ -315,7 +315,7 @@ a.button_alt:hover {
 
 /* line 173, ../sass/partials/_global.scss */
 .dropdownarrow {
-  width: 11px;
+  width: 13px;
   height: 6px;
   display: inline-block;
 }
@@ -561,8 +561,9 @@ a.button_alt:hover {
   font-weight: 400;
   font-size: 1.1rem;
   line-height: 1.9;
+  position: relative;
 }
-/* line 367, ../sass/partials/_global.scss */
+/* line 368, ../sass/partials/_global.scss */
 .section_testimonial p:before {
   content: '';
   background: url(../images/icon_quote.png) no-repeat top left;
@@ -574,78 +575,85 @@ a.button_alt:hover {
   line-height: 1;
   color: rgba(253, 131, 9, 0.4);
   position: absolute;
-  top: 15px;
-  left: 32px;
+  top: -12px;
+  left: -28px;
 }
-/* line 382, ../sass/partials/_global.scss */
+/* line 383, ../sass/partials/_global.scss */
 .section_testimonial span.author {
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 2px;
 }
 
-/* line 390, ../sass/partials/_global.scss */
+/* line 391, ../sass/partials/_global.scss */
 .section_texttestimonial_top .section {
   max-width: 900px;
 }
-/* line 393, ../sass/partials/_global.scss */
+/* line 394, ../sass/partials/_global.scss */
 .section_texttestimonial_top .section_testimonial {
-  margin-top: -90px;
+  margin-top: -230px;
+  /*p:before {
+  	top: 61px;
+  	left: 55px;
+  }*/
 }
-/* line 395, ../sass/partials/_global.scss */
-.section_texttestimonial_top .section_testimonial p:before {
-  top: 35px;
-  left: 62px;
-}
-/* line 400, ../sass/partials/_global.scss */
+/* line 401, ../sass/partials/_global.scss */
 .section_texttestimonial_top .testimonial_content {
   width: 100%;
-  padding: 50px 40px 40px 80px;
+  padding: 80px 40px 40px 80px;
 }
-/* line 404, ../sass/partials/_global.scss */
+/* line 405, ../sass/partials/_global.scss */
 .section_texttestimonial_top .testimonial_image {
-  top: -120px;
+  top: -90px;
   left: 35px;
 }
 
-/* line 410, ../sass/partials/_global.scss */
+/* line 411, ../sass/partials/_global.scss */
 .section_texttestimonial_right .section_testimonial {
   margin-top: -150px;
 }
-/* line 413, ../sass/partials/_global.scss */
+/* line 414, ../sass/partials/_global.scss */
 .section_texttestimonial_right .testimonial_content {
   padding: 60px 100px 60px 80px;
 }
-/* line 416, ../sass/partials/_global.scss */
+/* line 417, ../sass/partials/_global.scss */
 .section_texttestimonial_right .testimonial_image {
   right: -80px;
   top: 50%;
   margin-top: -80px;
 }
+/* line 422, ../sass/partials/_global.scss */
+.section_texttestimonial_right p:before {
+  width: 61px;
+  height: 46px;
+  background-size: contain;
+  top: -28px;
+  left: -33px;
+}
 
 /* :::::::::::::::::::::::::::::::::: STAT SECTIONS */
-/* line 423, ../sass/partials/_global.scss */
+/* line 431, ../sass/partials/_global.scss */
 .stat {
   text-align: center;
 }
-/* line 425, ../sass/partials/_global.scss */
+/* line 433, ../sass/partials/_global.scss */
 .stat .number {
   font-size: 13rem;
   font-family: "Libre Baskerville", Georgia, Times, "Times New Roman", serif;
   display: block;
-  color: rgba(35, 31, 32, 0.2);
+  color: rgba(35, 31, 32, 0.1);
   line-height: .8;
 }
-/* line 432, ../sass/partials/_global.scss */
+/* line 440, ../sass/partials/_global.scss */
 .stat .text {
   font-family: "Cormorant Garamond", TimesNewRoman, "Times New Roman", Times, Georgia, serif;
   font-style: italic;
-  font-size: 3.2rem;
+  font-size: 3rem;
   display: block;
   line-height: 1;
   margin-bottom: 10px;
 }
-/* line 440, ../sass/partials/_global.scss */
+/* line 448, ../sass/partials/_global.scss */
 .stat .stat_source {
   text-transform: uppercase;
   color: #cccccc;
@@ -654,7 +662,7 @@ a.button_alt:hover {
   font-size: 1rem;
 }
 
-/* line 448, ../sass/partials/_global.scss */
+/* line 456, ../sass/partials/_global.scss */
 .stat_one {
   background: url(../images/homebackground_stat1.jpg) no-repeat top center;
   background-size: cover;
@@ -663,50 +671,50 @@ a.button_alt:hover {
   padding-top: 30px;
 }
 
-/* line 455, ../sass/partials/_global.scss */
+/* line 463, ../sass/partials/_global.scss */
 .stat_two {
   background: #fd8309 url(../images/homebackground_stat2.jpg) no-repeat bottom center;
   background-size: cover;
   min-height: 500px;
   padding-top: 30px;
 }
-/* line 460, ../sass/partials/_global.scss */
+/* line 468, ../sass/partials/_global.scss */
 .stat_two p {
   color: #f9f9f9;
 }
-/* line 463, ../sass/partials/_global.scss */
+/* line 471, ../sass/partials/_global.scss */
 .stat_two .number {
   color: rgba(255, 255, 255, 0.3);
   line-height: .9;
 }
-/* line 467, ../sass/partials/_global.scss */
+/* line 475, ../sass/partials/_global.scss */
 .stat_two.testimonialisnext {
   padding-bottom: 200px;
 }
 
-/* line 471, ../sass/partials/_global.scss */
+/* line 479, ../sass/partials/_global.scss */
 .stat_three {
   background: #f9f9f9 url(../images/homebackground_stat3.jpg) no-repeat bottom center;
   background-size: 100%;
   min-height: 950px;
 }
-/* line 475, ../sass/partials/_global.scss */
+/* line 483, ../sass/partials/_global.scss */
 .stat_three .section {
   max-width: 1200px;
 }
-/* line 478, ../sass/partials/_global.scss */
+/* line 486, ../sass/partials/_global.scss */
 .stat_three .number {
   line-height: 1;
 }
 
 /* :::::::::::::::::::::::::::::::::: CTA SECTIONS */
-/* line 483, ../sass/partials/_global.scss */
+/* line 491, ../sass/partials/_global.scss */
 .pagecta {
   overflow: hidden;
   margin-bottom: 50px;
   text-align: center;
 }
-/* line 487, ../sass/partials/_global.scss */
+/* line 495, ../sass/partials/_global.scss */
 .pagecta p {
   font-family: "Cormorant Garamond", TimesNewRoman, "Times New Roman", Times, Georgia, serif;
   font-style: italic;
@@ -715,34 +723,35 @@ a.button_alt:hover {
   padding-right: 25px;
   font-size: 2.8rem;
 }
-/* line 495, ../sass/partials/_global.scss */
+/* line 503, ../sass/partials/_global.scss */
 .pagecta a {
   display: inline-block;
 }
 
 /* :::::::::::::::::::::::::::::::::: COST SECTIONS */
-/* line 500, ../sass/partials/_global.scss */
+/* line 508, ../sass/partials/_global.scss */
 .section_tuition {
   -webkit-box-shadow: 0px -3px 17px 1px rgba(0, 0, 0, 0.16);
   -moz-box-shadow: 0px -3px 17px 1px rgba(0, 0, 0, 0.16);
   box-shadow: 0px -3px 17px 1px rgba(0, 0, 0, 0.16);
+  padding: 40px 20px 50px;
 }
-/* line 502, ../sass/partials/_global.scss */
+/* line 511, ../sass/partials/_global.scss */
 .section_tuition .section {
   text-align: center;
   position: relative;
 }
-/* line 506, ../sass/partials/_global.scss */
+/* line 515, ../sass/partials/_global.scss */
 .section_tuition h3 {
   margin-bottom: 10px;
 }
-/* line 509, ../sass/partials/_global.scss */
+/* line 518, ../sass/partials/_global.scss */
 .section_tuition img.badge {
   position: absolute;
   top: -100px;
   left: -40px;
 }
-/* line 514, ../sass/partials/_global.scss */
+/* line 523, ../sass/partials/_global.scss */
 .section_tuition p.cost {
   font-family: "Cormorant Garamond", TimesNewRoman, "Times New Roman", Times, Georgia, serif;
   font-style: italic;
@@ -750,47 +759,48 @@ a.button_alt:hover {
   line-height: 1;
   margin-bottom: 0;
 }
-/* line 521, ../sass/partials/_global.scss */
+/* line 530, ../sass/partials/_global.scss */
 .section_tuition .number {
   font-size: 6.25rem;
-  color: rgba(35, 31, 32, 0.2);
+  color: rgba(35, 31, 32, 0.1);
   font-style: normal;
   font-family: "Libre Baskerville", Georgia, Times, "Times New Roman", serif;
 }
-/* line 527, ../sass/partials/_global.scss */
+/* line 536, ../sass/partials/_global.scss */
 .section_tuition .cost_for {
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 500;
   font-size: .95rem;
   letter-spacing: 2px;
 }
-/* line 533, ../sass/partials/_global.scss */
+/* line 542, ../sass/partials/_global.scss */
 .section_tuition .cost_note {
   font-family: "Cormorant Garamond", TimesNewRoman, "Times New Roman", Times, Georgia, serif;
   font-style: italic;
   margin-bottom: 0;
   line-height: 1.2;
-  font-size: .9rem;
+  font-size: 1.1rem;
 }
 
 /* :::::::::::::::::::::::::::::::::: END OF PAGE CTA SECTIONS */
-/* line 542, ../sass/partials/_global.scss */
+/* line 551, ../sass/partials/_global.scss */
 .section_pagecta {
   text-align: center;
   padding: 60px 20px;
 }
-/* line 545, ../sass/partials/_global.scss */
+/* line 554, ../sass/partials/_global.scss */
 .section_pagecta h4 {
   color: #f9f9f9;
   font-size: 2rem;
   font-style: italic;
 }
-/* line 549, ../sass/partials/_global.scss */
+/* line 558, ../sass/partials/_global.scss */
 .section_pagecta h4 .top_head {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
+  letter-spacing: 1px;
 }
-/* line 553, ../sass/partials/_global.scss */
+/* line 563, ../sass/partials/_global.scss */
 .section_pagecta h4 .main_head {
   display: inline-block;
   clear: both;
@@ -798,11 +808,11 @@ a.button_alt:hover {
   border-top: 1px solid #fd8309;
   border-bottom: 1px solid #fd8309;
 }
-/* line 562, ../sass/partials/_global.scss */
+/* line 572, ../sass/partials/_global.scss */
 .section_pagecta a.button span {
   border-color: #f9f9f9;
 }
-/* line 565, ../sass/partials/_global.scss */
+/* line 575, ../sass/partials/_global.scss */
 .section_pagecta a.button:hover {
   color: #f9f9f9;
 }

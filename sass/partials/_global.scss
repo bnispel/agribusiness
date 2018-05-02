@@ -55,7 +55,7 @@ a.button {
 	text-transform: uppercase;
 	color: $orange;
 	text-decoration: none;
-	font-weight: 700;
+	font-weight: 500;
 	letter-spacing: 3px;
 	position: relative;
 	padding: 0 10px 0 35px;
@@ -101,9 +101,9 @@ a.button_alt {
 	}
 }
 .focuspoint_count {
-	font-size: 12.5rem;
+	font-size: 12rem;
 	font-family: $highlightfont_alt;
-	color: $black-20;
+	color: $black-10;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -171,7 +171,7 @@ a.button_alt {
 }
 
 .dropdownarrow {
-	width: 11px;
+	width: 13px;
 	height: 6px;
 	display: inline-block;
 }
@@ -364,6 +364,7 @@ a.button_alt {
 		font-weight: 400;
 		font-size: 1.1rem;
 		line-height: 1.9;
+		position: relative;
 		&:before {
 			content: '';
 			background: url(../images/icon_quote.png) no-repeat top left;
@@ -375,13 +376,13 @@ a.button_alt {
 			line-height: 1;
 			color: $orange-40;
 			position: absolute;
-			top: 15px;
-			left: 32px;
+			top: -12px;
+			left: -28px;
 		}
 	}
 	span.author {
 		text-transform: uppercase;
-		font-weight: 700;
+		font-weight: 500;
 		letter-spacing: 2px;
 	}
 }
@@ -391,18 +392,18 @@ a.button_alt {
 		max-width: 900px;
 	}
 	.section_testimonial  {
-		margin-top: -90px;	
-		p:before {
-			top: 35px;
-			left: 62px;
-		}
+		margin-top: -230px;	
+		/*p:before {
+			top: 61px;
+			left: 55px;
+		}*/
 	}
 	.testimonial_content {
 		width: 100%;
-		padding: 50px 40px 40px 80px;
+		padding: 80px 40px 40px 80px;
 	}
 	.testimonial_image {
-		top: -120px;
+		top: -90px;
 		left: 35px;
 	}
 }
@@ -418,6 +419,13 @@ a.button_alt {
 		top: 50%;
 		margin-top: -80px;
 	}
+	p:before {
+		width: 61px;
+		height: 46px;
+		background-size: contain;
+		top: -28px;
+		left: -33px;
+	}
 }
 /* :::::::::::::::::::::::::::::::::: STAT SECTIONS */
 .stat {
@@ -426,13 +434,13 @@ a.button_alt {
 		font-size: 13rem;
 		font-family: $highlightfont_alt;
 		display: block;
-		color: $black-20;
+		color: $black-10;
 		line-height: .8;
 	}
 	.text {
 		font-family: $highlightfont;
 		font-style: italic;
-		font-size: 3.2rem;
+		font-size: 3rem;
 		display: block;
 		line-height: 1;
 		margin-bottom: 10px;
@@ -499,6 +507,7 @@ a.button_alt {
 /* :::::::::::::::::::::::::::::::::: COST SECTIONS */
 .section_tuition {
 	@include topshadow();
+	padding: 40px 20px 50px;
 	.section {
 		text-align: center;
 		position: relative;
@@ -520,13 +529,13 @@ a.button_alt {
 	}
 	.number {
 		font-size: 6.25rem;
-		color: $black-20;
+		color: $black-10;
 		font-style: normal;
 		font-family: $highlightfont_alt;
 	}
 	.cost_for {
 		text-transform: uppercase;
-		font-weight: 600;
+		font-weight: 500;
 		font-size: .95rem;
 		letter-spacing: 2px;
 	}
@@ -535,7 +544,7 @@ a.button_alt {
 		font-style: italic;
 		margin-bottom: 0;
 		line-height: 1.2;
-		font-size: .9rem;
+		font-size: 1.1rem;
 	}
 }
 /* :::::::::::::::::::::::::::::::::: END OF PAGE CTA SECTIONS */
@@ -548,7 +557,8 @@ a.button_alt {
 		font-style: italic;
 		.top_head {
 			display: block;
-			margin-bottom: 10px;
+			margin-bottom: 6px;
+			letter-spacing: 1px;
 		}
 		.main_head {
 			display: inline-block;

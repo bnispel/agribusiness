@@ -1,0 +1,14 @@
+/* Base styles */
+@import 'partials/_reset.scss';
+@import 'partials/_variables.scss';
+@import 'partials/_mixins.scss';
+
+/* Vendor styles */
+
+/* Global styles */
+@import 'partials/_global.scss';
+
+/* Page specific styles */
+@import 'pages/_home.scss';
+@import 'pages/_focus.scss';
+@import 'pages/_thankyou.scss';

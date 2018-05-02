@@ -1,0 +1,148 @@
+.home {
+	.navigation_wrapper {
+		opacity: 0;
+		animation: fadein 1s;
+		animation-delay: 1.5s;
+		animation-fill-mode: forwards;
+	}
+	.header_wrapper {
+		background: url(../images/homebg.jpg) no-repeat center center;
+		background-size: cover;
+	}
+	/* :::::::::::::::::::::::::::::: PAGE HEADER */
+	.header {
+		height: 100vh;
+		opacity: 0;
+		animation: fadein 1s;
+		animation-delay: .5s;
+		animation-fill-mode: forwards;
+		h1 {
+			font-size: 9.4rem;
+			letter-spacing: 4px;
+		}
+		h2 {
+			font-size: 2.8rem;
+			text-transform: none;
+			margin-bottom: 0;
+		}
+	}
+	.section_intro {
+		padding: 100px 30px 70px;	
+	}
+}
+/* :::::::::::::::::::::::::::::::::: FOCUS POINT SECTIONS */
+.focuspoint_one {
+	background: url(../images/homebackground_focus1.jpg) no-repeat top center;
+	background-size: cover;
+	.section {
+		padding: 140px 0 30px 140px;
+	}
+	&.testimonialisnext {
+		padding-bottom: 250px;
+	}
+	.focuspoint_count {
+		top: 89px;
+		left: -35px;
+	}
+	h2 {
+		padding: 9px 10px;
+	}
+}
+.focuspoint_two {
+	background: url(../images/homebackground_focus2.jpg) no-repeat top center;
+	background-size: cover;
+	padding-bottom: 20px;
+	.section {
+		padding: 40px 30px;
+		max-width: 1260px;
+		overflow: hidden;
+	}
+	.section_image {
+		float: left;
+		margin: -30px 0 0 -30px;
+		position: relative;
+		z-index: 9;
+	}
+	.section_content {
+		padding: 110px 0 0 0;
+		float: right;
+		width: 50%;
+		position: relative;
+	}
+	.focuspoint_count {
+		top: 40px;
+		left: -170px;
+	}
+}
+.section_twopoints {
+	background: url(../images/homebackground_focustwopoints.jpg) no-repeat top left;
+	img {
+		max-width: 100%;
+	}
+}
+.focuspoint_three {
+	@include flexbox();
+	padding-top: 100px;
+	.number {
+		font-size: 15.5vw;
+	}
+	.section_content {
+		position: relative;
+		@include flex(.95);
+	}
+	.section_image {
+		padding: 150px 0 0 115px;
+		@include flex(1);
+	}
+	.focuspoint_count {
+		top: -50px;
+		left: -180px;
+	}
+	h2 {
+		max-width: 480px;
+	}
+}
+.focuspoint_four {
+	clear: both;
+	@include flexbox();
+	.section_content {
+		clear: left;
+		position: relative;
+		@include flex(1);
+		padding: 30px 20px 0 136px;
+	}
+	.section_image {
+		margin-top: -120px;
+		@include flex(1.5);
+	}
+	.focuspoint_count {
+		top: -20px;
+		left: -80px;
+	}
+}
+.focuspoint_five {
+	background: url(../images/homebackground_focus5.jpg) no-repeat top center;
+	background-size: cover;
+	padding: 0 30px 270px;
+	.pagecta {
+		margin-bottom: 120px;
+	}
+	.focuspoint_count {
+		top: -47px;
+		left: -40px;
+	}
+	.section_content {
+		padding-left: 150px;
+	}
+}
+.section_getstarted {
+	text-align: center;
+	.popout_image {
+		margin: -260px auto 100px;
+		max-width: 900px;
+	}
+}
+.home .section_pagecta {
+	background: url(../images/home_ctabg.jpg) no-repeat top center;
+	background-size: cover;
+}

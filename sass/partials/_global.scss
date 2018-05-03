@@ -111,18 +111,21 @@ a.button_alt {
 }
 /* :::::::::::::::::::::::::::::: MAIN NAV */
 .navigation_wrapper {
-	padding: 50px 30px 0;	
+	padding: 16px 20px 0;	
 	overflow: hidden;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	width: 100%;
-	z-index: 10;
+	z-index: 999;
+	background: $starkwhite;
+	@include transition(.2s);
+	@include dropshadow();
 }
 .navigation {
 	max-width: 1300px;
 	margin: 0 auto;
 	nav {
-		background: $white;
+		background: $starkwhite;
 		width: 100%;
 		position: absolute;
 		top: 0;
@@ -130,7 +133,7 @@ a.button_alt {
 		display: none;
 	}
 	a {
-		color: $white;
+		color: $black;
 		text-transform: uppercase;
 		font-weight: 500;
 		text-decoration: none;
@@ -140,27 +143,29 @@ a.button_alt {
 		margin-left: 18px;
 		@include transition(.2s);
 		.st0 {
-			stroke: $white;
+			stroke: $black;
 		}
 		&:hover {
-			background: $white;
-			color: $black;
+			background: $black;
+			color: $white;
 			.st0 {
-				stroke: black;
+				stroke: $white;
 			}
 		}
 	}
-	.logo, .logoalt {
-		width: 155px;
-		height: 115px;
+	.logo {
+		width: 180px;
+		height: 60px;
 		display: block;
+		text-indent: -99999em;
 		float: left;
 		padding: 0;
-		img {
-			width: 100%;
-		}
+		background: $starkwhite url(../images/logohoriz.svg) no-repeat top left;
+		background-size: contain;
+		@include transition(.2s);
 		&:hover {
-			background: none;
+			background: $starkwhite url(../images/logohoriz.svg) no-repeat top left;
+			background-size: contain;
 		}
 	}
 	.logoalt {
@@ -170,7 +175,7 @@ a.button_alt {
 		margin-left: 0;
 	}
 	.button {
-		border: 1px solid $white;
+		border: 1px solid $black;
 		&:before {
 			display: none;
 		}
@@ -194,6 +199,98 @@ a.button_alt {
 	height: 6px;
 	display: inline-block;
 }
+.navigation_wrapper.stick {
+	background: none;
+	position: absolute;
+	@include removeshadow();
+	padding: 50px 30px;
+	.navigation {
+		.logo {
+			width: 155px;
+			height: 115px;
+			background: url(../images/logo.svg) no-repeat top left;
+			background-size: contain;
+			&:hover {
+				background: url(../images/logo.svg) no-repeat top left;
+				background-size: contain;
+			}
+		}
+		a {
+			color: $white;
+			.st0 {
+				stroke: $white;
+			}
+			&:hover {
+				background: $white;
+				color: $black;
+				.st0 {
+					stroke: black;
+				}
+			}
+		}
+		.button {
+			border: 1px solid $white;
+		}
+	}
+}
+.mobilenav {
+	display: none;
+}
+/*.mobilenav {
+	background: $starkwhite;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 30px;
+	z-index: 9999;
+	.mobile_logo {
+		width: 125px;
+		height: 90px;
+		background: url(../images/logoalt.svg) no-repeat top left;
+		background-size: contain;
+		text-indent: -9999em;
+		display: block;
+		margin: 0 auto;
+		margin-left: auto;
+		float: none;
+		padding: 0;
+		&:hover {
+			background: url(../images/logoalt.svg) no-repeat top left;
+			background-size: contain;
+		}
+	}
+	nav {
+		display: block;
+		position: static;
+		max-width: 230px;
+		margin: 0 auto 25px;
+		a {
+			color: $black;
+			text-transform: uppercase;
+			font-weight: 500;
+			text-decoration: none;
+			letter-spacing: 3px;
+			padding: 15px 20px;
+			font-size: .9rem;
+			margin: 0 auto 10px;
+			display: block;
+			text-align: center;
+			@include transition(.2s);
+			border: 1px solid $black;
+			.st0 {
+				stroke: $black;
+			}
+			&:hover {
+				background: $black;
+				color: $white;
+				.st0 {
+					stroke: $white;
+				}
+			}
+		}
+	}
+}*/
 
 /* :::::::::::::::::::::::::::::: PAGE HEADER */
 .header {
@@ -728,18 +825,26 @@ a.button_alt {
 			margin: 0;
 		}
 	}
+	.footer_bottom {
+		text-align: left;
+	}
 }
 @media screen and (min-width:950px) {
-	.mobile_menu_button {
+	.mobile_menu_button, .mobilenav {
 		display: none;
 	}
 	.logoalt {
 		display: none;
 	}
 	.navigation {
+		&.stick {
+			nav {
+				padding-top: 30px;
+			}
+		}
 		nav {
 			float: right;
-			padding-top: 30px;
+			padding-top: 14px;
 			display: block;
 			background: none;
 			position: static;
@@ -795,3 +900,7 @@ a.button_alt {
 		}
 	}	
 }
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::: MOBILE ONLY */
+
+

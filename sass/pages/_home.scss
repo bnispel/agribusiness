@@ -55,8 +55,8 @@
 	}
 }
 .focuspoint_two {
-	background: url(../images/homebackground_focus2.jpg) no-repeat top center;
-	background-size: cover;
+	background: url(../images/homebackground_focus2.jpg) no-repeat center bottom;
+	background-size: 200%;
 	padding-bottom: 20px;
 	.section {
 		padding: 40px 0;
@@ -208,6 +208,7 @@
 }
 @media screen and (min-width:650px) {
 	.focuspoint_two {
+		background-size: cover;
 		.section {
 			padding: 40px 0;
 		}

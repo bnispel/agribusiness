@@ -9,7 +9,7 @@ $(document).ready(function() {
 			s.removeClass("stick");	
 		}
 	});
-	$(".mobile_menu_button").click(function(){
+	$(".mobile_menu_button").on('click touch', function () {
 	    $(".navigation_wrapper").toggleClass("mobile_open");
 	});
 });

@@ -4,9 +4,9 @@ $(document).ready(function() {
 	$(window).scroll(function() {
 		var windowpos = $(window).scrollTop();
 		if (windowpos >= pos.top & windowpos <=1000) {
-			s.addClass("stick");
-		} else {
 			s.removeClass("stick");	
+		} else {
+			s.addClass("stick");
 		}
 	});
 	$(".mobile_menu_button").on('click touch', function () {

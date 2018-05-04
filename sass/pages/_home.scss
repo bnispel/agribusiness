@@ -34,6 +34,16 @@
 	}
 }
 /* :::::::::::::::::::::::::::::::::: FOCUS POINT SECTIONS */
+.focuspoint_count {
+	font-size: 6rem;
+}
+.focuspoint_one, .focuspoint_two, .focuspoint_three, .focuspoint_four, .focuspoint_five {
+	h2 {
+		margin-left: 70px;
+		font-size: 10vw;
+		padding: 9px 0;
+	}
+}
 .focuspoint_one {
 	background: url(../images/homebackground_focus1.jpg) no-repeat top center;
 	background-size: cover;
@@ -46,12 +56,6 @@
 	.focuspoint_count {
 		top: 7px;
 		left: 0;
-		font-size: 6rem;
-	}
-	h2 {
-		padding: 9px 10px;
-		margin-left: 84px;
-		font-size: 3.3rem;
 	}
 }
 .focuspoint_two {
@@ -64,9 +68,10 @@
 		overflow: hidden;
 	}
 	.section_image {
-		margin: -30px 0 20px -30px;
+		margin: 0 0 20px 0;
 		position: relative;
 		z-index: 9;
+		text-align: center;
 	}
 	.section_content {
 		padding: 0;
@@ -75,13 +80,9 @@
 	.focuspoint_count {
 		top: -25px;
 		left: 0;
-		font-size: 7rem;
 	}
 	img {
 		max-width: 100%;
-	}
-	h2 {
-		font-size: 2.5rem;
 	}
 }
 .section_twopoints {
@@ -108,12 +109,10 @@
 	.focuspoint_count {
 		top: -30px;
 		left: 0;
-		font-size: 7rem;
 	}
 	h2 {
 		max-width: 59vw;
-		margin-left: 110px;
-		font-size: 10vw;
+		margin-left: 90px;
 	}
 }
 .focuspoint_four {
@@ -129,11 +128,9 @@
 	.focuspoint_count {
 		top: -30px;
 		left: 0;
-		font-size: 7rem;
 	}
 	h2 {
-		margin-left: 110px;
-		font-size: 10vw;
+		margin-left: 90px;
 	}
 }
 .focuspoint_five {
@@ -146,11 +143,9 @@
 	.focuspoint_count {
 		top: -30px;
 		left: 0;
-		font-size: 7rem;
 	}
 	h2 {
-		font-size: 10vw;
-		margin-left: 110px;
+		margin-left: 80px;
 	}
 }
 .section_getstarted {
@@ -177,6 +172,9 @@
 }
 @media screen and (min-width:500px) {
 	/* :::::::::::::::::::::::::::::: PAGE HEADER */
+	.focuspoint_count {
+		font-size: 7rem;
+	}
 	.home .header {
 		h2 {
 			max-width: 100%;
@@ -185,40 +183,19 @@
 	}
 	.focuspoint_one {
 		.section {
-			padding: 20px 0 30px 140px;
+			padding: 20px 0 30px 80px;
 		}
 		.focuspoint_count {
-			top: -31px;
-			left: 35px;
-			font-size: 8rem;
+			top: 4px;
+			left: 0;
 		}
 		h2 {
 			margin-left: 0;
-			font-size: 5.3rem;
 		}
 	}
 	.focuspoint_three {
 		h2 {
 			margin-left: 130px;
-		}
-		.focuspoint_count {
-			font-size: 9rem;
-		}
-	}
-}
-@media screen and (min-width:650px) {
-	.focuspoint_two {
-		background-size: cover;
-		.section {
-			padding: 40px 0;
-		}
-		.section_image {
-			float: left;
-			width: 50%;
-		}
-		.section_content {
-			float: right;
-			width: 50%;
 		}
 	}
 }
@@ -229,33 +206,66 @@
 			font-size: 2.3rem;
 		}
 	}
+	.focuspoint_one, .focuspoint_two, .focuspoint_three, .focuspoint_four, .focuspoint_five {
+		h2 {
+			font-size: 3.5rem;
+			margin-left: 0px;
+		}
+	}
 	.section_intro {
 		padding: 100px 30px 70px;
 	}
-	.focuspoint_two {
-		.section_content {
-			padding: 50px 0 0 0;
+	.focuspoint_one {
+		.section {
+			padding: 20px 0 30px 130px;
 		}
 		.focuspoint_count {
-			top: 25px;
-			font-size: 8rem;
+			top: -1px;
+			left: 30px;
 		}
 		h2 {
-			font-size: 3rem;
+			margin-left: 0;
+		}
+	}
+	.focuspoint_two {
+		background-size: cover;
+		.section {
+			padding: 40px 0;
+		}
+		.section_image {
+			float: left;
+			width: 40%;
+		}
+		.section_content {
+			float: right;
+			width: 60%;
+			padding: 0;
+		}
+		.focuspoint_count {
+			top: -15px;
+		}
+	}
+	.focuspoint_three {
+		h2 {
+			margin-left: 110px;
+			max-width: 42vw;
+		}
+	}
+	.focuspoint_four {
+		h2 {
+			margin-left: 110px;
 		}
 	}
 	.focuspoint_five {
 		padding: 0 30px 270px;
 		.section_content {
-			padding-left: 150px;
+			padding-left: 80px;
 		}
 		.focuspoint_count {
-			font-size: 12rem;
 			top: -47px;
 			left: -20px;
 		}
 		h2 {
-			font-size: 5.3rem;
 			margin-left: 0;
 		}
 	}
@@ -264,6 +274,11 @@
 	}
 }
 @media screen and (min-width: 850px) {
+	.focuspoint_one, .focuspoint_two, .focuspoint_three, .focuspoint_four, .focuspoint_five {
+		h2 {
+			font-size: 4rem;
+		}
+	}
 	.focuspoint_three {
 		@include flexbox();
 		flex-direction: row-reverse;
@@ -284,13 +299,11 @@
 		}
 		.focuspoint_count {
 			top: -50px;
-			left: -180px;
-			font-size: 12rem;
+			left: -100px;
 		}
 		h2 {
 			margin-left: 0;
-			font-size: 5.3rem;
-			max-width: 480px;
+			max-width: 351px;
 		}
 	}
 	.focuspoint_four {
@@ -298,7 +311,7 @@
 		.section_content {
 			clear: left;
 			@include flex(1);
-			padding: 30px 20px 0 136px;
+			padding: 30px 20px 0 116px;
 		}
 		.section_image {
 			@include flex(1.5);
@@ -306,15 +319,21 @@
 		.focuspoint_count {
 			top: 0;
 			left: 10px;
-			font-size: 9rem;
 		}
 		h2 {
 			margin-left: 0;
-			font-size: 5.3rem;
 		}
 	}
 }
 @media screen and (min-width:950px) {
+	.focuspoint_one, .focuspoint_two, .focuspoint_three, .focuspoint_four, .focuspoint_five {
+		h2 {
+			font-size: 4rem;
+		}
+	}
+	.focuspoint_count {
+		font-size: 10rem;
+	}
 	/* :::::::::::::::::::::::::::::: PAGE HEADER */
 	.home .header {
 		h1 {
@@ -330,9 +349,8 @@
 			padding: 140px 0 30px 140px;
 		}
 		.focuspoint_count {
-			font-size: 12rem;				
-			top: 89px;
-			left: -35px;
+			top: 99px;
+			left: -5px;
 		}
 	}
 	.focuspoint_two {
@@ -341,14 +359,13 @@
 		}
 		.focuspoint_count {
 			top: 25px;
-			font-size: 10rem;
-		}
-		h2 {
-			font-size: 3.5rem;
 		}
 	}
 	.focuspoint_three {
 		padding-bottom: 0;
+		h2 {
+			max-width: 360px;
+		}
 	}
 	.focuspoint_four {
 		.section_image {
@@ -357,15 +374,26 @@
 	}
 }
 @media screen and (min-width:1150px) {
+	.focuspoint_one, .focuspoint_two, .focuspoint_three, .focuspoint_four, .focuspoint_five {
+		h2 {
+			font-size: 5rem;
+		}
+	}
 	.focuspoint_two {
 		.focuspoint_count {
 			top: 75px;	
 		}
 		.section_content {
 			padding: 110px 0 0 0;
+			width: 50%;
 		}	
+		.section_image {
+			width: 50%;
+		}
+	}
+	.focuspoint_three {
 		h2 {
-			font-size: 4.5rem;
+			max-width: 460px;
 		}
 	}
 	.focuspoint_four {
@@ -378,11 +406,7 @@
 	.focuspoint_two {
 		.focuspoint_count {
 			top: 40px;
-			left: -170px;
-			font-size: 12em;
-		}	
-		h2 {
-			font-size: 5.3rem;
+			left: -130px;
 		}
 	}
 	.focuspoint_three {

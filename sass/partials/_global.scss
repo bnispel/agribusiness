@@ -111,13 +111,15 @@ a.button_alt {
 }
 /* :::::::::::::::::::::::::::::: MAIN NAV */
 .navigation_wrapper {
-	padding: 16px 20px 0;	
+	padding: 16px 20px 7px;	
 	position: fixed;
 	top: 0;
 	width: 100%;
 	z-index: 999;
 	background: $starkwhite;
-	@include transition(.2s);
+	-webkit-transition: background .4s ease-out;
+	-moz-transition: background .4s ease-out;
+	transition: background .4s ease-out;
 	@include dropshadow();
 }
 .navigation {
@@ -153,22 +155,19 @@ a.button_alt {
 		}
 	}
 	.logo {
-		width: 180px;
-		height: 60px;
+		width: 130px;
+		height: 40px;
 		display: block;
 		text-indent: -99999em;
 		float: left;
 		padding: 0;
 		background: $starkwhite url(../images/logohoriz.svg) no-repeat top left;
 		background-size: contain;
-		@include transition(.2s);
+		@include removetransition();
 		&:hover {
 			background: $starkwhite url(../images/logohoriz.svg) no-repeat top left;
 			background-size: contain;
 		}
-	}
-	.logoalt {
-		display: none;
 	}
 	.programdetails {
 		margin-left: 0;
@@ -194,6 +193,7 @@ a.button_alt {
 		.logo {
 			width: 155px;
 			height: 115px;
+			text-indent: -99999em;
 			background: url(../images/logo.svg) no-repeat top left;
 			background-size: contain;
 			&:hover {
@@ -218,10 +218,13 @@ a.button_alt {
 			border: 1px solid $white;
 		}
 	}
+	.mobile_menu_button {
+		top: 25px;
+	}
 }
 .mobile_menu_button {
 	position: absolute;
-	top: 30px;
+	top: 15px;
 	right: 10px;
 	background: none;
 	-webkit-appearance: none;
@@ -240,7 +243,7 @@ a.button_alt {
 		opacity: .7;
 	}
 	.menubtn_bars_inside, .menubtn_bars_inside:before, .menubtn_bars_inside:after {
-		background-color: $starkwhite;
+		background-color: $black;
 		position: absolute;
 		width: 30px;
 		height: 2px;
@@ -281,6 +284,16 @@ a.button_alt {
 		bottom: 0;
 		transition: bottom 75ms ease,transform 75ms cubic-bezier(.215,.61,.355,1) .12s;
 		transform: rotate(-90deg);
+	}
+}
+.stick .menubtn_bars {
+	.menubtn_bars_inside, .menubtn_bars_inside:before, .menubtn_bars_inside:after {
+		background-color: $starkwhite;
+	}
+}
+.stick.mobile_open .menubtn_bars {
+	.menubtn_bars_inside, .menubtn_bars_inside:before, .menubtn_bars_inside:after {
+		background-color: $black;
 	}
 }
 /* :::::::::::::::::::::::::::::: PAGE HEADER */
@@ -822,6 +835,9 @@ a.button_alt {
 	.logoalt {
 		display: none;
 	}
+	.navigation_wrapper {
+		padding: 16px 20px 0;
+	}
 	.navigation {
 		&.stick {
 			nav {
@@ -835,6 +851,10 @@ a.button_alt {
 			background: none;
 			position: static;
 			width: auto;
+		}
+		.logo {
+			width: 180px;
+			height: 60px;
 		}
 	}
 	.stat_three {
@@ -890,10 +910,10 @@ a.button_alt {
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::: MOBILE ONLY */
 
 @media screen and (max-width:950px) {
-	.navigation_wrapper.stick .mobilenav {
+	.navigation_wrapper.stick .mobilenav, .navigation_wrapper .mobilenav {
 		background: $starkwhite;
 		position: fixed;
-		top: -100%;
+		top: -200%;
 		left: 0;
 		width: 100%;
 		padding: 30px;

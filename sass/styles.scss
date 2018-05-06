@@ -7,8 +7,11 @@
 
 /* Global styles */
 @import 'partials/_global.scss';
+@import 'partials/_form.scss';
 
 /* Page specific styles */
 @import 'pages/_home.scss';
 @import 'pages/_focus.scss';
 @import 'pages/_thankyou.scss';
+
+@import 'pages/_heritage.scss';

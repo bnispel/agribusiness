@@ -1,15 +1,12 @@
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: TEXT FORMATTING */
+.home {
+	h2 {
+		border-top: 1px solid $black;
+		text-transform: uppercase;
+	}
+}
+
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: HEADER AREA */
-.scroll {
-	margin: 0 auto 0;
-	display: block;
-	width: 18px;
-}
-.scroll_arrow {
-	display: block;
-	height: 10px;
-	animation: downarrow 3s infinite;
-	animation-delay: .1s;
-}
 .home {
 	.navigation_wrapper {
 		opacity: 0;
@@ -38,12 +35,30 @@
 			line-height: 1.1;
 			max-width: 69vw;
 			margin-bottom: 0;
+			text-transform: none;
+			border-top: 0;
 		}
 	}
 	.section_intro {
 		padding: 60px 20px 0;
 	}
 }
+/* :::::::::::::::::::::::::::::::::: STAT SECTIONS */
+.home {
+	.stat_one {
+		background: url(../images/homebackground_stat1.jpg) no-repeat 35% 110%;
+		background-size: 540px;
+	}
+	.stat_two {
+		background: $orange url(../images/homebackground_stat2.jpg) no-repeat bottom center;
+		background-size: cover;
+	}
+	.stat_three {
+		background: #ffffff url(../images/homebackground_stat3.jpg) no-repeat bottom center;
+		background-size: 145%;
+	}
+}
+
 /* :::::::::::::::::::::::::::::::::: FOCUS POINT SECTIONS */
 .focuspoint_count {
 	font-size: 6rem;
@@ -58,7 +73,7 @@
 	h2 {
 		margin-left: 70px;
 		font-size: 10vw;
-		padding: 9px 0;
+		padding: 12px 0 5px;
 		line-height: .9;
 	}
 }
@@ -213,6 +228,16 @@
 			font-size: 5vw;
 		}
 	}
+	/* ::::::::::::::::::::::::::::::: STAT SECTIONS */
+	.home {
+		.stat_one {
+			background-size: 730px;
+			background-position: center 140%;
+		}
+		.stat_three {
+			background-size: contain;
+		}
+	}
 	/* ::::::::::::::::::::::::::::::: FOCUS POINT SECTIONS */
 	.focuspoint_one, .focuspoint_two, .focuspoint_three, .focuspoint_four, .focuspoint_five {
 		h2 {
@@ -248,8 +273,14 @@
 			font-size: 2.3rem;
 		}
 	}
-	.scroll {
-		margin-top: 15px;
+	/* ::::::::::::::::::::::::::::::: INTRO SECTIONS */
+	.home .section_intro {
+		padding: 100px 20px 0;
+	} 
+	/* ::::::::::::::::::::::::::::::: STAT SECTIONS */
+	.home .stat_one {
+		background-position: center top;
+		background-size: cover;
 	}
 	/* ::::::::::::::::::::::::::::::: FOCUS POINT SECTIONS */
 	.focuspoint_one, .focuspoint_two, .focuspoint_three, .focuspoint_four, .focuspoint_five {
@@ -483,6 +514,6 @@
 	}
 	.focuspoint_four .focuspoint_count {
 		top: -20px;
-		left: -80px;
+		left: -30px;
 	}
 }

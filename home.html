@@ -241,8 +241,88 @@
 				</div>
 				<h3>Interested in Agribusiness?</h3>
 				<p>If you’re ready to start your experience with Doane, fill out the form below and we’ll be in touch. We guarantee 100% privacy. Your information will not be shared. We look forward to meeting you!</p>
-				<form>
-				</form>
+				<form id="msform" class="form" method="post" action="">
+				<div class="step-1 step">
+					<div class="field half">
+						<input type="text" name="f_name" id="f_name" >
+						<label for="f_name" class="inputlabel">First Name</label>
+					</div>
+					<div class="field half">
+						<input type="text" name="l_name" id="l_name" >
+						<label for="l_name" class="inputlabel">Last Name</label>
+					</div>
+					<div class="field half">
+						<input type="text" name="email" id="email" >
+						<label for="email" class="inputlabel">Email</label>
+					</div>
+					<div class="field half">
+						<input type="text" name="phone" id="phone" >
+						<label for="phone" class="inputlabel">Phone</label>
+					</div>
+				</div>
+				<div class="step-2 step">
+					<div class="field half focus">
+						<label for="program"  class="inputlabel">Program</label>
+						<select name="program" id="programFirstChoice" onchange="this.className=this.options[this.selectedIndex].className">
+								<option value="UND.BA.CPS" data-program="Undeclared">Undeclared</option>
+								<option value="AGR.BA" data-program="Agribusiness">Agribusiness</option>
+								<option value="CRJ.BA" data-program="Criminal Justice">Criminal Justice</option>
+								<option value="GRD.BA" data-program="Graphic Design">Graphic Design</option>
+								<option value="HSI.BS" data-program="Health Sciences">Health Sciences</option>
+								<option value="NRS.BSN" data-program="RN to BSN">RN to BSN</option>
+								<option value="HRE.BA" data-program="Human Relations">Human Relations</option>
+								<option value="ISY_SFT.BS" data-program="Information Systems &amp; Technology">Information Systems &amp; Technology</option>
+								<option value="LIBART.BA" data-program="Liberal Arts Studies">Liberal Arts Studies</option>
+								<option value="ORGCM.BA" data-program="Organizational Communication">Organizational Communication</option>
+								<option value="ACCT.BA" data-program="Professional Studies in Accounting">Professional Studies in Accounting</option>
+								<option value="BUSA_GEN.BA" data-program="Professional Studies in Business Administration">Professional Studies in Business Administration</option>
+								<option value="PADM.BA" data-program="Public Administration">Public Administration</option>
+								<option value="ED.AC.CI.MED" data-program="Initial Certification at the Advanced Level">Initial Certification at the Advanced Level</option>
+								<option value="COU.MA" data-program="Master of Arts in Counseling">Master of Arts in Counseling</option>
+								<option value="ED.SC.MED" data-program="Master of Arts in Counseling with School Counseling Emphasis">Master of Arts in Counseling with School Counseling Emphasis</option>
+								<option value="MGT.MA" data-program="Master of Arts in Management">Master of Arts in Management</option>
+								<option value="BA.MBA" data-program="Master of Business Administration" selected="selected">Master of Business Administration</option>
+								<option value="ED.CI.MED" data-program="Master of Education in Curriculum and Instruction">Master of Education in Curriculum and Instruction</option>
+								<option value="EDL.MED" data-program="Master of Education in Educational Leadership">Master of Education in Educational Leadership</option>
+			  					<option value="IDT.MS" data-program="Master of Science in Instructional Design and Technology">Master of Science in Instructional Design and Technology</option>
+								<option value="ED.ESL.CERT" data-program="English as a Second Language Teaching Endorsement">English as a Second Language Teaching Endorsement</option>
+								<option value="ED.EDC.CERT" data-program="Early Childhood Teaching Endorsement">Early Childhood Teaching Endorsement</option>
+								<option value="ED.SPED.CERT" data-program="Mild, Moderate Special Education Teaching Endorsement">Mild, Moderate Special Education Teaching Endorsement</option>
+								<option value="ED.READ.CERT" data-program="Reading Specialist Teaching Endorsement">Reading Specialist Teaching Endorsement</option>
+								<option value="ED.ESD.PM" data-program="Education Specialist ">Education Specialist </option>
+								<option value="EDU.ND">Graduate Education - Non-Degree</option>
+								<option value="ED.EDD" data-program="Doctorate in Education">Doctorate in Education</option>
+						</select>
+						
+					</div>
+					<div class="field half focus">
+						<label for="location" class="inputlabel">Location</label>
+						<select name="location" class="unselect" id="locationSecondChoice">
+								<option class="default" value="base" disabled>Location</option>
+								<option value="LINC">Lincoln</option>
+								<option value="OMAHA">Omaha</option>
+								<option value="GI">Grand Island</option>
+								<option value="ONLIN" selected>Online</option>
+						</select>
+					</div>
+						<div class="field full">
+							<label for="comments" class="no-hide">Additional questions or comments</label>
+							<textarea name="comments" id="comments"></textarea>
+						</div>
+					<p class="privacy">By submitting this information, you authorize Doane University to call you at the phone number provided.</p>
+				</div>
+				<div class="controls">
+					<span class="action back"><span>Back</span></span>
+					<span class="action next"><span>Next</span></span>
+					<button type="submit" class="action submit">Submit</button>	
+				</div>
+				<div class="step-counter">
+					<ul class="steps" id="progressbar">
+						<li class="step1-progress">Step 1</li>
+						<li class="step2-progress">Step 2</li>
+					</ul>
+				</div>
+			</form>
 			</div>
 		</div>
 		<div class="section_wrapper section_tuition">
@@ -294,6 +374,7 @@
 		</div>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/home.js"></script>
 </body>

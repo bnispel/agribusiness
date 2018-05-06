@@ -1,0 +1,31 @@
+.focus {
+	/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: PAGE HEADER */
+	.header {
+		height: 65vh;
+		min-height: 455px;
+		position: relative;
+		.bottomtext {
+			border-top: 1px solid $orange;
+			border-bottom: 1px solid $orange;
+		}
+	}
+	.header_content {
+		padding-top: 90px;
+	}
+	.scroll {
+		position: absolute;
+		bottom: 30px;
+		left: 50%;
+		margin-left: -9px;
+	}
+	.sustainability {
+		background: url(../images/heritage_sustainability.jpg) no-repeat bottom center;
+	}
+}
+@media screen and (min-width:1050px) {
+	.focus {
+		.header {
+			min-height: 575px;
+		}
+	}
+}

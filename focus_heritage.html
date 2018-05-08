@@ -101,14 +101,16 @@
 				<p>Tradition’s roots run deep in agriculture. Family farms and agriculture practices are handed down to the next generation of young farmers, ranchers, and ag professionals with the idea that one day - it will be you who will hand down your ag business to your children and grandchildren.</p>
 			</div>
 		</div>
-		<div class="section_wrapper twocol sustainability">
+		<div class="section_wrapper sustainability">
 			<div class="section">
 				<h2>Sustainability</h2>
-				<div class="col1">
-					<p>Agricultural heritage and sustainability go hand in hand. For generations communities of farmers and ranchers have created complex, local agricultural ecosystems.These systems have been managed with techniques and processes that have led to food security, the conservation of natural resources and biodiversity in the community.</p>
-				</div>
-				<div class="col2">
-					<p>Without the sustainability efforts of our ancestors there would be no agriculture today. Without the consideration of the next generation, there would be nothing to pass down for our children and their children. At Doane we honor agriculture’s heritage by giving our students a strong foundation built around sustainability, so they can hand it down to the next generation.</p>
+				<div class="twocol">
+					<div class="col1">
+						<p>Agricultural heritage and sustainability go hand in hand. For generations communities of farmers and ranchers have created complex, local agricultural ecosystems.These systems have been managed with techniques and processes that have led to food security, the conservation of natural resources and biodiversity in the community.</p>
+					</div>
+					<div class="col2">
+						<p>Without the sustainability efforts of our ancestors there would be no agriculture today. Without the consideration of the next generation, there would be nothing to pass down for our children and their children. At Doane we honor agriculture’s heritage by giving our students a strong foundation built around sustainability, so they can hand it down to the next generation.</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -134,17 +136,20 @@
 				</div>
 			</div>
 		</div>
-		<div class="section_wrapper twocol agfinance">
+		<div class="section_wrapper agfinance">
 			<div class="section">
 				<h2>Agricultural Finance</h2>
-				<div class="col1">
-					<p>Today the majority of agricultural operations are family-owned farms and ranches, which have been passed down through generations. There might not be a finance expert of bookkeeper in the family, but managing the business’ finances is a hard job that has to get done. Managing the budget, watching market prices, maintaining inventory and equipment, etc. is an essential part of a successful operation.</p>
-
-					<p>At Doane we give our students the financial understanding to support a successful business. We teach our students pricing models, financial markets, capital structure, farmland control and more, so they graduate prepared to manage a business, no matter the size.
-</p>
-				</div>
-				<div class="col2">
-					<img src="#" />
+				<div class="twocol">
+					<div class="col1">
+						<p>Today the majority of agricultural operations are family-owned farms and ranches, which have been passed down through generations. There might not be a finance expert of bookkeeper in the family, but managing the business’ finances is a hard job that has to get done. Managing the budget, watching market prices, maintaining inventory and equipment, etc. is an essential part of a successful operation.</p>
+	
+						<p>At Doane we give our students the financial understanding to support a successful business. We teach our students pricing models, financial markets, capital structure, farmland control and more, so they graduate prepared to manage a business, no matter the size.
+	</p>
+					</div>
+					<div class="col2">
+						<img src="images/heritage_financeimg_full.jpg" />
+						<img src="images/heritage_financeimg.png" class="cutout"/>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -192,9 +197,88 @@
 			<div class="section">
 				<h3>Interested in Agribusiness?</h3>
 				<p>If you’re ready to start your experience with Doane, fill out the form below and we’ll be in touch. We guarantee 100% privacy. Your information will not be shared. We look forward to meeting you!</p>
-				
-
-
+				<form id="msform" class="form" method="post" action="">
+					<div class="step-1 step">
+						<div class="field half">
+							<input type="text" name="f_name" id="f_name" class="floatlabel">
+							<label for="f_name" class="inputlabel">First Name</label>
+						</div>
+						<div class="field half">
+							<input type="text" name="l_name" id="l_name" class="floatlabel">
+							<label for="l_name" class="inputlabel">Last Name</label>
+						</div>
+						<div class="field half">
+							<input type="text" name="email" id="email" class="floatlabel">
+							<label for="email" class="inputlabel">Email</label>
+						</div>
+						<div class="field half">
+							<input type="text" name="phone" id="phone" class="floatlabel">
+							<label for="phone" class="inputlabel">Phone</label>
+						</div>
+					</div>
+					<div class="step-2 step">
+						<div class="field half focus">
+							
+							<select name="program" id="programFirstChoice" onchange="this.className=this.options[this.selectedIndex].className" class="floatlabel">
+									<option value="UND.BA.CPS" data-program="Undeclared">Undeclared</option>
+									<option value="AGR.BA" data-program="Agribusiness">Agribusiness</option>
+									<option value="CRJ.BA" data-program="Criminal Justice">Criminal Justice</option>
+									<option value="GRD.BA" data-program="Graphic Design">Graphic Design</option>
+									<option value="HSI.BS" data-program="Health Sciences">Health Sciences</option>
+									<option value="NRS.BSN" data-program="RN to BSN">RN to BSN</option>
+									<option value="HRE.BA" data-program="Human Relations">Human Relations</option>
+									<option value="ISY_SFT.BS" data-program="Information Systems &amp; Technology">Information Systems &amp; Technology</option>
+									<option value="LIBART.BA" data-program="Liberal Arts Studies">Liberal Arts Studies</option>
+									<option value="ORGCM.BA" data-program="Organizational Communication">Organizational Communication</option>
+									<option value="ACCT.BA" data-program="Professional Studies in Accounting">Professional Studies in Accounting</option>
+									<option value="BUSA_GEN.BA" data-program="Professional Studies in Business Administration">Professional Studies in Business Administration</option>
+									<option value="PADM.BA" data-program="Public Administration">Public Administration</option>
+									<option value="ED.AC.CI.MED" data-program="Initial Certification at the Advanced Level">Initial Certification at the Advanced Level</option>
+									<option value="COU.MA" data-program="Master of Arts in Counseling">Master of Arts in Counseling</option>
+									<option value="ED.SC.MED" data-program="Master of Arts in Counseling with School Counseling Emphasis">Master of Arts in Counseling with School Counseling Emphasis</option>
+									<option value="MGT.MA" data-program="Master of Arts in Management">Master of Arts in Management</option>
+									<option value="BA.MBA" data-program="Master of Business Administration" selected="selected">Master of Business Administration</option>
+									<option value="ED.CI.MED" data-program="Master of Education in Curriculum and Instruction">Master of Education in Curriculum and Instruction</option>
+									<option value="EDL.MED" data-program="Master of Education in Educational Leadership">Master of Education in Educational Leadership</option>
+				  					<option value="IDT.MS" data-program="Master of Science in Instructional Design and Technology">Master of Science in Instructional Design and Technology</option>
+									<option value="ED.ESL.CERT" data-program="English as a Second Language Teaching Endorsement">English as a Second Language Teaching Endorsement</option>
+									<option value="ED.EDC.CERT" data-program="Early Childhood Teaching Endorsement">Early Childhood Teaching Endorsement</option>
+									<option value="ED.SPED.CERT" data-program="Mild, Moderate Special Education Teaching Endorsement">Mild, Moderate Special Education Teaching Endorsement</option>
+									<option value="ED.READ.CERT" data-program="Reading Specialist Teaching Endorsement">Reading Specialist Teaching Endorsement</option>
+									<option value="ED.ESD.PM" data-program="Education Specialist ">Education Specialist </option>
+									<option value="EDU.ND">Graduate Education - Non-Degree</option>
+									<option value="ED.EDD" data-program="Doctorate in Education">Doctorate in Education</option>
+							</select>
+							<label for="program"  class="inputlabel">Program</label>
+						</div>
+						<div class="field half focus">
+							<select name="location" class="unselect" id="locationSecondChoice" class="floatlabel">
+									<option class="default" value="base" disabled>Location</option>
+									<option value="LINC">Lincoln</option>
+									<option value="OMAHA">Omaha</option>
+									<option value="GI">Grand Island</option>
+									<option value="ONLIN" selected>Online</option>
+							</select>
+							<label for="location" class="inputlabel">Location</label>
+						</div>
+							<div class="field full">
+								<textarea name="comments" id="comments" class="floatlabel"></textarea>
+								<label for="comments" class="no-hide inputlabel">Additional questions or comments</label>
+							</div>
+						<p class="privacy">By submitting this information, you authorize Doane University to call you at the phone number provided.</p>
+					</div>
+					<div class="controls">
+						<span class="action back"><span>Back</span></span>
+						<span class="action next"><span>Next</span></span>
+						<button type="submit" class="action submit">Submit</button>	
+					</div>
+					<div class="step-counter">
+						<ul class="steps" id="progressbar">
+							<li class="step1-progress">Step 1</li>
+							<li class="step2-progress">Step 2</li>
+						</ul>
+					</div>
+				</form>
 			</div>
 		</div>
 		<div class="section_wrapper section_tuition">

@@ -14,10 +14,6 @@
 		animation-delay: 1.5s;
 		animation-fill-mode: forwards;
 	}
-	.header_wrapper {
-		background: url(../images/homebg.jpg) no-repeat center center;
-		background-size: cover;
-	}
 	/* :::::::::::::::::::::::::::::: PAGE HEADER */
 	.header {
 		height: 100vh;
@@ -43,11 +39,20 @@
 		padding: 60px 20px 0;
 	}
 }
+/* :::::::::::::::::::::::::::::::::: GENERAL SECTIONS */
+.home {
+	.section_wrapper {
+		.section {
+			max-width: 900px;
+		}
+	}
+}
 /* :::::::::::::::::::::::::::::::::: STAT SECTIONS */
 .home {
 	.stat_one {
-		background: url(../images/homebackground_stat1.jpg) no-repeat 35% 110%;
-		background-size: 540px;
+		background: url(../images/homebackground_stat1.jpg) no-repeat center bottom;
+		background-size: 130%;
+		padding: 50px 20px 50%;
 	}
 	.stat_two {
 		background: $orange url(../images/homebackground_stat2.jpg) no-repeat bottom center;
@@ -56,17 +61,23 @@
 	.stat_three {
 		background: #ffffff url(../images/homebackground_stat3.jpg) no-repeat bottom center;
 		background-size: 145%;
+		padding-bottom: 53%;
 	}
 }
 
 /* :::::::::::::::::::::::::::::::::: FOCUS POINT SECTIONS */
+
 .focuspoint_count {
 	font-size: 6rem;
+	font-style: normal;
 	font-family: $highlightfont_alt;
 	color: $black-10;
 	position: absolute;
-	top: 0;
-	left: 0;
+	top: 50%;
+	right: 100%;
+	margin-right: -20px;
+	margin-top: -45px;
+	line-height: 1;
 	letter-spacing: -5px;
 }
 .focuspoint_one, .focuspoint_two, .focuspoint_three, .focuspoint_four, .focuspoint_five {
@@ -75,6 +86,7 @@
 		font-size: 10vw;
 		padding: 12px 0 5px;
 		line-height: .9;
+		position: relative;
 	}
 }
 .focuspoint_one {
@@ -85,10 +97,6 @@
 	}
 	&.testimonialisnext {
 		padding-bottom: 220px;
-	}
-	.focuspoint_count {
-		top: -2px;
-		left: 0;
 	}
 }
 .focuspoint_two {
@@ -102,39 +110,37 @@
 		clear: both;
 	}
 	.section {
-		padding: 0 0 40px;
-		max-width: 1260px;
+		padding: 40px 0;
 	}
 	.section_image {
-		margin: 0 0 20px 0;
+		margin: 0 0 40px 0;
 		position: relative;
 		z-index: 9;
 		text-align: center;
+	}
+	img {
+		max-width: 100%;
 	}
 	.section_content {
 		padding: 0;
 		position: relative;
 	}
 	.focuspoint_count {
-		top: -25px;
+		right: auto;
 		left: 0;
-	}
-	img {
-		width: 106%;
-		margin-left: -3%;
 	}
 	h2 {
 		margin-left: 0;
 	}
 }
 .section_twopoints {
-	background: url(../images/homebackground_focustwopoints.jpg) no-repeat top left;
+	background: $starkwhite url(../images/homebackground_focustwopoints.jpg) no-repeat top left;
 	img {
 		width: 100%;
 	}
 }
 .focuspoint_three {
-	padding-bottom: 30px;
+	padding: 30px 0;
 	.number {
 		font-size: 15.5vw;
 	}
@@ -144,18 +150,14 @@
 	}
 	.section_image {
 		padding: 0;
-		img {
-			width: 106%;
-			margin: 0 -3%;
-		}
-	}
-	.focuspoint_count {
-		top: -30px;
-		left: -10px;
+		margin: 20px 0;
 	}
 	h2 {
 		max-width: 61vw;
 		margin-left: 80px;
+	}
+	img.cutout {
+		transform: scale(1.10);
 	}
 }
 .focuspoint_four {
@@ -168,10 +170,6 @@
 	.section_image {
 		padding: 0;
 	}
-	.focuspoint_count {
-		top: -30px;
-		left: 0;
-	}
 	h2 {
 		margin-left: 90px;
 	}
@@ -183,31 +181,87 @@
 	.pagecta {
 		margin-bottom: 90px;
 	}
-	.focuspoint_count {
-		top: -30px;
-		left: 0;
-	}
 	h2 {
-		margin-left: 50px;
+		margin-left: 60px;
 	}
 }
+.home {
+	.focuspoint_two .section {
+		max-width: 1260px;
+	}
+	.section_twopoints .section {
+		max-width: 1260px;
+	}
+	.stat_three .section {
+		max-width: 1300px;
+	}
+}
+.home {
+	.section_texttestimonial_top {
+		.section {
+			max-width: 900px;
+		}	
+	}
+}
+
 /* :::::::::::::::::::::::::::::::::: GET STARTED SECTION */
 .section_getstarted {
 	text-align: center;
-	.popout_image {
-		margin: -120px auto 50px;
-		max-width: 900px;
-		img {
-			width: 100%;
+}
+
+
+/* :::::::::::::::::::::::::::::::::: ANIMATIONS */
+/*.section_intro {
+	.section {
+		opacity: 0;
+		@include transition(.5s);
+	}
+	&.visible {
+		.section {
+			opacity: 1;	
 		}
 	}
 }
-/* :::::::::::::::::::::::::::::::::: CTA SECTION */
-.home .section_pagecta {
-	background: url(../images/home_ctabg.jpg) no-repeat top center;
-	background-size: cover;
+
+.section_imgtestimonial {
+	.section_testimonial {
+		right: -160px;
+		@include transition(.5s);
+		opacity: 0;
+	}
+	&.visible {
+		.section_testimonial {
+			right: -45px;
+			opacity: 1;
+		}
+	}
+}
+.section_texttestimonial_top, .section_texttestimonial_right {
+	.section_testimonial {
+		position: relative;
+		top: 100px;	
+		@include transition(.5s);
+		opacity: 0;
+	}
+	&.visible {
+		.section_testimonial { 
+			top: 0px;
+			opacity: 1;
+		}
+	}	
 }
 
+.popout_image {
+		.section {
+			opacity: 0;
+			@include transition(.5s);
+		}
+	&.visible {
+		.section {
+			opacity: 1;
+		}
+	}
+}*/
 
 
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
@@ -231,11 +285,11 @@
 	/* ::::::::::::::::::::::::::::::: STAT SECTIONS */
 	.home {
 		.stat_one {
-			background-size: 730px;
-			background-position: center 140%;
+			padding: 50px 20px 55%;
 		}
 		.stat_three {
 			background-size: contain;
+			padding-bottom: 40%;
 		}
 	}
 	/* ::::::::::::::::::::::::::::::: FOCUS POINT SECTIONS */
@@ -246,14 +300,11 @@
 	}
 	.focuspoint_count {
 		font-size: 7rem;
+		margin-top: -51px;
 	}
 	.focuspoint_one {
 		.section {
 			padding: 20px 0 30px 80px;
-		}
-		.focuspoint_count {
-			top: 4px;
-			left: 0;
 		}
 		h2 {
 			margin-left: 0;
@@ -263,6 +314,11 @@
 		h2 {
 			margin-left: 100px;
 			max-width: 330px;
+		}
+	}
+	.focuspoint_five {
+		h2 {
+			margin-left: 100px;
 		}
 	}
 }
@@ -278,10 +334,14 @@
 		padding: 100px 20px 0;
 	} 
 	/* ::::::::::::::::::::::::::::::: STAT SECTIONS */
-	.home .stat_one {
-		background-position: center top;
-		background-size: cover;
+	.home {
+		.stat_three {
+			.number {
+				font-size: 12vw;
+			}
+		}
 	}
+	
 	/* ::::::::::::::::::::::::::::::: FOCUS POINT SECTIONS */
 	.focuspoint_one, .focuspoint_two, .focuspoint_three, .focuspoint_four, .focuspoint_five {
 		h2 {
@@ -293,10 +353,6 @@
 		.section {
 			padding: 20px 0 30px 130px;
 		}
-		.focuspoint_count {
-			top: -1px;
-			left: 30px;
-		}
 		h2 {
 			margin-left: 0;
 		}
@@ -304,20 +360,24 @@
 	.focuspoint_two {
 		background-size: cover;
 		.section {
-			padding: 40px 0;
+			padding: 75px 0 40px;
+			&:after {
+				content: '';
+				display: block;
+				clear: both;
+				width: 1px;
+			}
 		}
 		.section_image {
 			float: left;
 			width: 40%;
 			text-align: left;
+			padding-right: 40px;
 		}
 		.section_content {
 			float: right;
 			width: 60%;
 			padding: 0;
-		}
-		.focuspoint_count {
-			top: -15px;
 		}
 		img {
 			width: auto;
@@ -337,21 +397,13 @@
 		}
 	}
 	.focuspoint_five {
-		padding: 0 30px 270px;
+		padding: 20px 30px 270px;
 		.section_content {
-			padding-left: 120px;
-		}
-		.focuspoint_count {
-			top: -47px;
-			left: 40px;
+			padding-left: 150px;
 		}
 		h2 {
 			margin-left: 0;
 		}
-	}
-	/* ::::::::::::::::::::::::::::::: GET STARTED SECTIONS */
-	.section_getstarted .popout_image {
-		margin: -260px auto 100px;
 	}
 }
 @media screen and (min-width: 850px) {
@@ -369,19 +421,18 @@
 			font-size: 15.5vw;
 		}
 		.section_content {
-			@include flex(.95);
+			@include flex(1);
+			padding-left: 40px;
 		}
 		.section_image {
-			padding: 40px 20px 0 0;
 			@include flex(1);
+			padding-top: 120px;
 			img {
 				width: 100%;
 				margin: 0;
+				max-width: 540px;
+				float: right;
 			}
-		}
-		.focuspoint_count {
-			top: -50px;
-			left: -100px;
 		}
 		h2 {
 			margin-left: 0;
@@ -398,13 +449,14 @@
 		.section_image {
 			@include flex(1.5);
 		}
-		.focuspoint_count {
-			top: 0;
-			left: 10px;
-		}
 		h2 {
 			margin-left: 0;
 		}
+	}
+	.home .stat_one {
+		padding-bottom: 35%;
+		background-size: 100%;
+		background-position: center 160%;
 	}
 }
 @media screen and (min-width:950px) {
@@ -416,28 +468,22 @@
 	}
 	.focuspoint_count {
 		font-size: 10rem;
+		margin-top: -73px;
+		margin-right: -30px;
 	}
 	.focuspoint_one {
 		.section {
 			padding: 140px 0 30px 140px;
-		}
-		.focuspoint_count {
-			top: 99px;
-			left: -5px;
 		}
 	}
 	.focuspoint_two {
 		.section_content {
 			padding: 70px 0 0 0;
 		}
-		.focuspoint_count {
-			top: 25px;
-		}
 	}
 	.focuspoint_three {
-		padding-bottom: 0;
+		padding: 60px 0 0;
 		.section_image {
-			padding: 150px 20px 0 0;	
 		}
 		h2 {
 			max-width: 410px;
@@ -446,11 +492,6 @@
 	.focuspoint_four {
 		.section_image {
 			margin-top: -90px;
-		}
-	}
-	.focuspoint_five {
-		.focuspoint_count {
-			left: -10px;
 		}
 	}
 }
@@ -474,9 +515,6 @@
 		}
 	}
 	.focuspoint_two {
-		.focuspoint_count {
-			top: 75px;	
-		}
 		.section_content {
 			padding: 110px 0 0 0;
 			width: 60%;
@@ -495,13 +533,24 @@
 			margin-top: -120px;
 		}
 	}
+	.home .stat_one {
+		padding-bottom: 430px;
+		background: url(../images/homebackground_stat1_large.jpg) no-repeat center bottom;
+		background-position: center -170%;
+	}
+	/* :::::::::::::::::::::::::::::: PAGE HEADER */
+	.home .header {
+		h1 {
+			font-size: 9rem;
+		}
+	}
 }
 @media screen and (min-width:1250px) {
 	/* ::::::::::::::::::::::::::::::: FOCUS POINT SECTIONS */
 	.focuspoint_two {
 		.focuspoint_count {
-			top: 40px;
-			left: -50px;
+			right: 100%;
+			left: auto;
 		}
 		.section_content {
 			padding: 110px 0 0 80px;
@@ -509,11 +558,18 @@
 	}
 	.focuspoint_three {
 		.section_image {
-			padding: 150px 30px 0 115px;
+			@include flex(1.11);
+			img {
+				max-width: 555px;
+			}
+		}
+		.section_content {
+			@include flex(.9);
 		}
 	}
-	.focuspoint_four .focuspoint_count {
-		top: -20px;
-		left: -30px;
+	.home .stat_three {
+		.number {
+			font-size: 10rem;
+		}
 	}
 }

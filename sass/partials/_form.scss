@@ -15,14 +15,14 @@ form {
 		text-align: left;
 		text-transform: uppercase;
 		position: absolute;
-		top: 32px;
+		top: 36px;
 		left: 25px;
 		@include transition(.2s);
 		cursor: text;
 	}
 	input, select, textarea {
 		width: 100%;
-		padding: 10px;
+		padding: 13px 10px;
 		font-size: .9em;
 		color: $black;
 		border: 0;
@@ -43,7 +43,7 @@ form {
 			outline: 0;
 		}
 	}
-	input:focus + .inputlabel, .focus .inputlabel {
+	input:focus + .inputlabel, .focus .inputlabel, textarea:focus + .inputlabel, select:focus + .inputlabel {
 		top: 0;
 	}
 	textarea {
@@ -54,6 +54,7 @@ form {
 		background-size: 13px 6px;
 	}
 }
+
 fieldset {
 	position: absolute;
 }
@@ -119,6 +120,7 @@ select.unselect {
 }
 .controls {
 	clear: both;
+	padding-top: 15px;
 }
 /* :::::::::::::::::::::::::::::::::::::::::: FORM BUTTONS */
 .next, .back {
@@ -179,27 +181,46 @@ select.unselect {
 		}
 	}
 }
+
 button.submit {
-	display: none;
+	text-transform: uppercase;
+	color: $orange;
+	text-decoration: none;
+	font-weight: 600;
+	letter-spacing: 3px;
+	position: relative;
+	padding: 0 10px 0 35px;
+	@include transition(.2s);
 	border: 0;
 	outline: 0;
-	height: 45px;
-	cursor: pointer;
 	float: right;
-	padding: 0 32px 0 0;
-	color: $orange;
-	font-size: 1em;
-	font-style: italic;
-	display: block;
-	-webkit-transition: all .2s ease-in-out;
-	-moz-transition: all .2s ease-in-out;
-	-o-transition: all .2s ease-in-out;
-	transition: all .2s ease-in-out;
+	font-size: 1.1rem;
+	-webkit-appearance: none;
+	cursor: pointer;
+	&:before {
+		content: '';
+		width: 28px;
+		height: 18px;
+		margin-right: 10px;
+		display: block;
+		position: absolute;
+		left: 0;
+		background: url(../images/arrow.svg) no-repeat bottom left;
+		background-size: contain;
+		@include transition(.2s);
+	}
+	span {
+		padding: 0 0 5px;
+		display: inline-block;
+		border-bottom: 2px solid $black;
+	}
 	&:hover {
-		margin-right: -5px;
+		color: $black;
+		&:before {
+			left: 100%;
+		}
 	}
 }
-
 p.privacy {
 	font-style: italic;
 	color: $gray;

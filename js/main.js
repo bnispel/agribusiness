@@ -32,12 +32,12 @@ $(document).ready(function(){
 	}
 	
 	// The lines below are executed on page load
-	$('.field input').each(function() {
+	$('.field .floatlabel').each(function() {
 	  checkForInput(this);
 	});
 	
 	// The lines below (inside) are executed on change & keyup
-	$('.field input').on('change keyup', function() {
+	$('.field .floatlabel').on('change keyup', function() {
 	  checkForInput(this);  
 	});
 	

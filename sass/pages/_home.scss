@@ -413,6 +413,7 @@
 	}
 	.focuspoint_three {
 		@include flexbox();
+		-webkit-flex-direction: row-reverse;
 		flex-direction: row-reverse;
 		padding-top: 100px;
 		.number {

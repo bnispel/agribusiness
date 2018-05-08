@@ -12,6 +12,9 @@ $(document).ready(function() {
 	$(".mobile_menu_button").on('click touch', function () {
 	    $(".navigation_wrapper").toggleClass("mobile_open");
 	});
+	$(".mobilenav .agis").on('click touch', function () {
+	    $(".mobilenav .dropdown").slideToggle();
+	});
 });
 
 /*-----------------------------------------------------------------*/

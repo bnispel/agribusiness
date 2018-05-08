@@ -27,7 +27,7 @@
 			letter-spacing: 2px;
 		}
 		h2 {
-			font-size: 7.5vw;
+			font-size: 5vw;
 			line-height: 1.1;
 			max-width: 69vw;
 			margin-bottom: 0;
@@ -211,7 +211,7 @@
 
 
 /* :::::::::::::::::::::::::::::::::: ANIMATIONS */
-/*.section_intro {
+.section_intro {
 	.section {
 		opacity: 0;
 		@include transition(.5s);
@@ -236,32 +236,30 @@
 		}
 	}
 }
+
 .section_texttestimonial_top, .section_texttestimonial_right {
-	.section_testimonial {
-		position: relative;
-		top: 100px;	
+	.testimonial_image {	
 		@include transition(.5s);
 		opacity: 0;
 	}
 	&.visible {
-		.section_testimonial { 
-			top: 0px;
+		.testimonial_image { 
 			opacity: 1;
 		}
 	}	
 }
 
 .popout_image {
-		.section {
+		img {
 			opacity: 0;
 			@include transition(.5s);
 		}
 	&.visible {
-		.section {
+		img {
 			opacity: 1;
 		}
 	}
-}*/
+}
 
 
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */

@@ -144,13 +144,6 @@ img.cutout {
 			display: none;
 		}
 	}
-	.logo {
-		display: block;
-		float: left;
-		text-indent: -999999px;
-		padding: 0;
-		@include removetransition();
-	}
 	.mobile_menu_button {
 		top: 25px;
 	}
@@ -171,6 +164,11 @@ img.cutout {
 		text-indent: -99999em;
 		background: url(../images/logo.svg) no-repeat top left;
 		background-size: contain;
+		display: block;
+		float: left;
+		text-indent: -999999px;
+		padding: 0;
+		@include removetransition();
 		&:hover {
 			background: url(../images/logo.svg) no-repeat top left;
 			background-size: contain;
@@ -291,9 +289,8 @@ img.cutout {
 }
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: PAGE HEADER */
 .header {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	@include flexbox();
+	@include flexboxcenter();
 	text-align: center;
 	h1, h2 {
 		color: $white;
@@ -313,7 +310,7 @@ img.cutout {
 		border-top: 0;
 		max-width: 850px;
 		line-height: 1.2;
-		padding: 12px 20px;
+		padding: 5px 20px;
 		border-bottom: 0;
 		letter-spacing: 2px;
 		text-transform: none;
@@ -345,6 +342,7 @@ img.cutout {
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: PAGE FOOTER */
 .footer_wrapper {
 	background: $starkwhite;
+	padding: 0 30px;
 }
 .footer {
 	margin: 0 0 30px;
@@ -420,7 +418,7 @@ img.cutout {
 	clear: both;
 	max-width: 1260px;
 	margin: 0 auto;
-	padding: 0 30px 20px;
+	padding: 0 0 20px;
 	text-align: center;
 	p {
 		margin-bottom: 0;
@@ -646,6 +644,7 @@ img.cutout {
 		display: inline-block;
 		font-size: 1.5rem;
 		line-height: 1.2;
+		letter-spacing: 1px;
 	}
 	a {
 		display: inline-block;
@@ -658,6 +657,7 @@ img.cutout {
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: COST SECTIONS */
 .section_tuition {
 	@include topshadow();
+	background: $white;
 	padding: 80px 20px 50px;
 	.section {
 		text-align: center;
@@ -687,7 +687,7 @@ img.cutout {
 		font-family: $highlightfont_alt;
 	}
 	.costper {
-		font-size: 1.7rem;
+		font-size: 1.9rem;
 	}
 	.cost_for {
 		text-transform: uppercase;
@@ -816,6 +816,10 @@ img.cutout {
 		p.cost {
 			font-size: 2.5rem;
 		}
+		.costper {
+			font-size: 2rem;
+			letter-spacing: 1px;
+		}
 		.number {
 			font-size: 7rem;
 		}
@@ -890,7 +894,7 @@ img.cutout {
 		font-size: 1.7rem;
 		.main_head {
 			font-size: 4rem;
-			padding: 5px 0;
+			padding: 7px 0 0;
 		}
 	}
 	/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: IMAGE POPOUT SECTIONS */
@@ -909,6 +913,13 @@ img.cutout {
 		}
 		h2 {
 			font-size: 1.9rem;
+		}
+	}
+	/* ::::::::::::::::::::::::::::::: TUTION SECTION */
+	.section_tuition {
+		.costper {
+			font-size: 2.5rem;
+			letter-spacing: 1.5px;
 		}
 	}
 	/* ::::::::::::::::::::::::::::::: FOOTER */
@@ -947,7 +958,11 @@ img.cutout {
 	}
 	/* ::::::::::::::::::::::::::::::: NAVIGATION */
 	.navigation_wrapper {
-		padding: 16px 20px 0;
+		padding: 56px 20px 0;
+		.logo {
+			width: 150px;
+			height: 115px;
+		}
 	}
 	.navigation {
 		nav {
@@ -999,7 +1014,7 @@ img.cutout {
 		padding: 40px 20px 50px;
 		img.badge {
 			top: -100px;
-			left: -40px;
+			left: -60px;
 			width: auto;
 			height: auto;
 		}
@@ -1013,6 +1028,7 @@ img.cutout {
 		}
 		h2 {
 			font-size: 2rem;
+			padding: 0 20px;
 		}
 	}
 	/* ::::::::::::::::::::::::::::::: TESTIMONIAL SECTION */

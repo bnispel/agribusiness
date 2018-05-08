@@ -197,6 +197,7 @@ button.submit {
 	font-size: 1.1rem;
 	-webkit-appearance: none;
 	cursor: pointer;
+	display: none;
 	&:before {
 		content: '';
 		width: 28px;

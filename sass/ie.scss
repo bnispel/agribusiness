@@ -1,5 +1,33 @@
-/* Welcome to Compass. Use this file to write IE specific override styles.
- * Import this file using the following HTML or equivalent:
- * <!--[if IE]>
- *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
- * <![endif]--> */
+/* :::::::::::::::::::::::::::::::::::::::::::::: GLOBAL */
+
+/* :::::::::::::::::::::::::::::::::::::::::::::: HOME */
+.home {
+	.navigation_wrapper {
+		opacity: 1;
+	}
+	.header {
+		opacity: 1;
+		padding: 340px 0;
+	}
+	.section_pagecta {
+		background: url(../images/home_ctabg.jpg) no-repeat center center;
+		background-size: cover;
+	}
+}
+@media screen and (min-width: 1250px) {
+	.focuspoint_three .section_content {
+		width: 600px;
+		float: right;
+	}
+	.focuspoint_four {
+		.section_content {
+			width: 50%;
+			float: left;
+		}
+		.section_image {
+			width: 50%;
+			float: right;
+		}
+	}
+	
+}

@@ -114,8 +114,10 @@ img.cutout {
 .navigation {
 	max-width: 1300px;
 	margin: 0 auto;
+	position: relative;
 	nav {
 		display: none;
+		position: relative;
 	}
 	a {
 		color: $white;
@@ -975,6 +977,75 @@ img.cutout {
 		.programdetails {
 			margin-left: 0;
 		}
+		.navitem_dropdown:hover {
+			a.agis {
+				background: $white;
+				color: $black;
+				border-bottom: 7px solid #747575;
+				.st0 {
+					stroke: $black;
+				}
+			}
+			.dropdown {
+				display: block;
+			}
+		}
+		.dropdown {
+			position: absolute;
+			right: 0;
+			top: 67px;
+			background: $white;
+			width: 850px;
+			z-index: 99;
+			padding: 20px 10px;
+			display: none;
+			a {
+				float: left;
+				width: 20%;
+				text-align: center;
+				margin-left: 0;
+				padding: 0;
+				cursor: pointer;
+				&:hover {
+					.pagename {
+						color: $black;
+					}
+				}
+				img {
+					width: 100%;
+					height: auto;
+				}
+			}
+			.pagename_wrapper {
+				height: 64px;
+				@include flexbox();
+				@include flexboxcenter();
+			}
+			.pagename {
+				color: $orange;
+				text-transform: uppercase;
+				font-family: $highlightfont;
+				font-size: .9rem;
+				border-top: 1px solid $black;
+				border-bottom: 1px solid $black;
+				padding: 5px 0;
+				display: block;
+				margin-bottom: 8px;
+				font-style: italic;
+				font-weight: 300;
+				letter-spacing: 2px;
+				span {
+					text-transform: none;
+				}
+			}
+			.farming .pagename {
+				max-width: 145px;
+			}
+			.pageimage {
+				padding: 0 5px;
+				display: block;
+			}
+		}
 	}
 	.navigation_wrapper.stick .navigation {
 		.logo {
@@ -1029,6 +1100,14 @@ img.cutout {
 		h2 {
 			font-size: 2rem;
 			padding: 0 20px;
+		}
+	}
+	.navigation {
+		.dropdown {
+			width: 1015px;
+			.pagename { 
+				font-size: 1.2rem;
+			}
 		}
 	}
 	/* ::::::::::::::::::::::::::::::: TESTIMONIAL SECTION */

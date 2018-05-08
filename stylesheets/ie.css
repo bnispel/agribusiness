@@ -15,19 +15,30 @@
   background-size: cover;
 }
 
+@media screen and (min-width: 950px) {
+  /* line 19, ../sass/ie.scss */
+  .navigation .dropdown .pagename {
+    display: inline-block;
+    margin: 9px 0 19px;
+  }
+  /* line 24, ../sass/ie.scss */
+  .navigation .dropdown .farming .pagename {
+    margin: 0 0 10px;
+  }
+}
 @media screen and (min-width: 1250px) {
-  /* line 18, ../sass/ie.scss */
+  /* line 31, ../sass/ie.scss */
   .focuspoint_three .section_content {
     width: 600px;
     float: right;
   }
 
-  /* line 23, ../sass/ie.scss */
+  /* line 36, ../sass/ie.scss */
   .focuspoint_four .section_content {
     width: 50%;
     float: left;
   }
-  /* line 27, ../sass/ie.scss */
+  /* line 40, ../sass/ie.scss */
   .focuspoint_four .section_image {
     width: 50%;
     float: right;

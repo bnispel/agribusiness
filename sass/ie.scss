@@ -14,6 +14,19 @@
 		background-size: cover;
 	}
 }
+@media screen and (min-width: 950px) {
+	.navigation .dropdown {
+		.pagename {
+			display: inline-block;
+			margin: 9px 0 19px;
+		}
+		.farming {
+			.pagename {
+				margin: 0 0 10px;
+			}
+		}
+	}
+}
 @media screen and (min-width: 1250px) {
 	.focuspoint_three .section_content {
 		width: 600px;

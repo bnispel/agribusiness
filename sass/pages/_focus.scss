@@ -1,22 +1,15 @@
 .focus {
 	/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: PAGE HEADER */
 	.header {
-		height: 65vh;
-		min-height: 500px;
-		position: relative;
 		.bottomtext {
 			border-top: 1px solid $orange;
 			border-bottom: 1px solid $orange;
 		}
 	}
-	.header_content {
-		padding-top: 90px;
-	}
-	.scroll {
-		position: absolute;
-		bottom: 30px;
-		left: 50%;
-		margin-left: -9px;
+	.section_wrapper {
+		.twocol {
+			margin-bottom: 50px;
+		}	
 	}
 }
 @media screen and (min-width:950px) {

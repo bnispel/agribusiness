@@ -11,6 +11,7 @@
 	/* :::::::::::::::::::::::::::::: PAGE HEADER */
 	.header {
 		height: 100vh;
+		min-height: 100px;
 		h1 {
 			font-size: 11vw;
 			letter-spacing: 2px;
@@ -28,6 +29,11 @@
 	.section_intro {
 		padding: 60px 20px 0;
 	}
+	.scroll {
+		margin: 0 auto 0;
+		display: block;
+		position: static;
+	}
 }
 /* :::::::::::::::::::::::::::::::::: GENERAL SECTIONS */
 .home {
@@ -35,6 +41,9 @@
 		.section {
 			max-width: 900px;
 		}
+	}
+	.pagecta {
+		text-align: center;
 	}
 }
 /* :::::::::::::::::::::::::::::::::: STAT SECTIONS */
@@ -360,7 +369,7 @@
 		}
 	}
 	/* :::::::::::::::::::::::::::::::::: ANIMATIONS */
-	.section_intro {
+	.home .section_intro {
 		.section {
 			opacity: 0;
 			@include transition(.5s);

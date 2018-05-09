@@ -49,11 +49,33 @@ h3 {
 	line-height: 1.2;
 	text-transform: uppercase;
 }
+h4 {
+	font-size: 1.5rem;
+	display: inline-block;
+	padding: 9px 0;
+	line-height: 1.2;
+	margin-bottom: 10px;
+	letter-spacing: 1.5px;
+	font-style: italic;
+	span {
+		text-transform: none;
+		font-size: .7em;
+		letter-spacing: 0;
+	}
+}
 p {
 	font-size: 1.05rem;
 	line-height: 1.8;
 	font-weight: 100;
 	margin-bottom: 20px;
+}
+span.highlight {
+	color: $gray;
+}
+p.note {
+	font-style: italic;
+	font-size: .8rem;
+	font-family: $highlightfont_alt;
 }
 a.button {
 	text-transform: uppercase;
@@ -107,6 +129,29 @@ a.button_alt {
 }
 img.cutout {
 	transform: scale(1.14);
+}
+ul, ol {
+	padding-left: 20px;
+	li {
+		margin-bottom: 10px;
+		font-size: .9rem;
+		line-height: 1.6;
+	}
+}
+ul li {
+	list-style-type: disc;
+}
+ol li {
+	list-style-type: decimal;
+}
+ul.courses {
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2px;
+	padding-left: 0;
+	li {
+		list-style-type: none;
+	}
 }
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: MAIN NAV */
 .dropdownarrow {
@@ -190,6 +235,9 @@ img.cutout {
 	top: 0;
 	background: $starkwhite;
 	@include dropshadow();
+	.mobile_menu_button { 
+		top: 18px;	
+	}
 	nav {
 		background: $starkwhite;
 	}
@@ -233,7 +281,7 @@ img.cutout {
 /* :::::::::::::::::::::::::: MOBILE MENU BUTTON */
 .mobile_menu_button {
 	position: absolute;
-	top: 18px;
+	top: 30px;
 	right: 10px;
 	background: none;
 	-webkit-appearance: none;
@@ -309,6 +357,9 @@ img.cutout {
 	animation: fadein 1s;
 	animation-delay: .5s;
 	animation-fill-mode: forwards;
+	height: 65vh;
+	min-height: 500px;
+	position: relative;
 	h1, h2 {
 		color: $white;
 		font-family: $highlightfont;
@@ -320,6 +371,8 @@ img.cutout {
 		letter-spacing: 2px;
 		text-rendering:optimizeLegibility;
 		font-weight: 300;
+		max-width: 760px;
+		margin: 0 auto;
 	}
 	h2 {
 		font-size: 1.5rem;
@@ -345,10 +398,16 @@ img.cutout {
 		padding-top: 8px;
 	}
 }
+.header_content {
+	padding-top: 90px;
+}
+
 .scroll {
-	margin: 0 auto 0;
-	display: block;
 	width: 18px;
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	margin-left: -9px;
 }
 .scroll_arrow {
 	display: block;
@@ -455,6 +514,9 @@ img.cutout {
 }
 .section_wrapper {
 	padding: 50px 20px 40px;
+	background-size: 100%;
+	background-position: center bottom;
+	background-repeat: no-repeat;
 	.section {
 		max-width: 1200px;
 		margin: 0 auto;
@@ -462,7 +524,7 @@ img.cutout {
 	}
 	.twocol {
 		margin: 0 -15px;
-		padding-bottom: 50px;
+		padding-bottom: 20px;
 		overflow: hidden;
 		img {
 			width: 100%;
@@ -658,7 +720,7 @@ img.cutout {
 .pagecta {
 	overflow: hidden;
 	margin-bottom: 50px;
-	text-align: center;
+	text-align: left;
 	p {
 		font-family: $highlightfont;
 		font-style: italic;
@@ -739,6 +801,12 @@ img.cutout {
 		font-size: 1.2rem;
 		font-style: italic;
 		text-transform: uppercase;
+		display: block;
+		padding: 0;
+		margin-bottom: 25px;
+		span {
+			text-transform: uppercase;
+		}
 		.top_head {
 			display: block;
 			margin-bottom: 6px;
@@ -905,6 +973,14 @@ img.cutout {
 	}
 	h3 {
 		font-size: 2.7rem;
+	}
+	h4 {
+		font-size: 1.7rem;	
+	}
+	ul, ol {
+		li {
+			margin-bottom: 20px;
+		}
 	}
 	/* ::::::::::::::::::::::::::::::: HEADER SECTION */
 	.scroll {
@@ -1240,6 +1316,11 @@ img.cutout {
 	/* ::::::::::::::::::::::::::::::: TEXT FORMATTING */
 	h2 {
 		font-size: 5.3rem;
+	}
+	ul, ol {
+		li {
+			margin-bottom: 25px;
+		}
 	}
 	/* ::::::::::::::::::::::::::::::: HEADER */
 	.header {

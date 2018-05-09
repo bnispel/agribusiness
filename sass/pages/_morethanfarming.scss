@@ -1,0 +1,28 @@
+.morethanfarming {
+	.stat_one {
+		background: url(../images/heritage_farmoperator.jpg) no-repeat bottom center;
+		background-size: 113%;
+		padding: 40px 20px 40%;
+		.text {
+			max-width: 510px;
+			margin: 0 auto;
+		}
+	}
+	.stat_two {
+		background: $orange url(../images/homebackground_stat2.jpg) no-repeat bottom center;
+		background-size: cover;
+	}
+	.stat_three {
+		background: url(../images/heritage_farmlandacres.jpg) no-repeat center bottom;
+		background-size: 200%;
+		padding: 40px 20px 40%;
+	}
+	.farmmanagement {
+		background: url(../images/heritage_sustainability.jpg) no-repeat center bottom;
+		background-size: 140%;
+	}
+	.technology {
+		background: url(../images/heritage_riskmanagement.jpg) no-repeat center bottom;
+		background-size: 140%;
+	}
+}

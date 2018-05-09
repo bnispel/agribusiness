@@ -4,6 +4,7 @@ form {
 	.field {
 		position: relative;
 		min-height: 60px;
+		padding-bottom: 15px;
 	}
 	label {
 		display: block;
@@ -42,7 +43,7 @@ form {
 			outline: 0;
 		}
 	}
-	input:focus + .inputlabel, .focus .inputlabel, textarea:focus + .inputlabel, select:focus + .inputlabel {
+	input:focus + .inputlabel, .focus .inputlabel, textarea:focus + .inputlabel, select:focus + .inputlabel, .infield .inputlabel {
 		top: 0;
 	}
 	textarea {
@@ -227,7 +228,7 @@ button.submit {
 }
 p.privacy {
 	font-style: italic;
-	color: $gray;
+	color: $black;
 	font-weight: normal;
 	line-height: 1.5;
 	font-size: .9rem;
@@ -273,6 +274,7 @@ label.error {
 		.field {
 			padding: 0 15px;
 			margin-bottom: 15px;
+			min-height: 60px;
 		}
 		.full {
 			clear: both;

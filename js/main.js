@@ -3,7 +3,7 @@ $(document).ready(function() {
 	var pos = s.position();					   
 	$(window).scroll(function() {
 		var windowpos = $(window).scrollTop();
-		if (windowpos >= pos.top & windowpos <=1000) {
+		if (windowpos <=1000) {
 			s.removeClass("stick");	
 		} else {
 			s.addClass("stick");
@@ -23,14 +23,17 @@ $(document).ready(function() {
 /*-----------------------------------------------------------------*/
     /* Form Steps
 /*-----------------------------------------------------------------*/
-$(document).ready(function(){		
-	
+$(document).ready(function(){			  
+	$(".floatlabel").focus(function(){
+		$(this).parent().addClass("focus");
+
+	  }).blur(function(){
+	       $(this).parent().removeClass("focus");
+	  })
 	function checkForInput(element) {
 	  // element is passed to the function ^
-	  
-	  const $label = $(element).parent();
-	
-	  if ($(element).val().length > 0) {
+	  const $label = $(element).parent();  
+	  if ( $(element).val().length > 0 ) {
 	    $label.addClass('focus');
 	  } else {
 	    $label.removeClass('focus');
@@ -38,12 +41,12 @@ $(document).ready(function(){
 	}
 	
 	// The lines below are executed on page load
-	$('.field .floatlabel').each(function() {
+	$('.floatlabel').each(function() {
 	  checkForInput(this);
 	});
 	
 	// The lines below (inside) are executed on change & keyup
-	$('.field .floatlabel').on('change keyup', function() {
+	$('.floatlabel').on('change keyup', function() {
 	  checkForInput(this);  
 	});
 	

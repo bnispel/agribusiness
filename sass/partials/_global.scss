@@ -1364,6 +1364,7 @@ ul.courses {
 	}
 	/* ::::::::::::::::::::::::::::::: 2 COL CTA SECTION */
 	.twocolcta {
+		@include flexbox();
 		.col1, .col2 {
 			width: 50%;
 			padding: 50px 50px 20px;
@@ -1376,12 +1377,34 @@ ul.courses {
 			.col_inside {
 				float: right;
 			}
+			a.button {
+				&:before {
+					transform: rotate(180deg);
+				}
+				&:hover {
+					&:before {
+						left: -10px;
+					}
+				}
+			}
 		}
 		.col2 {
 			float: right;
 			overflow: hidden;
 			.col_inside {
 				float: left;
+			}
+			a.button {
+				padding: 0 42px 0 10px;
+				&:before {
+					left: auto;
+					right: 0;
+				}
+				&:hover {
+					&:before {
+						right: -10px;
+					}
+				}
 			}
 		}
 		.col_inside {

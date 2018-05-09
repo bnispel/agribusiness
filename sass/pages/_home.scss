@@ -4,6 +4,9 @@
 		border-top: 1px solid $black;
 		text-transform: uppercase;
 	}
+	.toptext {
+		margin-bottom: 8px;
+	}
 }
 
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: HEADER AREA */
@@ -176,7 +179,7 @@
 	}
 }
 .focuspoint_five {
-	background: url(../images/homebackground_focus5.jpg) no-repeat top center;
+	background: url(../images/homebackground_focus1.jpg) no-repeat top center;
 	background-size: cover;
 	padding: 0 20px 130px;
 	.pagecta {
@@ -208,6 +211,15 @@
 /* :::::::::::::::::::::::::::::::::: GET STARTED SECTION */
 .section_getstarted {
 	text-align: center;
+}
+/* :::::::::::::::::::::::::::::::::: SECTION CTA */
+.section_pagecta {
+	.section {
+		padding: 0 0 25px;
+	}
+	a.button {
+		bottom: 0;
+	}
 }
 
 

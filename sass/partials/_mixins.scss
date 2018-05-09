@@ -67,6 +67,18 @@
   -webkit-align-items: center;
   align-items: center;
 }
+@mixin flexboxstretch() {
+	-webkit-box-pack: stretch;
+  -moz-box-pack: stretch;
+  -ms-flex-pack: stretch;
+  -webkit-justify-content: stretch;
+  justify-content: stretch;
+  -webkit-box-align: stretch;
+  -moz-box-align: stretch;
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+}
 @mixin flex($values) {
   -webkit-box-flex: $values;
   -moz-box-flex:  $values;

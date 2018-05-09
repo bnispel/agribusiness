@@ -36,7 +36,7 @@ h2 {
 	border-bottom: 1px solid $black;
 	display: inline-block;
 	padding: 9px 0;
-	line-height: 1.2;
+	line-height: 1;
 	font-style: italic;
 	span {
 		text-transform: none;
@@ -390,12 +390,14 @@ ul.courses {
 		font-size: 1.2rem;
 		letter-spacing: 2px;
 		display: block;
-		margin-bottom: 8px;
 	}
 	.bottomtext {
 		display: inline-block;
 		line-height: 1;
 		padding-top: 8px;
+		em {
+			text-transform: none;
+		}
 	}
 }
 .header_content {
@@ -524,7 +526,6 @@ ul.courses {
 	}
 	.twocol {
 		margin: 0 -15px;
-		padding-bottom: 20px;
 		overflow: hidden;
 		img {
 			width: 100%;
@@ -573,6 +574,7 @@ ul.courses {
 		font-size: 1.4rem;
 		line-height: 1.2;
 		font-style: italic;
+		margin-bottom: 30px;
 	}
 }
 
@@ -819,8 +821,12 @@ ul.courses {
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: END OF PAGE CTA SECTIONS */
 .section_pagecta {
 	text-align: center;
-	padding: 60px 20px;
+	padding: 40px 20px;
+	@include flexbox();
+	@include flexboxstretch();
 	h4 {
+		max-width: 480px;
+		margin: 0 auto;
 		color: $white;
 		font-size: 1.2rem;
 		font-style: italic;
@@ -842,15 +848,35 @@ ul.courses {
 			font-size: 3rem;
 			border-top: 1px solid $orange;
 			border-bottom: 1px solid $orange;
+			em {
+				text-transform: none;
+			}
 		}
 	}
 	a.button {
+		position: absolute;
+		bottom: 0;
+		display: block;
+		width: 180px;
+		left: 50%;
+		margin-left: -90px;
 		span {
 			border-color: $white;
 		}
 		&:hover {
 			color: $white;
 		}
+	}
+	.col1, .col2 {
+		@include flexbox();
+		@include flexboxcenter();
+		position: relative;
+		a.button {
+			bottom: 25px;
+		}
+	}
+	&.twocolumns .col1, &.twocolumns .col2 {
+			padding-bottom: 50px;
 	}
 }
 .twocolumns {

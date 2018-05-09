@@ -1,9 +1,15 @@
 .focus {
 	/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: PAGE HEADER */
 	.header {
+		h1 {
+			margin-bottom: 20px;
+		}
 		.bottomtext {
 			border-top: 1px solid $orange;
 			border-bottom: 1px solid $orange;
+		}
+		.toptext {
+			margin-bottom: 8px;
 		}
 	}
 	.section_wrapper {

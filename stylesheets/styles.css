@@ -807,8 +807,38 @@ ul.courses li {
   max-width: 1230px;
 }
 
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: 2 COL CTA SECTIONS */
+/* line 557, ../sass/partials/_global.scss */
+.twocolcta {
+  overflow: hidden;
+  padding: 0;
+  background: #f9f9f9;
+}
+/* line 561, ../sass/partials/_global.scss */
+.twocolcta .col1, .twocolcta .col2 {
+  padding: 50px 20px;
+  text-align: center;
+}
+/* line 565, ../sass/partials/_global.scss */
+.twocolcta .col1 {
+  -webkit-box-shadow: 2px 2px 18px 6px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 2px 2px 18px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 18px 6px rgba(0, 0, 0, 0.1);
+}
+/* line 568, ../sass/partials/_global.scss */
+.twocolcta h3 {
+  margin-bottom: 15px;
+}
+/* line 571, ../sass/partials/_global.scss */
+.twocolcta p {
+  font-family: "Didot 42 A", "Didot 42 B", TimesNewRoman, "Times New Roman", Times, Georgia, serif;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  font-style: italic;
+}
+
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: TESTIMONIAL SECTIONS */
-/* line 558, ../sass/partials/_global.scss */
+/* line 582, ../sass/partials/_global.scss */
 .section_testimonial p {
   font-style: italic;
   font-weight: 400;
@@ -818,7 +848,7 @@ ul.courses li {
   position: relative;
   font-family: Georgia, Times, "Times New Roman", serif;
 }
-/* line 566, ../sass/partials/_global.scss */
+/* line 590, ../sass/partials/_global.scss */
 .section_testimonial p:before {
   content: '';
   background: url(../images/icon_quote.png) no-repeat top left;
@@ -829,7 +859,7 @@ ul.courses li {
   top: -12px;
   left: -28px;
 }
-/* line 577, ../sass/partials/_global.scss */
+/* line 601, ../sass/partials/_global.scss */
 .section_testimonial span.author {
   text-transform: uppercase;
   font-weight: 600;
@@ -837,19 +867,19 @@ ul.courses li {
   font-size: .9rem;
 }
 
-/* line 584, ../sass/partials/_global.scss */
+/* line 608, ../sass/partials/_global.scss */
 .testimonial_image {
   width: 160px;
   height: 160px;
   position: absolute;
 }
-/* line 588, ../sass/partials/_global.scss */
+/* line 612, ../sass/partials/_global.scss */
 .testimonial_image img {
   display: block;
   width: 100%;
 }
 
-/* line 593, ../sass/partials/_global.scss */
+/* line 617, ../sass/partials/_global.scss */
 .testimonial_content {
   background: #f9f9f9;
   -webkit-box-shadow: 2px 2px 18px 6px rgba(0, 0, 0, 0.1);
@@ -858,85 +888,85 @@ ul.courses li {
   padding: 30px 30px 30px 45px;
 }
 
-/* line 598, ../sass/partials/_global.scss */
+/* line 622, ../sass/partials/_global.scss */
 .section_imgtestimonial {
   padding-bottom: 20px;
   position: relative;
 }
-/* line 601, ../sass/partials/_global.scss */
+/* line 625, ../sass/partials/_global.scss */
 .section_imgtestimonial .section {
   margin-top: -270px;
 }
-/* line 604, ../sass/partials/_global.scss */
+/* line 628, ../sass/partials/_global.scss */
 .section_imgtestimonial img {
   display: block;
   max-width: 100%;
 }
-/* line 608, ../sass/partials/_global.scss */
+/* line 632, ../sass/partials/_global.scss */
 .section_imgtestimonial .testimonial_mainimg {
   width: 900px;
   height: 527px;
 }
-/* line 613, ../sass/partials/_global.scss */
+/* line 637, ../sass/partials/_global.scss */
 .section_imgtestimonial .section_testimonial p {
   font-size: 1rem;
 }
-/* line 617, ../sass/partials/_global.scss */
+/* line 641, ../sass/partials/_global.scss */
 .section_imgtestimonial .testimonial_image {
   display: none;
 }
 
-/* line 621, ../sass/partials/_global.scss */
+/* line 645, ../sass/partials/_global.scss */
 .section_texttestimonial_top {
   padding: 50px 0;
 }
-/* line 623, ../sass/partials/_global.scss */
+/* line 647, ../sass/partials/_global.scss */
 .section_texttestimonial_top .section {
   max-width: 900px;
 }
-/* line 626, ../sass/partials/_global.scss */
+/* line 650, ../sass/partials/_global.scss */
 .section_texttestimonial_top .section_testimonial {
   margin-top: -190px;
 }
-/* line 629, ../sass/partials/_global.scss */
+/* line 653, ../sass/partials/_global.scss */
 .section_texttestimonial_top .testimonial_content {
   width: 100%;
   padding: 40px 30px 30px 40px;
 }
-/* line 633, ../sass/partials/_global.scss */
+/* line 657, ../sass/partials/_global.scss */
 .section_texttestimonial_top .testimonial_image {
   top: -90px;
   left: 35px;
   display: none;
 }
-/* line 638, ../sass/partials/_global.scss */
+/* line 662, ../sass/partials/_global.scss */
 .section_texttestimonial_top p {
   font-size: 1rem;
 }
 
-/* line 642, ../sass/partials/_global.scss */
+/* line 666, ../sass/partials/_global.scss */
 .section_texttestimonial_right {
   padding: 50px 20px 20px;
 }
-/* line 644, ../sass/partials/_global.scss */
+/* line 668, ../sass/partials/_global.scss */
 .section_texttestimonial_right .section_testimonial {
   max-width: 900px;
   position: relative;
   margin: -120px auto 0;
 }
-/* line 649, ../sass/partials/_global.scss */
+/* line 673, ../sass/partials/_global.scss */
 .section_texttestimonial_right .testimonial_content {
   padding: 30px 20px 30px 30px;
 }
-/* line 652, ../sass/partials/_global.scss */
+/* line 676, ../sass/partials/_global.scss */
 .section_texttestimonial_right .testimonial_image {
   display: none;
 }
-/* line 655, ../sass/partials/_global.scss */
+/* line 679, ../sass/partials/_global.scss */
 .section_texttestimonial_right p {
   font-size: 1em;
 }
-/* line 658, ../sass/partials/_global.scss */
+/* line 682, ../sass/partials/_global.scss */
 .section_texttestimonial_right p:before {
   width: 41px;
   height: 36px;
@@ -946,12 +976,12 @@ ul.courses li {
 }
 
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: STAT SECTIONS */
-/* line 667, ../sass/partials/_global.scss */
+/* line 691, ../sass/partials/_global.scss */
 .stat {
   text-align: center;
   margin-bottom: 0;
 }
-/* line 670, ../sass/partials/_global.scss */
+/* line 694, ../sass/partials/_global.scss */
 .stat .number {
   font-size: 7rem;
   font-family: "Libre Baskerville", Georgia, Times, "Times New Roman", serif;
@@ -959,7 +989,7 @@ ul.courses li {
   color: rgba(35, 31, 32, 0.1);
   line-height: .8;
 }
-/* line 677, ../sass/partials/_global.scss */
+/* line 701, ../sass/partials/_global.scss */
 .stat .text {
   font-family: "Didot 42 A", "Didot 42 B", TimesNewRoman, "Times New Roman", Times, Georgia, serif;
   font-style: italic;
@@ -969,7 +999,7 @@ ul.courses li {
   margin-bottom: 10px;
   letter-spacing: 1px;
 }
-/* line 686, ../sass/partials/_global.scss */
+/* line 710, ../sass/partials/_global.scss */
 .stat .stat_source {
   text-transform: uppercase;
   color: #cccccc;
@@ -980,46 +1010,46 @@ ul.courses li {
   display: block;
 }
 
-/* line 696, ../sass/partials/_global.scss */
+/* line 720, ../sass/partials/_global.scss */
 .stat_two {
   padding-top: 30px;
 }
-/* line 698, ../sass/partials/_global.scss */
+/* line 722, ../sass/partials/_global.scss */
 .stat_two p {
   color: #f9f9f9;
 }
-/* line 701, ../sass/partials/_global.scss */
+/* line 725, ../sass/partials/_global.scss */
 .stat_two .number {
   color: rgba(255, 255, 255, 0.3);
   line-height: .9;
 }
-/* line 705, ../sass/partials/_global.scss */
+/* line 729, ../sass/partials/_global.scss */
 .stat_two.testimonialisnext {
   padding-bottom: 70px;
 }
 
-/* line 709, ../sass/partials/_global.scss */
+/* line 733, ../sass/partials/_global.scss */
 .stat_three {
   padding: 20px 20px 70px;
 }
-/* line 711, ../sass/partials/_global.scss */
+/* line 735, ../sass/partials/_global.scss */
 .stat_three .section {
   max-width: 1200px;
 }
-/* line 714, ../sass/partials/_global.scss */
+/* line 738, ../sass/partials/_global.scss */
 .stat_three .number {
   line-height: 1;
   font-size: 12vw;
 }
 
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: CTA SECTIONS */
-/* line 720, ../sass/partials/_global.scss */
+/* line 744, ../sass/partials/_global.scss */
 .pagecta {
   overflow: hidden;
   margin-bottom: 50px;
   text-align: left;
 }
-/* line 724, ../sass/partials/_global.scss */
+/* line 748, ../sass/partials/_global.scss */
 .pagecta p {
   font-family: "Didot 42 A", "Didot 42 B", TimesNewRoman, "Times New Roman", Times, Georgia, serif;
   font-style: italic;
@@ -1029,23 +1059,23 @@ ul.courses li {
   line-height: 1.2;
   letter-spacing: 1px;
 }
-/* line 733, ../sass/partials/_global.scss */
+/* line 757, ../sass/partials/_global.scss */
 .pagecta a {
   display: inline-block;
 }
 
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: GET STARTED SECTIONS */
-/* line 738, ../sass/partials/_global.scss */
+/* line 762, ../sass/partials/_global.scss */
 .section_getstarted {
   padding-bottom: 100px;
 }
-/* line 740, ../sass/partials/_global.scss */
+/* line 764, ../sass/partials/_global.scss */
 .section_getstarted .section {
   max-width: 900px;
 }
 
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: COST SECTIONS */
-/* line 745, ../sass/partials/_global.scss */
+/* line 769, ../sass/partials/_global.scss */
 .section_tuition {
   -webkit-box-shadow: 0px -3px 17px 1px rgba(0, 0, 0, 0.16);
   -moz-box-shadow: 0px -3px 17px 1px rgba(0, 0, 0, 0.16);
@@ -1053,17 +1083,17 @@ ul.courses li {
   background: #f9f9f9;
   padding: 80px 20px 50px;
 }
-/* line 749, ../sass/partials/_global.scss */
+/* line 773, ../sass/partials/_global.scss */
 .section_tuition .section {
   text-align: center;
   position: relative;
   max-width: 900px;
 }
-/* line 754, ../sass/partials/_global.scss */
+/* line 778, ../sass/partials/_global.scss */
 .section_tuition h3 {
   margin-bottom: 10px;
 }
-/* line 757, ../sass/partials/_global.scss */
+/* line 781, ../sass/partials/_global.scss */
 .section_tuition img.badge {
   position: absolute;
   top: -140px;
@@ -1071,7 +1101,7 @@ ul.courses li {
   width: 160px;
   height: auto;
 }
-/* line 764, ../sass/partials/_global.scss */
+/* line 788, ../sass/partials/_global.scss */
 .section_tuition p.cost {
   font-family: "Didot 42 A", "Didot 42 B", TimesNewRoman, "Times New Roman", Times, Georgia, serif;
   font-style: italic;
@@ -1079,25 +1109,25 @@ ul.courses li {
   line-height: 1;
   margin-bottom: 0;
 }
-/* line 771, ../sass/partials/_global.scss */
+/* line 795, ../sass/partials/_global.scss */
 .section_tuition .number {
   font-size: 4.5rem;
   color: rgba(35, 31, 32, 0.1);
   font-style: normal;
   font-family: "Libre Baskerville", Georgia, Times, "Times New Roman", serif;
 }
-/* line 777, ../sass/partials/_global.scss */
+/* line 801, ../sass/partials/_global.scss */
 .section_tuition .costper {
   font-size: 1.9rem;
 }
-/* line 780, ../sass/partials/_global.scss */
+/* line 804, ../sass/partials/_global.scss */
 .section_tuition .cost_for {
   text-transform: uppercase;
   font-weight: 500;
   font-size: .95rem;
   letter-spacing: 2px;
 }
-/* line 786, ../sass/partials/_global.scss */
+/* line 810, ../sass/partials/_global.scss */
 .section_tuition .cost_note {
   font-family: "Didot 42 A", "Didot 42 B", TimesNewRoman, "Times New Roman", Times, Georgia, serif;
   font-style: italic;
@@ -1108,12 +1138,12 @@ ul.courses li {
 }
 
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: END OF PAGE CTA SECTIONS */
-/* line 796, ../sass/partials/_global.scss */
+/* line 820, ../sass/partials/_global.scss */
 .section_pagecta {
   text-align: center;
   padding: 60px 20px;
 }
-/* line 799, ../sass/partials/_global.scss */
+/* line 823, ../sass/partials/_global.scss */
 .section_pagecta h4 {
   color: #f9f9f9;
   font-size: 1.2rem;
@@ -1123,17 +1153,17 @@ ul.courses li {
   padding: 0;
   margin-bottom: 25px;
 }
-/* line 807, ../sass/partials/_global.scss */
+/* line 831, ../sass/partials/_global.scss */
 .section_pagecta h4 span {
   text-transform: uppercase;
 }
-/* line 810, ../sass/partials/_global.scss */
+/* line 834, ../sass/partials/_global.scss */
 .section_pagecta h4 .top_head {
   display: block;
   margin-bottom: 6px;
   letter-spacing: 1px;
 }
-/* line 815, ../sass/partials/_global.scss */
+/* line 839, ../sass/partials/_global.scss */
 .section_pagecta h4 .main_head {
   display: inline-block;
   clear: both;
@@ -1141,74 +1171,74 @@ ul.courses li {
   border-top: 1px solid #fd8309;
   border-bottom: 1px solid #fd8309;
 }
-/* line 824, ../sass/partials/_global.scss */
+/* line 848, ../sass/partials/_global.scss */
 .section_pagecta a.button span {
   border-color: #f9f9f9;
 }
-/* line 827, ../sass/partials/_global.scss */
+/* line 851, ../sass/partials/_global.scss */
 .section_pagecta a.button:hover {
   color: #f9f9f9;
 }
 
-/* line 832, ../sass/partials/_global.scss */
+/* line 856, ../sass/partials/_global.scss */
 .twocolumns {
   padding: 0;
   overflow: hidden;
 }
-/* line 835, ../sass/partials/_global.scss */
+/* line 859, ../sass/partials/_global.scss */
 .twocolumns .col1, .twocolumns .col2 {
   width: 100%;
   padding: 50px 20px 40px;
 }
-/* line 840, ../sass/partials/_global.scss */
+/* line 864, ../sass/partials/_global.scss */
 .twocolumns .col1 a.button {
   padding: 0 0 0 35px;
 }
-/* line 842, ../sass/partials/_global.scss */
+/* line 866, ../sass/partials/_global.scss */
 .twocolumns .col1 a.button:before {
   transform: rotate(180deg);
 }
-/* line 846, ../sass/partials/_global.scss */
+/* line 870, ../sass/partials/_global.scss */
 .twocolumns .col1 a.button:hover:before {
   left: -10px;
 }
-/* line 853, ../sass/partials/_global.scss */
+/* line 877, ../sass/partials/_global.scss */
 .twocolumns .col2 h4 .main_head {
   border-color: #231f20;
 }
-/* line 856, ../sass/partials/_global.scss */
+/* line 880, ../sass/partials/_global.scss */
 .twocolumns .col2 a.button {
   color: #231f20;
   border-bottom: #f9f9f9;
   padding: 0 45px 0 0;
 }
-/* line 860, ../sass/partials/_global.scss */
+/* line 884, ../sass/partials/_global.scss */
 .twocolumns .col2 a.button:before {
   background: url(../images/arrow_black.svg) no-repeat bottom left;
   background-size: contain;
   left: auto;
   right: 0;
 }
-/* line 866, ../sass/partials/_global.scss */
+/* line 890, ../sass/partials/_global.scss */
 .twocolumns .col2 a.button:hover {
   color: #f9f9f9;
 }
-/* line 868, ../sass/partials/_global.scss */
+/* line 892, ../sass/partials/_global.scss */
 .twocolumns .col2 a.button:hover:before {
   right: -10px;
 }
 
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: IMAGE POPOUT SECTIONS */
-/* line 876, ../sass/partials/_global.scss */
+/* line 900, ../sass/partials/_global.scss */
 .popout_image {
   padding: 40px 20px 0px;
 }
-/* line 878, ../sass/partials/_global.scss */
+/* line 902, ../sass/partials/_global.scss */
 .popout_image .section {
   margin: -120px auto 0;
   max-width: 900px;
 }
-/* line 881, ../sass/partials/_global.scss */
+/* line 905, ../sass/partials/_global.scss */
 .popout_image .section img {
   width: 100%;
 }
@@ -1218,145 +1248,145 @@ ul.courses li {
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 @media screen and (min-width: 550px) {
   /* ::::::::::::::::::::::::::::::: TEXT FORMATTING */
-  /* line 891, ../sass/partials/_global.scss */
+  /* line 915, ../sass/partials/_global.scss */
   h2 {
     font-size: 4rem;
   }
 
   /* ::::::::::::::::::::::::::::::: HEADER SECTION */
-  /* line 896, ../sass/partials/_global.scss */
+  /* line 920, ../sass/partials/_global.scss */
   .header h1 {
     font-size: 4.5rem;
   }
-  /* line 899, ../sass/partials/_global.scss */
+  /* line 923, ../sass/partials/_global.scss */
   .header .toptext {
     font-size: 1.7rem;
   }
-  /* line 902, ../sass/partials/_global.scss */
+  /* line 926, ../sass/partials/_global.scss */
   .header h2 {
     font-size: 1.7rem;
   }
 
   /* ::::::::::::::::::::::::::::::: STAT SECTION */
-  /* line 909, ../sass/partials/_global.scss */
+  /* line 933, ../sass/partials/_global.scss */
   .stat_two.testimonialisnext {
     padding-bottom: 200px;
     min-height: 500px;
   }
 
-  /* line 914, ../sass/partials/_global.scss */
+  /* line 938, ../sass/partials/_global.scss */
   .stat_three {
     padding: 50px 20px;
   }
 
   /* ::::::::::::::::::::::::::::::: TESTIMONIAL SECTION */
-  /* line 918, ../sass/partials/_global.scss */
+  /* line 942, ../sass/partials/_global.scss */
   .section_imgtestimonial {
     padding: 50px 20px 80px;
   }
 
-  /* line 921, ../sass/partials/_global.scss */
+  /* line 945, ../sass/partials/_global.scss */
   .section_texttestimonial_top {
     padding: 50px 20px;
   }
-  /* line 923, ../sass/partials/_global.scss */
+  /* line 947, ../sass/partials/_global.scss */
   .section_texttestimonial_top .testimonial_image {
     display: block;
   }
-  /* line 926, ../sass/partials/_global.scss */
+  /* line 950, ../sass/partials/_global.scss */
   .section_texttestimonial_top .testimonial_content {
     padding: 80px 40px 40px 80px;
   }
-  /* line 929, ../sass/partials/_global.scss */
+  /* line 953, ../sass/partials/_global.scss */
   .section_texttestimonial_top p {
     font-size: 1.1rem;
   }
 
-  /* line 934, ../sass/partials/_global.scss */
+  /* line 958, ../sass/partials/_global.scss */
   .section_texttestimonial_right .testimonial_image {
     right: 30px;
     top: 0;
     margin-top: -80px;
     display: block;
   }
-  /* line 940, ../sass/partials/_global.scss */
+  /* line 964, ../sass/partials/_global.scss */
   .section_texttestimonial_right .testimonial_content {
     padding: 100px 30px 60px 60px;
   }
-  /* line 943, ../sass/partials/_global.scss */
+  /* line 967, ../sass/partials/_global.scss */
   .section_texttestimonial_right p {
     font-size: 1.2em;
   }
 
   /* ::::::::::::::::::::::::::::::: PAGE CTA SECTION */
-  /* line 949, ../sass/partials/_global.scss */
+  /* line 973, ../sass/partials/_global.scss */
   .pagecta p {
     padding-right: 25px;
     font-size: 2.4rem;
   }
 
   /* ::::::::::::::::::::::::::::::: TUTION SECTION */
-  /* line 956, ../sass/partials/_global.scss */
+  /* line 980, ../sass/partials/_global.scss */
   .section_tuition p.cost {
     font-size: 2.5rem;
   }
-  /* line 959, ../sass/partials/_global.scss */
+  /* line 983, ../sass/partials/_global.scss */
   .section_tuition .costper {
     font-size: 2rem;
     letter-spacing: 1px;
   }
-  /* line 963, ../sass/partials/_global.scss */
+  /* line 987, ../sass/partials/_global.scss */
   .section_tuition .number {
     font-size: 7rem;
   }
 }
 @media screen and (min-width: 750px) {
   /* ::::::::::::::::::::::::::::::: TEXT FORMATTING */
-  /* line 971, ../sass/partials/_global.scss */
+  /* line 995, ../sass/partials/_global.scss */
   h2 {
     font-size: 4rem;
   }
 
-  /* line 974, ../sass/partials/_global.scss */
+  /* line 998, ../sass/partials/_global.scss */
   h3 {
     font-size: 2.7rem;
   }
 
-  /* line 977, ../sass/partials/_global.scss */
+  /* line 1001, ../sass/partials/_global.scss */
   h4 {
     font-size: 1.7rem;
   }
 
-  /* line 981, ../sass/partials/_global.scss */
+  /* line 1005, ../sass/partials/_global.scss */
   ul li, ol li {
     margin-bottom: 20px;
   }
 
   /* ::::::::::::::::::::::::::::::: HEADER SECTION */
-  /* line 986, ../sass/partials/_global.scss */
+  /* line 1010, ../sass/partials/_global.scss */
   .scroll {
     margin-top: 15px;
   }
 
   /* ::::::::::::::::::::::::::::::: INTRO SECTION */
-  /* line 990, ../sass/partials/_global.scss */
+  /* line 1014, ../sass/partials/_global.scss */
   .section_intro {
     padding: 50px 30px 70px;
   }
 
   /* ::::::::::::::::::::::::::::::: SECTION TESTIMONIAL */
-  /* line 994, ../sass/partials/_global.scss */
+  /* line 1018, ../sass/partials/_global.scss */
   .section_imgtestimonial {
     padding: 50px 20px 120px;
   }
-  /* line 996, ../sass/partials/_global.scss */
+  /* line 1020, ../sass/partials/_global.scss */
   .section_imgtestimonial .section_testimonial {
     position: absolute;
     bottom: 0;
     right: 0;
     max-width: 470px;
   }
-  /* line 1002, ../sass/partials/_global.scss */
+  /* line 1026, ../sass/partials/_global.scss */
   .section_imgtestimonial .testimonial_image {
     top: 50%;
     left: -110px;
@@ -1364,96 +1394,96 @@ ul.courses li {
     display: block;
   }
 
-  /* line 1010, ../sass/partials/_global.scss */
+  /* line 1034, ../sass/partials/_global.scss */
   .section_texttestimonial_right .section_testimonial {
     margin-top: -160px;
   }
 
-  /* line 1016, ../sass/partials/_global.scss */
+  /* line 1040, ../sass/partials/_global.scss */
   .testimonial_content {
     padding: 30px 30px 30px 65px;
   }
 
-  /* line 1019, ../sass/partials/_global.scss */
+  /* line 1043, ../sass/partials/_global.scss */
   .section_texttestimonial_top p {
     font-size: 1.3rem;
   }
 
   /* ::::::::::::::::::::::::::::::: STAT SECTION */
-  /* line 1024, ../sass/partials/_global.scss */
+  /* line 1048, ../sass/partials/_global.scss */
   .stat .number {
     font-size: 13rem;
   }
-  /* line 1027, ../sass/partials/_global.scss */
+  /* line 1051, ../sass/partials/_global.scss */
   .stat .text {
     font-size: 2.5rem;
     letter-spacing: 1.5px;
   }
-  /* line 1031, ../sass/partials/_global.scss */
+  /* line 1055, ../sass/partials/_global.scss */
   .stat .stat_source {
     font-size: 1rem;
   }
 
-  /* line 1037, ../sass/partials/_global.scss */
+  /* line 1061, ../sass/partials/_global.scss */
   .stat_three .number {
     font-size: 12vw;
   }
 
   /* ::::::::::::::::::::::::::::::: TUTION SECTION */
-  /* line 1042, ../sass/partials/_global.scss */
+  /* line 1066, ../sass/partials/_global.scss */
   .section_tuition img.badge {
     width: 220px;
   }
 
-  /* line 1045, ../sass/partials/_global.scss */
+  /* line 1069, ../sass/partials/_global.scss */
   .section_pagecta h4 {
     font-size: 1.7rem;
   }
-  /* line 1047, ../sass/partials/_global.scss */
+  /* line 1071, ../sass/partials/_global.scss */
   .section_pagecta h4 .main_head {
     font-size: 4rem;
     padding: 7px 0 0;
   }
 
   /* ::::::::::::::::::::::::::::::: TWO COLUMNS SECTION */
-  /* line 1054, ../sass/partials/_global.scss */
+  /* line 1078, ../sass/partials/_global.scss */
   .twocolumns .col1, .twocolumns .col2 {
     width: 50%;
   }
-  /* line 1057, ../sass/partials/_global.scss */
+  /* line 1081, ../sass/partials/_global.scss */
   .twocolumns .col1 {
     float: left;
   }
-  /* line 1060, ../sass/partials/_global.scss */
+  /* line 1084, ../sass/partials/_global.scss */
   .twocolumns .col2 {
     float: right;
   }
 
   /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: IMAGE POPOUT SECTIONS */
-  /* line 1065, ../sass/partials/_global.scss */
+  /* line 1089, ../sass/partials/_global.scss */
   .popout_image .section {
     margin: -260px auto 10px;
   }
 }
 @media screen and (min-width: 850px) {
   /* ::::::::::::::::::::::::::::::: HEADER */
-  /* line 1072, ../sass/partials/_global.scss */
+  /* line 1096, ../sass/partials/_global.scss */
   .header h1 {
     font-size: 5.4rem;
     letter-spacing: 4px;
   }
-  /* line 1076, ../sass/partials/_global.scss */
+  /* line 1100, ../sass/partials/_global.scss */
   .header .toptext {
     font-size: 2rem;
   }
-  /* line 1079, ../sass/partials/_global.scss */
+  /* line 1103, ../sass/partials/_global.scss */
   .header h2 {
     font-size: 1.9rem;
     letter-spacing: 2px;
   }
 
   /* ::::::::::::::::::::::::::::::: TUTION SECTION */
-  /* line 1086, ../sass/partials/_global.scss */
+  /* line 1110, ../sass/partials/_global.scss */
   .section_tuition .costper {
     font-size: 2.5rem;
     letter-spacing: 1.5px;
@@ -1461,23 +1491,23 @@ ul.courses li {
 }
 @media screen and (min-width: 950px) {
   /* ::::::::::::::::::::::::::::::: MENU */
-  /* line 1094, ../sass/partials/_global.scss */
+  /* line 1118, ../sass/partials/_global.scss */
   .mobile_menu_button, .mobilenav {
     display: none;
   }
 
   /* ::::::::::::::::::::::::::::::: NAVIGATION */
-  /* line 1098, ../sass/partials/_global.scss */
+  /* line 1122, ../sass/partials/_global.scss */
   .navigation_wrapper {
     padding: 56px 20px 0;
   }
-  /* line 1100, ../sass/partials/_global.scss */
+  /* line 1124, ../sass/partials/_global.scss */
   .navigation_wrapper .logo {
     width: 150px;
     height: 115px;
   }
 
-  /* line 1106, ../sass/partials/_global.scss */
+  /* line 1130, ../sass/partials/_global.scss */
   .navigation nav {
     display: block;
     float: right;
@@ -1485,12 +1515,12 @@ ul.courses li {
     width: auto;
     padding-top: 2px;
   }
-  /* line 1113, ../sass/partials/_global.scss */
+  /* line 1137, ../sass/partials/_global.scss */
   .navigation .programdetails {
     margin-left: 0;
   }
 
-  /* line 1117, ../sass/partials/_global.scss */
+  /* line 1141, ../sass/partials/_global.scss */
   .dropdown {
     position: absolute;
     right: 0;
@@ -1501,7 +1531,7 @@ ul.courses li {
     padding: 20px 10px;
     display: none;
   }
-  /* line 1126, ../sass/partials/_global.scss */
+  /* line 1150, ../sass/partials/_global.scss */
   .dropdown a {
     float: left;
     width: 20%;
@@ -1510,16 +1540,16 @@ ul.courses li {
     padding: 0;
     cursor: pointer;
   }
-  /* line 1134, ../sass/partials/_global.scss */
+  /* line 1158, ../sass/partials/_global.scss */
   .dropdown a:hover .pagename {
     color: #231f20;
   }
-  /* line 1138, ../sass/partials/_global.scss */
+  /* line 1162, ../sass/partials/_global.scss */
   .dropdown a img {
     width: 100%;
     height: auto;
   }
-  /* line 1143, ../sass/partials/_global.scss */
+  /* line 1167, ../sass/partials/_global.scss */
   .dropdown .pagename_wrapper {
     height: 64px;
     display: -webkit-box;
@@ -1538,7 +1568,7 @@ ul.courses li {
     -webkit-align-items: center;
     align-items: center;
   }
-  /* line 1148, ../sass/partials/_global.scss */
+  /* line 1172, ../sass/partials/_global.scss */
   .dropdown .pagename {
     color: #fd8309;
     text-transform: uppercase;
@@ -1553,110 +1583,110 @@ ul.courses li {
     font-weight: 300;
     letter-spacing: 2px;
   }
-  /* line 1161, ../sass/partials/_global.scss */
+  /* line 1185, ../sass/partials/_global.scss */
   .dropdown .pagename span {
     text-transform: none;
   }
-  /* line 1165, ../sass/partials/_global.scss */
+  /* line 1189, ../sass/partials/_global.scss */
   .dropdown .farming .pagename {
     max-width: 145px;
   }
-  /* line 1168, ../sass/partials/_global.scss */
+  /* line 1192, ../sass/partials/_global.scss */
   .dropdown .pageimage {
     padding: 0 5px;
     display: block;
   }
 
-  /* line 1174, ../sass/partials/_global.scss */
+  /* line 1198, ../sass/partials/_global.scss */
   .navitem_dropdown:hover a.agis {
     background: #ffffff;
     color: #231f20;
     border-bottom: 7px solid #747575;
   }
-  /* line 1178, ../sass/partials/_global.scss */
+  /* line 1202, ../sass/partials/_global.scss */
   .navitem_dropdown:hover a.agis .st0 {
     stroke: #231f20;
   }
-  /* line 1182, ../sass/partials/_global.scss */
+  /* line 1206, ../sass/partials/_global.scss */
   .navitem_dropdown:hover .dropdown {
     display: block;
   }
 
-  /* line 1187, ../sass/partials/_global.scss */
+  /* line 1211, ../sass/partials/_global.scss */
   .navigation_wrapper.stick .navigation .logo {
     width: 180px;
     height: 60px;
   }
-  /* line 1191, ../sass/partials/_global.scss */
+  /* line 1215, ../sass/partials/_global.scss */
   .navigation_wrapper.stick .navigation .dropdown {
     top: 53px;
   }
-  /* line 1193, ../sass/partials/_global.scss */
+  /* line 1217, ../sass/partials/_global.scss */
   .navigation_wrapper.stick .navigation .dropdown a:hover {
     background: #ffffff;
   }
-  /* line 1197, ../sass/partials/_global.scss */
+  /* line 1221, ../sass/partials/_global.scss */
   .navigation_wrapper.stick .navigation nav {
     padding-top: 2px;
   }
 
   /* ::::::::::::::::::::::::::::::: FOOTER */
-  /* line 1202, ../sass/partials/_global.scss */
+  /* line 1226, ../sass/partials/_global.scss */
   .footer_wrapper {
     padding: 0 30px;
   }
 
-  /* line 1205, ../sass/partials/_global.scss */
+  /* line 1229, ../sass/partials/_global.scss */
   .footer {
     max-width: 1260px;
     margin: 0 auto 30px;
     padding: 30px 20px 0;
   }
-  /* line 1209, ../sass/partials/_global.scss */
+  /* line 1233, ../sass/partials/_global.scss */
   .footer .dropdownarrow {
     transform: rotate(180deg);
   }
-  /* line 1212, ../sass/partials/_global.scss */
+  /* line 1236, ../sass/partials/_global.scss */
   .footer nav {
     position: relative;
     float: right;
     max-width: 100%;
     margin: 0 0 10px;
   }
-  /* line 1217, ../sass/partials/_global.scss */
+  /* line 1241, ../sass/partials/_global.scss */
   .footer nav a {
     margin-left: 18px;
     display: inline-block;
     border: 0;
   }
-  /* line 1222, ../sass/partials/_global.scss */
+  /* line 1246, ../sass/partials/_global.scss */
   .footer nav .button_alt {
     border: 1px solid #231f20;
   }
-  /* line 1226, ../sass/partials/_global.scss */
+  /* line 1250, ../sass/partials/_global.scss */
   .footer .social {
     float: right;
     clear: right;
     max-width: 100%;
     margin: 0;
   }
-  /* line 1232, ../sass/partials/_global.scss */
+  /* line 1256, ../sass/partials/_global.scss */
   .footer .dropdown {
     top: auto;
     bottom: 100%;
     padding: 0 0 18px;
     display: none !important;
   }
-  /* line 1237, ../sass/partials/_global.scss */
+  /* line 1261, ../sass/partials/_global.scss */
   .footer .dropdown a {
     padding: 0;
     margin-left: 0;
   }
-  /* line 1240, ../sass/partials/_global.scss */
+  /* line 1264, ../sass/partials/_global.scss */
   .footer .dropdown a:hover {
     background: none;
   }
-  /* line 1245, ../sass/partials/_global.scss */
+  /* line 1269, ../sass/partials/_global.scss */
   .footer .dropdown_inside {
     -webkit-box-shadow: 2px 2px 18px 6px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 2px 2px 18px 6px rgba(0, 0, 0, 0.1);
@@ -1664,71 +1694,71 @@ ul.courses li {
     overflow: hidden;
     padding: 20px 10px;
   }
-  /* line 1252, ../sass/partials/_global.scss */
+  /* line 1276, ../sass/partials/_global.scss */
   .footer .navitem_dropdown:hover a.agis {
     border-bottom: 0;
     background: #231f20;
     color: #ffffff;
   }
-  /* line 1256, ../sass/partials/_global.scss */
+  /* line 1280, ../sass/partials/_global.scss */
   .footer .navitem_dropdown:hover a.agis .st0 {
     stroke: #ffffff;
   }
-  /* line 1260, ../sass/partials/_global.scss */
+  /* line 1284, ../sass/partials/_global.scss */
   .footer .navitem_dropdown:hover .dropdown {
     display: block !important;
   }
 
-  /* line 1266, ../sass/partials/_global.scss */
+  /* line 1290, ../sass/partials/_global.scss */
   .footer_logo {
     margin: 0;
     float: left;
   }
 
-  /* line 1270, ../sass/partials/_global.scss */
+  /* line 1294, ../sass/partials/_global.scss */
   .footer_bottom {
     text-align: left;
   }
 
   /* ::::::::::::::::::::::::::::::: SECTION STYLES */
-  /* line 1276, ../sass/partials/_global.scss */
+  /* line 1300, ../sass/partials/_global.scss */
   .section_wrapper .twocol .col1, .section_wrapper .twocol .col2 {
     width: 50%;
     float: left;
   }
 
   /* ::::::::::::::::::::::::::::::: STAT SECTION */
-  /* line 1285, ../sass/partials/_global.scss */
+  /* line 1309, ../sass/partials/_global.scss */
   .stat_three {
     padding: 180px 20px 50px;
   }
 
   /* ::::::::::::::::::::::::::::::: TESTIMONIAL SECTION */
-  /* line 1290, ../sass/partials/_global.scss */
+  /* line 1314, ../sass/partials/_global.scss */
   .section_texttestimonial_right .testimonial_content {
     padding: 60px 150px 60px 80px;
   }
-  /* line 1293, ../sass/partials/_global.scss */
+  /* line 1317, ../sass/partials/_global.scss */
   .section_texttestimonial_right .testimonial_image {
     right: -30px;
     top: 50%;
   }
-  /* line 1297, ../sass/partials/_global.scss */
+  /* line 1321, ../sass/partials/_global.scss */
   .section_texttestimonial_right p {
     font-size: 1.3em;
   }
 
-  /* line 1301, ../sass/partials/_global.scss */
+  /* line 1325, ../sass/partials/_global.scss */
   .section_imgtestimonial .section_testimonial p {
     font-size: 1.1rem;
   }
 
   /* ::::::::::::::::::::::::::::::: TUTION SECTION */
-  /* line 1305, ../sass/partials/_global.scss */
+  /* line 1329, ../sass/partials/_global.scss */
   .section_tuition {
     padding: 40px 20px 50px;
   }
-  /* line 1307, ../sass/partials/_global.scss */
+  /* line 1331, ../sass/partials/_global.scss */
   .section_tuition img.badge {
     top: -100px;
     left: -60px;
@@ -1738,74 +1768,117 @@ ul.courses li {
 }
 @media screen and (min-width: 1050px) {
   /* ::::::::::::::::::::::::::::::: TEXT FORMATTING */
-  /* line 1317, ../sass/partials/_global.scss */
+  /* line 1341, ../sass/partials/_global.scss */
   h2 {
     font-size: 5.3rem;
   }
 
-  /* line 1321, ../sass/partials/_global.scss */
+  /* line 1345, ../sass/partials/_global.scss */
   ul li, ol li {
     margin-bottom: 25px;
   }
 
   /* ::::::::::::::::::::::::::::::: HEADER */
-  /* line 1327, ../sass/partials/_global.scss */
+  /* line 1351, ../sass/partials/_global.scss */
   .header h1 {
     font-size: 6rem;
   }
-  /* line 1330, ../sass/partials/_global.scss */
+  /* line 1354, ../sass/partials/_global.scss */
   .header h2 {
     font-size: 2rem;
     padding: 0 20px;
   }
 
-  /* line 1335, ../sass/partials/_global.scss */
+  /* line 1359, ../sass/partials/_global.scss */
   .dropdown {
     width: 1015px;
   }
-  /* line 1337, ../sass/partials/_global.scss */
+  /* line 1361, ../sass/partials/_global.scss */
   .dropdown .pagename {
     font-size: 1.2rem;
   }
 
+  /* ::::::::::::::::::::::::::::::: 2 COL CTA SECTION */
+  /* line 1367, ../sass/partials/_global.scss */
+  .twocolcta .col1, .twocolcta .col2 {
+    width: 50%;
+    padding: 50px 50px 20px;
+    min-height: 290px;
+    text-align: center;
+  }
+  /* line 1373, ../sass/partials/_global.scss */
+  .twocolcta .col1 {
+    float: left;
+    overflow: hidden;
+  }
+  /* line 1376, ../sass/partials/_global.scss */
+  .twocolcta .col1 .col_inside {
+    float: right;
+  }
+  /* line 1380, ../sass/partials/_global.scss */
+  .twocolcta .col2 {
+    float: right;
+    overflow: hidden;
+  }
+  /* line 1383, ../sass/partials/_global.scss */
+  .twocolcta .col2 .col_inside {
+    float: left;
+  }
+  /* line 1387, ../sass/partials/_global.scss */
+  .twocolcta .col_inside {
+    max-width: 650px;
+  }
+  /* line 1390, ../sass/partials/_global.scss */
+  .twocolcta h3 {
+    margin-bottom: 10px;
+  }
+  /* line 1393, ../sass/partials/_global.scss */
+  .twocolcta p {
+    font-family: "Didot 42 A", "Didot 42 B", TimesNewRoman, "Times New Roman", Times, Georgia, serif;
+    font-size: 1.7rem;
+    line-height: 1.2;
+    letter-spacing: 1.5px;
+    font-style: italic;
+  }
+
   /* ::::::::::::::::::::::::::::::: TESTIMONIAL SECTION */
-  /* line 1343, ../sass/partials/_global.scss */
+  /* line 1403, ../sass/partials/_global.scss */
   .section_imgtestimonial .section_testimonial {
     right: -45px;
   }
 }
 @media screen and (min-width: 1150px) {
   /* ::::::::::::::::::::::::::::::: TESTIMONIAL SECTION */
-  /* line 1351, ../sass/partials/_global.scss */
+  /* line 1411, ../sass/partials/_global.scss */
   .section_texttestimonial_right .testimonial_content {
     padding: 60px 120px 60px 80px;
   }
-  /* line 1354, ../sass/partials/_global.scss */
+  /* line 1414, ../sass/partials/_global.scss */
   .section_texttestimonial_right .testimonial_image {
     right: -80px;
   }
 }
 @media screen and (min-width: 1250px) {
   /* ::::::::::::::::::::::::::::::: STAT SECTION */
-  /* line 1361, ../sass/partials/_global.scss */
+  /* line 1421, ../sass/partials/_global.scss */
   .stat_three {
     background-size: 100%;
   }
-  /* line 1363, ../sass/partials/_global.scss */
+  /* line 1423, ../sass/partials/_global.scss */
   .stat_three .number {
     font-size: 10rem;
   }
 }
 @media screen and (min-width: 1300px) {
   /* ::::::::::::::::::::::::::::::: SECTION */
-  /* line 1373, ../sass/partials/_global.scss */
+  /* line 1433, ../sass/partials/_global.scss */
   .section_wrapper .twocol {
     overflow: visible;
   }
 }
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::: MOBILE ONLY */
 @media screen and (max-width: 950px) {
-  /* line 1382, ../sass/partials/_global.scss */
+  /* line 1442, ../sass/partials/_global.scss */
   .dropdown {
     background: #231f20;
     padding-bottom: 10px;
@@ -1813,7 +1886,7 @@ ul.courses li {
     display: none;
     overflow: hidden;
   }
-  /* line 1388, ../sass/partials/_global.scss */
+  /* line 1448, ../sass/partials/_global.scss */
   .dropdown a {
     color: #f9f9f9;
     padding: 8px 20px;
@@ -1821,16 +1894,16 @@ ul.courses li {
     margin-bottom: 0;
     max-width: 400px;
   }
-  /* line 1394, ../sass/partials/_global.scss */
+  /* line 1454, ../sass/partials/_global.scss */
   .dropdown a .pagename {
     color: #f9f9f9;
   }
-  /* line 1398, ../sass/partials/_global.scss */
+  /* line 1458, ../sass/partials/_global.scss */
   .dropdown .pageimage {
     display: none;
   }
 
-  /* line 1403, ../sass/partials/_global.scss */
+  /* line 1463, ../sass/partials/_global.scss */
   .mobilenav {
     background: #ffffff;
     position: fixed;
@@ -1843,13 +1916,13 @@ ul.courses li {
     -moz-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
   }
-  /* line 1412, ../sass/partials/_global.scss */
+  /* line 1472, ../sass/partials/_global.scss */
   .mobilenav .dropdown a {
     color: #f9f9f9;
     padding: 10px 20px;
     margin-bottom: 0;
   }
-  /* line 1417, ../sass/partials/_global.scss */
+  /* line 1477, ../sass/partials/_global.scss */
   .mobilenav .mobile_logo {
     width: 125px;
     height: 90px;
@@ -1862,17 +1935,17 @@ ul.courses li {
     float: none;
     padding: 0;
   }
-  /* line 1428, ../sass/partials/_global.scss */
+  /* line 1488, ../sass/partials/_global.scss */
   .mobilenav .mobile_logo:hover {
     background: url(../images/logoalt.svg) no-repeat top left;
     background-size: contain;
   }
-  /* line 1433, ../sass/partials/_global.scss */
+  /* line 1493, ../sass/partials/_global.scss */
   .mobilenav nav {
     display: block;
     position: static;
   }
-  /* line 1436, ../sass/partials/_global.scss */
+  /* line 1496, ../sass/partials/_global.scss */
   .mobilenav nav a {
     max-width: 230px;
     margin: 0 auto 10px;
@@ -1890,29 +1963,29 @@ ul.courses li {
     transition: all 0.2s ease-out;
     border: 1px solid #231f20;
   }
-  /* line 1450, ../sass/partials/_global.scss */
+  /* line 1510, ../sass/partials/_global.scss */
   .mobilenav nav a .st0 {
     stroke: #231f20;
   }
-  /* line 1453, ../sass/partials/_global.scss */
+  /* line 1513, ../sass/partials/_global.scss */
   .mobilenav nav a:hover {
     background: #231f20;
     color: #f9f9f9;
   }
-  /* line 1456, ../sass/partials/_global.scss */
+  /* line 1516, ../sass/partials/_global.scss */
   .mobilenav nav a:hover .st0 {
     stroke: #f9f9f9;
   }
-  /* line 1462, ../sass/partials/_global.scss */
+  /* line 1522, ../sass/partials/_global.scss */
   .mobilenav .button {
     border: 1px solid #231f20;
   }
-  /* line 1465, ../sass/partials/_global.scss */
+  /* line 1525, ../sass/partials/_global.scss */
   .mobilenav .mobile_social {
     text-align: center;
     padding-top: 20px;
   }
-  /* line 1468, ../sass/partials/_global.scss */
+  /* line 1528, ../sass/partials/_global.scss */
   .mobilenav .mobile_social a {
     width: 35px;
     height: 35px;
@@ -1924,12 +1997,12 @@ ul.courses li {
     transition: all 0.2s ease-out;
     border: none;
   }
-  /* line 1476, ../sass/partials/_global.scss */
+  /* line 1536, ../sass/partials/_global.scss */
   .mobilenav .mobile_social a:hover {
     fill: #fd8309;
     background: none;
   }
-  /* line 1479, ../sass/partials/_global.scss */
+  /* line 1539, ../sass/partials/_global.scss */
   .mobilenav .mobile_social a:hover svg {
     transform: scale(1.15);
     -webkit-transition: all 0.2s ease-out;
@@ -1937,27 +2010,27 @@ ul.courses li {
     transition: all 0.2s ease-out;
     fill: #fd8309;
   }
-  /* line 1485, ../sass/partials/_global.scss */
+  /* line 1545, ../sass/partials/_global.scss */
   .mobilenav .mobile_social a svg {
     width: 35px;
     height: 35px;
     display: block;
   }
 
-  /* line 1494, ../sass/partials/_global.scss */
+  /* line 1554, ../sass/partials/_global.scss */
   stick.mobile_open .mobile_menu_button, .mobile_open .mobile_menu_button {
     z-index: 99999;
   }
-  /* line 1497, ../sass/partials/_global.scss */
+  /* line 1557, ../sass/partials/_global.scss */
   stick.mobile_open .mobilenav, .mobile_open .mobilenav {
     top: 0;
   }
 
-  /* line 1501, ../sass/partials/_global.scss */
+  /* line 1561, ../sass/partials/_global.scss */
   .footer .dropdown {
     padding-top: 20px;
   }
-  /* line 1503, ../sass/partials/_global.scss */
+  /* line 1563, ../sass/partials/_global.scss */
   .footer .dropdown a {
     padding: 8px 20px;
     max-width: 100%;

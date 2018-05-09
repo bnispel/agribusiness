@@ -2,7 +2,7 @@
 	/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: PAGE HEADER */
 	.header {
 		height: 65vh;
-		min-height: 455px;
+		min-height: 500px;
 		position: relative;
 		.bottomtext {
 			border-top: 1px solid $orange;
@@ -18,6 +18,9 @@
 		left: 50%;
 		margin-left: -9px;
 	}
+}
+@media screen and (min-width:950px) {
+	
 }
 @media screen and (min-width:1050px) {
 	.focus {

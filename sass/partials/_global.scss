@@ -29,13 +29,14 @@ h2, h3 {
 h1 {
 	font-weight: 500;
 	font-size: 8.5rem;
+	margin-bottom: 15px;
 }
 h2 {
-	font-size: 5.3rem;
+	font-size: 3rem;
 	border-bottom: 1px solid $black;
 	display: inline-block;
 	padding: 9px 0;
-	line-height: .8;
+	line-height: 1.2;
 	font-style: italic;
 	span {
 		text-transform: none;
@@ -45,6 +46,7 @@ h3 {
 	font-size: 1.7rem;
 	font-weight: 500;
 	letter-spacing: 2px;
+	line-height: 1.2;
 	text-transform: uppercase;
 }
 p {
@@ -61,6 +63,7 @@ a.button {
 	letter-spacing: 3px;
 	position: relative;
 	padding: 0 10px 0 35px;
+	display: inline-block;
 	@include transition(.2s);
 	&:before {
 		content: '';
@@ -108,7 +111,7 @@ img.cutout {
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: MAIN NAV */
 .dropdownarrow {
 	width: 13px;
-	height: 6px;
+	height: 15px;
 	display: inline-block;
 }
 .navigation {
@@ -130,10 +133,10 @@ img.cutout {
 		margin-left: 18px;
 		@include transition(.2s);
 		.st0 {
-			stroke: $white;
+			stroke: $starkwhite;
 		}
 		&:hover {
-			background: $white;
+			background: $starkwhite;
 			color: $black;
 			.st0 {
 				stroke: $black;
@@ -141,13 +144,13 @@ img.cutout {
 		}
 	}
 	.button {
-		border: 1px solid $white;
+		border: 1px solid $starkwhite;
 		&:before {
 			display: none;
 		}
 	}
 	.mobile_menu_button {
-		top: 25px;
+		top: 30px;
 	}
 }
 .navigation_wrapper {
@@ -160,6 +163,10 @@ img.cutout {
 	-webkit-transition: background .4s ease-out;
 	-moz-transition: background .4s ease-out;
 	transition: background .4s ease-out;
+	opacity: 0;
+	animation: fadein 1s;
+	animation-delay: 1.5s;
+	animation-fill-mode: forwards;
 	.logo {
 		width: 125px;
 		height: 96px;
@@ -186,6 +193,7 @@ img.cutout {
 	nav {
 		background: $starkwhite;
 	}
+	
 	.navigation {
 		a {
 			color: $black;
@@ -217,12 +225,15 @@ img.cutout {
 			}
 		}
 	}
+	.dropdown a {
+		color: $white;
+	}
 	
 }
 /* :::::::::::::::::::::::::: MOBILE MENU BUTTON */
 .mobile_menu_button {
 	position: absolute;
-	top: 15px;
+	top: 18px;
 	right: 10px;
 	background: none;
 	-webkit-appearance: none;
@@ -294,6 +305,10 @@ img.cutout {
 	@include flexbox();
 	@include flexboxcenter();
 	text-align: center;
+	opacity: 0;
+	animation: fadein 1s;
+	animation-delay: .5s;
+	animation-fill-mode: forwards;
 	h1, h2 {
 		color: $white;
 		font-family: $highlightfont;
@@ -302,7 +317,7 @@ img.cutout {
 	h1 {
 		text-transform: uppercase;
 		font-size: 2.5rem;
-		letter-spacing: 4px;
+		letter-spacing: 2px;
 		text-rendering:optimizeLegibility;
 		font-weight: 300;
 	}
@@ -310,11 +325,11 @@ img.cutout {
 		font-size: 1.5rem;
 		font-weight: 300;
 		border-top: 0;
-		max-width: 850px;
+		max-width: 890px;
 		line-height: 1.2;
 		padding: 5px 20px;
 		border-bottom: 0;
-		letter-spacing: 2px;
+		letter-spacing: 1px;
 		text-transform: none;
 		text-rendering:optimizeLegibility;
 	}
@@ -344,11 +359,10 @@ img.cutout {
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: PAGE FOOTER */
 .footer_wrapper {
 	background: $starkwhite;
-	padding: 0 30px;
 }
 .footer {
 	margin: 0 0 30px;
-	padding: 30px 20px 0;
+	padding: 30px 0 0;
 	&:after {
 		content: '';
 		display: block;
@@ -356,9 +370,9 @@ img.cutout {
 		clear: both;
 	}
 	nav {
-		max-width: 230px;
-		margin: 0 auto 25px;
+		margin: 0 0 25px;
 		a {
+			max-width: 230px;
 			color: $black;
 			text-transform: uppercase;
 			font-weight: 600;
@@ -448,6 +462,8 @@ img.cutout {
 	}
 	.twocol {
 		margin: 0 -15px;
+		padding-bottom: 50px;
+		overflow: hidden;
 		img {
 			width: 100%;
 		}
@@ -458,8 +474,7 @@ img.cutout {
 			clear: both;
 		}
 		.col1, .col2 {
-			width: 50%;
-			float: left;
+			width: 100%;
 			padding: 0 15px;
 		}
 	}
@@ -519,9 +534,11 @@ img.cutout {
 	padding: 30px 30px 30px 45px;
 }
 .section_imgtestimonial {
-	margin-top: -270px;
 	padding-bottom: 20px;
 	position: relative;
+	.section {
+		margin-top: -270px;
+	}
 	img {
 		display: block;
 		max-width: 100%;
@@ -561,8 +578,11 @@ img.cutout {
 	}
 }
 .section_texttestimonial_right {
+	padding: 50px 20px 20px;
 	.section_testimonial  {
-		margin-top: -120px;	
+		max-width: 900px;
+		position: relative;
+		margin: -120px auto 0;
 	}
 	.testimonial_content {
 		padding: 30px 20px 30px 30px;
@@ -584,6 +604,7 @@ img.cutout {
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: STAT SECTIONS */
 .stat {
 	text-align: center;
+	margin-bottom: 0;
 	.number {
 		font-size: 7rem;
 		font-family: $highlightfont_alt;
@@ -611,7 +632,6 @@ img.cutout {
 	}
 }
 .stat_two {
-	min-height: 460px;
 	padding-top: 30px;
 	p {
 		color: $white;
@@ -655,6 +675,9 @@ img.cutout {
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: GET STARTED SECTIONS */
 .section_getstarted {
 	padding-bottom: 100px;
+	.section {
+		max-width: 900px;
+	}
 }
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: COST SECTIONS */
 .section_tuition {
@@ -664,6 +687,7 @@ img.cutout {
 	.section {
 		text-align: center;
 		position: relative;
+		max-width: 900px;
 	}
 	h3 {
 		margin-bottom: 10px;
@@ -737,7 +761,49 @@ img.cutout {
 		}
 	}
 }
-
+.twocolumns {
+	padding: 0;
+	overflow: hidden;
+	.col1, .col2 {
+		width: 100%;
+		padding: 50px 20px 40px;
+	}
+	.col1 {
+		a.button {
+			padding: 0 0 0 35px;
+			&:before {
+				transform: rotate(180deg);
+			}
+			&:hover {
+				&:before {
+					left: -10px;
+				}
+			}
+		}
+	}
+	.col2 {
+		h4 .main_head {
+			border-color: $black;
+		}
+		a.button {
+			color: $black;
+			border-bottom: $white;
+			padding: 0 45px 0 0;
+			&:before {
+				background: url(../images/arrow_black.svg) no-repeat bottom left;
+				background-size: contain;
+				left: auto;
+				right: 0;
+			}
+			&:hover {
+				color: $white;
+				&:before {
+					right: -10px;
+				}
+			}
+		}
+	}
+}
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: IMAGE POPOUT SECTIONS */
 .popout_image {
 	padding: 40px 20px 0px;
@@ -753,6 +819,10 @@ img.cutout {
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::: MEDIA QUERIES */
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 @media screen and (min-width:550px) {
+	/* ::::::::::::::::::::::::::::::: TEXT FORMATTING */
+	h2 {
+		font-size: 4rem;
+	}
 	/* ::::::::::::::::::::::::::::::: HEADER SECTION */
 	.header {
 		h1 {
@@ -768,9 +838,9 @@ img.cutout {
 	/* ::::::::::::::::::::::::::::::: STAT SECTION */
 	
 	.stat_two {
-		min-height: 500px;
 		&.testimonialisnext {
 			padding-bottom: 200px;
+			min-height: 500px;
 		}
 	}	
 	.stat_three {
@@ -830,6 +900,9 @@ img.cutout {
 
 @media screen and (min-width:750px) {
 	/* ::::::::::::::::::::::::::::::: TEXT FORMATTING */
+	h2 {
+		font-size: 4rem;
+	}
 	h3 {
 		font-size: 2.7rem;
 	}
@@ -877,6 +950,7 @@ img.cutout {
 		}
 		.text {
 			font-size: 2.5rem;
+			letter-spacing: 1.5px;
 		}
 		.stat_source {
 			font-size: 1rem;
@@ -899,6 +973,18 @@ img.cutout {
 			padding: 7px 0 0;
 		}
 	}
+	/* ::::::::::::::::::::::::::::::: TWO COLUMNS SECTION */
+	.twocolumns {
+		.col1, .col2 {
+			width: 50%;
+		}
+		.col1 {
+			float: left;
+		}
+		.col2 {
+			float: right;
+		}
+	}
 	/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: IMAGE POPOUT SECTIONS */
 	.popout_image .section {
 		margin: -260px auto 10px;
@@ -909,12 +995,14 @@ img.cutout {
 	.header {
 		h1 {
 			font-size: 5.4rem;
+			letter-spacing: 4px;
 		}
 		.toptext {
 			font-size: 2rem;
 		}
 		h2 {
 			font-size: 1.9rem;
+			letter-spacing: 2px;
 		}
 	}
 	/* ::::::::::::::::::::::::::::::: TUTION SECTION */
@@ -923,34 +1011,6 @@ img.cutout {
 			font-size: 2.5rem;
 			letter-spacing: 1.5px;
 		}
-	}
-	/* ::::::::::::::::::::::::::::::: FOOTER */
-	.footer {
-		max-width: 1260px;
-		margin: 0 auto 30px;
-		nav {
-			float: right;
-			max-width: 100%;
-			margin: 0 0 10px;
-			a {
-				margin-left: 18px;
-				display: inline-block;
-				border: 0;
-			}
-			.button_alt {
-				border: 1px solid $black;
-			}
-		}
-		.social {
-			float: right;
-			clear: right;
-			max-width: 100%;
-			margin: 0;
-		}	
-	}
-	.footer_logo {
-		margin: 0;
-		float: left;
 	}	
 }
 @media screen and (min-width:950px) {
@@ -972,79 +1032,79 @@ img.cutout {
 			float: right;
 			background: none;
 			width: auto;
-			padding-top: 30px;
+			padding-top: 2px;
 		}
 		.programdetails {
 			margin-left: 0;
 		}
-		.navitem_dropdown:hover {
-			a.agis {
-				background: $white;
-				color: $black;
-				border-bottom: 7px solid #747575;
-				.st0 {
-					stroke: $black;
+	}
+	.dropdown {
+		position: absolute;
+		right: 0;
+		top: 54px;
+		background: $starkwhite;
+		width: 850px;
+		z-index: 99;
+		padding: 20px 10px;
+		display: none;
+		a {
+			float: left;
+			width: 20%;
+			text-align: center;
+			margin-left: 0;
+			padding: 0;
+			cursor: pointer;
+			&:hover {
+				.pagename {
+					color: $black;
 				}
 			}
-			.dropdown {
-				display: block;
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+		.pagename_wrapper {
+			height: 64px;
+			@include flexbox();
+			@include flexboxcenter();
+		}
+		.pagename {
+			color: $orange;
+			text-transform: uppercase;
+			font-family: $highlightfont;
+			font-size: .9rem;
+			border-top: 1px solid $black;
+			border-bottom: 1px solid $black;
+			padding: 5px 0;
+			display: block;
+			margin-bottom: 8px;
+			font-style: italic;
+			font-weight: 300;
+			letter-spacing: 2px;
+			span {
+				text-transform: none;
+			}
+		}
+		.farming .pagename {
+			max-width: 145px;
+		}
+		.pageimage {
+			padding: 0 5px;
+			display: block;
+		}
+	}
+	.navitem_dropdown:hover {
+		a.agis {
+			background: $starkwhite;
+			color: $black;
+			border-bottom: 7px solid #747575;
+			.st0 {
+				stroke: $black;
 			}
 		}
 		.dropdown {
-			position: absolute;
-			right: 0;
-			top: 67px;
-			background: $white;
-			width: 850px;
-			z-index: 99;
-			padding: 20px 10px;
-			display: none;
-			a {
-				float: left;
-				width: 20%;
-				text-align: center;
-				margin-left: 0;
-				padding: 0;
-				cursor: pointer;
-				&:hover {
-					.pagename {
-						color: $black;
-					}
-				}
-				img {
-					width: 100%;
-					height: auto;
-				}
-			}
-			.pagename_wrapper {
-				height: 64px;
-				@include flexbox();
-				@include flexboxcenter();
-			}
-			.pagename {
-				color: $orange;
-				text-transform: uppercase;
-				font-family: $highlightfont;
-				font-size: .9rem;
-				border-top: 1px solid $black;
-				border-bottom: 1px solid $black;
-				padding: 5px 0;
-				display: block;
-				margin-bottom: 8px;
-				font-style: italic;
-				font-weight: 300;
-				letter-spacing: 2px;
-				span {
-					text-transform: none;
-				}
-			}
-			.farming .pagename {
-				max-width: 145px;
-			}
-			.pageimage {
-				padding: 0 5px;
-				display: block;
-			}
+			display: block;
 		}
 	}
 	.navigation_wrapper.stick .navigation {
@@ -1052,14 +1112,99 @@ img.cutout {
 			width: 180px;
 			height: 60px;
 		}
+		.dropdown {
+			top: 53px;
+			a:hover {
+				background: $starkwhite;
+			}
+		}
 		nav {
-			padding-top: 14px;
+			padding-top: 2px;
 		}
 	}
 	/* ::::::::::::::::::::::::::::::: FOOTER */
+	.footer_wrapper {
+		padding: 0 30px;
+	}
+	.footer {
+		max-width: 1260px;
+		margin: 0 auto 30px;
+		padding: 30px 20px 0;
+		.dropdownarrow {
+			transform: rotate(180deg);
+		}
+		nav {
+			position: relative;
+			float: right;
+			max-width: 100%;
+			margin: 0 0 10px;
+			a {
+				margin-left: 18px;
+				display: inline-block;
+				border: 0;
+			}
+			.button_alt {
+				border: 1px solid $black;
+			}
+		}
+		.social {
+			float: right;
+			clear: right;
+			max-width: 100%;
+			margin: 0;
+		}
+		.dropdown {
+			top: auto;
+			bottom: 100%;
+			padding: 0 0 18px;
+			display: none !important;
+			a {
+				padding: 0;
+				margin-left: 0;
+				&:hover {
+					background: none;
+				}
+			}
+		}
+		.dropdown_inside {
+			@include dropshadow();
+			overflow: hidden;
+			padding: 20px 10px;
+		}
+		.navitem_dropdown {
+			&:hover {
+				a.agis {
+					border-bottom: 0;
+					background: $black;
+					color: $starkwhite;
+					.st0 {
+						stroke: $starkwhite;
+					}
+				}
+				.dropdown {
+					display: block !important;
+				}
+			}
+		}
+	}
+	.footer_logo {
+		margin: 0;
+		float: left;
+	}
 	.footer_bottom {
 		text-align: left;
 	}
+	/* ::::::::::::::::::::::::::::::: SECTION STYLES */
+	.section_wrapper {
+		.twocol {
+			.col1, .col2 {
+				width: 50%;
+				float: left;
+			}
+		}
+	}
+	
+	
 	/* ::::::::::::::::::::::::::::::: STAT SECTION */
 	.stat_three {
 		padding: 180px 20px 50px;
@@ -1092,6 +1237,10 @@ img.cutout {
 	}
 }
 @media screen and (min-width:1050px) {
+	/* ::::::::::::::::::::::::::::::: TEXT FORMATTING */
+	h2 {
+		font-size: 5.3rem;
+	}
 	/* ::::::::::::::::::::::::::::::: HEADER */
 	.header {
 		h1 {
@@ -1102,12 +1251,10 @@ img.cutout {
 			padding: 0 20px;
 		}
 	}
-	.navigation {
-		.dropdown {
-			width: 1015px;
-			.pagename { 
-				font-size: 1.2rem;
-			}
+	.dropdown {
+		width: 1015px;
+		.pagename { 
+			font-size: 1.2rem;
 		}
 	}
 	/* ::::::::::::::::::::::::::::::: TESTIMONIAL SECTION */
@@ -1121,7 +1268,7 @@ img.cutout {
 	/* ::::::::::::::::::::::::::::::: TESTIMONIAL SECTION */
 	.section_texttestimonial_right {
 		.testimonial_content {
-			padding: 60px 100px 60px 80px;
+			padding: 60px 120px 60px 80px;
 		}
 		.testimonial_image {
 			right: -80px;
@@ -1136,12 +1283,42 @@ img.cutout {
 			font-size: 10rem;
 		}
 	}	
+	
 }
 
+@media screen and (min-width: 1300px) {
+	/* ::::::::::::::::::::::::::::::: SECTION */
+	.section_wrapper {
+		.twocol {
+			overflow: visible;
+		}
+	}
+}
 
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::: MOBILE ONLY */
 
 @media screen and (max-width:950px) {
+	.dropdown {
+		background: $black;
+		padding-bottom: 10px;
+		margin: -11px 0 20px;
+		display: none;
+		overflow: hidden;
+		a {
+			color: $white;
+			padding: 8px 20px;
+			display: block;
+			margin-bottom: 0;
+			max-width: 400px;
+			.pagename {
+				color: $white;
+			}
+		}
+		.pageimage {
+			display: none;
+		}
+	}
+	
 	.mobilenav {
 		background: $starkwhite;
 		position: fixed;
@@ -1151,6 +1328,11 @@ img.cutout {
 		padding: 30px 0;
 		z-index: 9999;
 		@include transition(.2s);
+		.dropdown a {
+			color: $white;
+			padding: 10px 20px;
+			margin-bottom: 0;
+		}
 		.mobile_logo {
 			width: 125px;
 			height: 90px;
@@ -1195,19 +1377,6 @@ img.cutout {
 					}
 				}
 			}
-			.dropdown {
-				background: $black;
-				padding-bottom: 10px;
-				margin: -11px 0 20px;
-				display: none;
-				overflow: hidden;
-				a {
-					color: $white;
-					padding: 10px 20px;
-					margin-bottom: 0;
-					max-width: 400px;
-				}
-			}
 		}
 		.button {
 			border: 1px solid $black;
@@ -1248,5 +1417,11 @@ img.cutout {
 			top: 0;
 		}
 	}
-	
+	.footer .dropdown {
+		padding-top: 20px;
+		a {
+			padding: 8px 20px;
+			max-width: 100%;
+		}
+	}
 }

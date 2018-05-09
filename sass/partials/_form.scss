@@ -2,7 +2,6 @@
 form {
 	position: relative;
 	.field {
-		margin-bottom: 15px;
 		position: relative;
 		min-height: 60px;
 	}
@@ -269,6 +268,7 @@ label.error {
 		}
 		.field {
 			padding: 0 15px;
+			margin-bottom: 15px;
 		}
 		.full {
 			clear: both;

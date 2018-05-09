@@ -8,23 +8,13 @@
 
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: HEADER AREA */
 .home {
-	.navigation_wrapper {
-		opacity: 0;
-		animation: fadein 1s;
-		animation-delay: 1.5s;
-		animation-fill-mode: forwards;
-	}
 	/* :::::::::::::::::::::::::::::: PAGE HEADER */
 	.header {
 		height: 100vh;
-		min-height: 470px;
-		opacity: 0;
-		animation: fadein 1s;
-		animation-delay: .5s;
-		animation-fill-mode: forwards;
 		h1 {
 			font-size: 11vw;
 			letter-spacing: 2px;
+			margin-bottom: 0;
 		}
 		h2 {
 			font-size: 5vw;
@@ -57,6 +47,7 @@
 	.stat_two {
 		background: $orange url(../images/homebackground_stat2.jpg) no-repeat bottom center;
 		background-size: cover;
+		min-height: 460px;
 	}
 	.stat_three {
 		background: #ffffff url(../images/homebackground_stat3.jpg) no-repeat bottom center;
@@ -119,7 +110,7 @@
 		text-align: center;
 	}
 	img {
-		max-width: 100%;
+		max-width: 80%;
 	}
 	.section_content {
 		padding: 0;
@@ -211,31 +202,6 @@
 
 
 /* :::::::::::::::::::::::::::::::::: ANIMATIONS */
-.section_intro {
-	.section {
-		opacity: 0;
-		@include transition(.5s);
-	}
-	&.visible {
-		.section {
-			opacity: 1;	
-		}
-	}
-}
-
-.section_imgtestimonial {
-	.section_testimonial {
-		right: -160px;
-		@include transition(.5s);
-		opacity: 0;
-	}
-	&.visible {
-		.section_testimonial {
-			right: -45px;
-			opacity: 1;
-		}
-	}
-}
 
 .section_texttestimonial_top, .section_texttestimonial_right {
 	.testimonial_image {	
@@ -247,18 +213,6 @@
 			opacity: 1;
 		}
 	}	
-}
-
-.popout_image {
-		img {
-			opacity: 0;
-			@include transition(.5s);
-		}
-	&.visible {
-		img {
-			opacity: 1;
-		}
-	}
 }
 
 
@@ -356,7 +310,7 @@
 		}
 	}
 	.focuspoint_two {
-		background-size: cover;
+		background-size: 100%;
 		.section {
 			padding: 75px 0 40px;
 			&:after {
@@ -396,11 +350,25 @@
 	}
 	.focuspoint_five {
 		padding: 20px 30px 270px;
+		background-size: 100%;
+		background-position: center bottom;
 		.section_content {
 			padding-left: 150px;
 		}
 		h2 {
 			margin-left: 0;
+		}
+	}
+	/* :::::::::::::::::::::::::::::::::: ANIMATIONS */
+	.section_intro {
+		.section {
+			opacity: 0;
+			@include transition(.5s);
+		}
+		&.visible {
+			.section {
+				opacity: 1;	
+			}
 		}
 	}
 }
@@ -503,6 +471,20 @@
 		}
 		h2 {
 			font-size: 2.4rem;
+		}
+	}
+	/* :::::::::::::::::::::::::::::: ANIMATIONS */
+	.section_imgtestimonial {
+		.section_testimonial {
+			right: -160px;
+			@include transition(.5s);
+			opacity: 0;
+		}
+		&.visible {
+			.section_testimonial {
+				right: -45px;
+				opacity: 1;
+			}
 		}
 	}
 }

@@ -205,9 +205,7 @@ ul.courses {
 	padding: 30px 10px 50px;
 	width: 100%;
 	z-index: 999;
-	-webkit-transition: background .4s ease-out;
-	-moz-transition: background .4s ease-out;
-	transition: background .4s ease-out;
+	@include transition(.2s);
 	opacity: 0;
 	animation: fadein 1s;
 	animation-delay: 1.5s;
@@ -232,9 +230,12 @@ ul.courses {
 .navigation_wrapper.stick {
 	padding: 16px 20px 7px;	
 	position: fixed;
-	top: 0;
+	top: -150px;
+	opacity: 1;
 	background: $starkwhite;
 	@include dropshadow();
+	animation: slidein .4s;
+	animation-fill-mode: forwards;
 	.mobile_menu_button { 
 		top: 18px;	
 	}
@@ -358,7 +359,7 @@ ul.courses {
 	animation-delay: .5s;
 	animation-fill-mode: forwards;
 	height: 65vh;
-	min-height: 500px;
+	min-height: 520px;
 	position: relative;
 	h1, h2 {
 		color: $white;
@@ -375,7 +376,7 @@ ul.courses {
 		margin: 0 auto;
 	}
 	h2 {
-		font-size: 1.5rem;
+		font-size: 1.2rem;
 		font-weight: 300;
 		border-top: 0;
 		max-width: 890px;
@@ -867,8 +868,6 @@ ul.courses {
 .section_pagecta {
 	text-align: center;
 	padding: 40px 20px;
-	@include flexbox();
-	@include flexboxstretch();
 	&:before {
 		display: none;
 	}
@@ -889,19 +888,22 @@ ul.courses {
 			display: block;
 			margin-bottom: 6px;
 			letter-spacing: 1px;
+			font-size: 1em;
 		}
 		.main_head {
 			display: inline-block;
 			clear: both;
-			font-size: 3rem;
+			font-size: 2.2rem;
 			border-top: 1px solid $orange;
 			border-bottom: 1px solid $orange;
 			line-height: 1;
+			padding-top: 5px;
 			em {
 				text-transform: none;
 			}
 			&.morethanfarming {
-				max-width: 430px;
+				max-width: 250px;
+				padding: 5px 0;
 			}
 		}
 	}
@@ -1156,11 +1158,20 @@ ul.courses {
 	.section_tuition img.badge {
 		width: 220px;
 	}
-	.section_pagecta h4 {
-		font-size: 1.7rem;
-		.main_head {
-			font-size: 4rem;
-			padding: 7px 0 0;
+	/* ::::::::::::::::::::::::::::::: CTA SECTION */
+	.section_pagecta {
+		@include flexbox();
+		@include flexboxstretch();
+		h4 {
+			font-size: 1.7rem;
+			.main_head {
+				font-size: 2.7rem;
+				padding: 7px 0 0;
+				&.morethanfarming {
+					max-width: 270px;
+					padding: 8px 0 5px;
+				}
+			}
 		}
 	}
 	/* ::::::::::::::::::::::::::::::: TWO COLUMNS SECTION */
@@ -1542,6 +1553,17 @@ ul.courses {
 	.section_imgtestimonial {
 		.section_testimonial {
 			right: -45px;
+		}
+	}
+	/* ::::::::::::::::::::::::::::::: CTA SECTION */
+	.section_pagecta {
+		h4 {
+			.main_head {
+				font-size: 4rem;
+				&.morethanfarming {
+					max-width: 400px;
+				}
+			}
 		}
 	}	
 }

@@ -23,6 +23,14 @@
 		opacity: 1;
 	}
 }
+@keyframes slidein {
+	0% {
+		top: -150px;
+	}
+	100% {
+		top: 0;
+	}
+}
 @mixin transition($value) {
 	-webkit-transition: all $value ease-out;
 	-moz-transition: all $value ease-out;

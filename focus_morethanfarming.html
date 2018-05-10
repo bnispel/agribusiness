@@ -228,26 +228,26 @@
 				<form id="msform" class="form" method="post" action="">
 					<div class="step-1 step">
 						<div class="field half">
-							<input type="text" name="f_name" id="f_name" class="floatlabel">
 							<label for="f_name" class="inputlabel">First Name</label>
+							<input type="text" name="f_name" id="f_name" class="floatlabel" tabindex="1">
 						</div>
 						<div class="field half">
-							<input type="text" name="l_name" id="l_name" class="floatlabel">
 							<label for="l_name" class="inputlabel">Last Name</label>
+							<input type="text" name="l_name" id="l_name" class="floatlabel" tabindex="2">
 						</div>
 						<div class="field half">
-							<input type="text" name="email" id="email" class="floatlabel">
 							<label for="email" class="inputlabel">Email</label>
+							<input type="text" name="email" id="email" class="floatlabel" tabindex="3">
 						</div>
 						<div class="field half">
-							<input type="text" name="phone" id="phone" class="floatlabel">
 							<label for="phone" class="inputlabel">Phone</label>
+							<input type="text" name="phone" id="phone" class="floatlabel" tabindex="4">
 						</div>
 					</div>
 					<div class="step-2 step">
 						<div class="field half focus">
-							
-							<select name="program" id="programFirstChoice" onchange="this.className=this.options[this.selectedIndex].className" class="floatlabel">
+							<label for="program"  class="inputlabel">Program</label>
+							<select name="program" id="programFirstChoice" onchange="this.className=this.options[this.selectedIndex].className" class="floatlabel"  tabindex="5">
 									<option value="UND.BA.CPS" data-program="Undeclared">Undeclared</option>
 									<option value="AGR.BA" data-program="Agribusiness">Agribusiness</option>
 									<option value="CRJ.BA" data-program="Criminal Justice">Criminal Justice</option>
@@ -277,28 +277,27 @@
 									<option value="EDU.ND">Graduate Education - Non-Degree</option>
 									<option value="ED.EDD" data-program="Doctorate in Education">Doctorate in Education</option>
 							</select>
-							<label for="program"  class="inputlabel">Program</label>
 						</div>
 						<div class="field half focus">
-							<select name="location" class="unselect" id="locationSecondChoice" class="floatlabel">
+							<label for="location" class="inputlabel">Location</label>
+							<select name="location" class="unselect floatlabel" id="locationSecondChoice"  tabindex="6">
 									<option class="default" value="base" disabled>Location</option>
 									<option value="LINC">Lincoln</option>
 									<option value="OMAHA">Omaha</option>
 									<option value="GI">Grand Island</option>
 									<option value="ONLIN" selected>Online</option>
 							</select>
-							<label for="location" class="inputlabel">Location</label>
 						</div>
 							<div class="field full">
-								<textarea name="comments" id="comments" class="floatlabel"></textarea>
 								<label for="comments" class="no-hide inputlabel">Additional questions or comments</label>
+								<textarea name="comments" id="comments" class="floatlabel"  tabindex="7"></textarea>
 							</div>
 						<p class="privacy">By submitting this information, you authorize Doane University to call you at the phone number provided.</p>
 					</div>
 					<div class="controls">
 						<span class="action back"><span>Back</span></span>
 						<span class="action next"><span>Next</span></span>
-						<button type="submit" class="action submit">Submit</button>	
+						<button type="submit" class="action submit button"><span>Submit</span></button>	
 					</div>
 					<div class="step-counter">
 						<ul class="steps" id="progressbar">

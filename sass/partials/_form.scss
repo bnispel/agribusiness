@@ -14,7 +14,7 @@ form {
 		color: $orange;
 		text-align: left;
 		text-transform: uppercase;
-		position: absolute;
+		position: static;
 		top: 36px;
 		left: 25px;
 		@include transition(.2s);
@@ -36,7 +36,7 @@ form {
 		-webkit-border-raduis: 0;
 		-moz-border-radius: 0;
 		@include transition(.2s);
-		margin-top: 20px;
+		margin: 9px 0 5px;
 		&:focus {
 			border-bottom: 1px solid $orange;
 			border-top: 1px solid $orange;
@@ -283,5 +283,13 @@ label.error {
 		.full {
 			clear: both;
 		}
+		label {
+			position: absolute;
+		}
+		input, select, textarea { 
+			margin-top: 20px;
+		}
 	}
+
+	
 }

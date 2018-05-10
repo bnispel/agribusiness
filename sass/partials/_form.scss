@@ -114,6 +114,7 @@ select.unselect {
 		border-radius: 50%;
 		text-indent: -99999em;
 		cursor: pointer;
+		list-style-type: none;
 	}
 	.active-50 .step1-progress {
 		background: $orange;
@@ -187,6 +188,7 @@ select.unselect {
 }
 
 button.submit {
+	background: none;
 	text-transform: uppercase;
 	color: $orange;
 	text-decoration: none;
@@ -200,6 +202,8 @@ button.submit {
 	float: right;
 	font-size: 1.1rem;
 	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 	cursor: pointer;
 	display: none;
 	&:before {

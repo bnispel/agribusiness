@@ -328,7 +328,7 @@ ul.courses {
 		background-color: $starkwhite;
 	}
 	.menubtn_bars_inside {
-		transition-delay: .12x;
+		transition-delay: .12s;
 		transition-timing-function: cubic-bezier(.215,.61,.355,1);
 		transform: rotate(45deg);
 	}
@@ -371,7 +371,7 @@ ul.courses {
 		letter-spacing: 2px;
 		text-rendering:optimizeLegibility;
 		font-weight: 300;
-		max-width: 760px;
+		max-width: 920px;
 		margin: 0 auto;
 	}
 	h2 {
@@ -398,10 +398,10 @@ ul.courses {
 		em {
 			text-transform: none;
 		}
+		&.morethanfarming {
+			max-width: 280px;
+		}
 	}
-}
-.header_content {
-	padding-top: 90px;
 }
 
 .scroll {
@@ -520,6 +520,18 @@ ul.courses {
 	background-size: 100%;
 	background-position: center bottom;
 	background-repeat: no-repeat;
+	position: relative;
+	&:before {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 30%;
+		background: red;
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include whitebg();
+	}
 	.section {
 		max-width: 1200px;
 		margin: 0 auto;
@@ -551,6 +563,9 @@ ul.courses {
 	}
 }
 .section_twopoints {
+	&:before {
+		display: none;
+	}
 	.section {
 		max-width: 1230px;
 	}
@@ -699,7 +714,10 @@ ul.courses {
 		font-family: $highlightfont_alt;
 		display: block;
 		color: $black-60;
-		line-height: .8;
+		line-height: 1;
+		&.long {
+			font-size: 3rem;
+		}
 	}
 	.text {
 		font-family: $highlightfont;
@@ -721,11 +739,23 @@ ul.courses {
 	}
 }
 .stat_one {
-	background-color: $l-gray;
+	background-color: $white;
+	background-size: 220%;
+	background-position: center bottom;
+	padding-bottom: 50%;
+	position: relative;
+	&:before {
+		height: 70%;
+	}
 }
 .stat_two {
-	background-color: $orange;
 	padding-top: 30px;
+	background-size: cover;
+	background-position: bottom center;
+	padding: 70px 20px;
+	&:before {
+		display: none;
+	}
 	p {
 		color: $white;
 	}
@@ -736,13 +766,16 @@ ul.courses {
 	.stat_source {
 		color: $white;
 	}
-	&.testimonialisnext {
+	&.pooutisnext {
 		padding-bottom: 70px;
 	}
 }
 .stat_three {
-	padding: 20px 20px 70px;
-	background-color: $gray;
+	padding: 70px 20px;
+	background-color: $l-gray;
+	&:before {
+		display: none;
+	}
 	.section {
 		max-width: 1200px;
 	}
@@ -779,8 +812,11 @@ ul.courses {
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: COST SECTIONS */
 .section_tuition {
 	@include topshadow();
-	background: $white;
+	background: $starkwhite;
 	padding: 80px 20px 50px;
+	&:before {
+		display: none;
+	}
 	.section {
 		text-align: center;
 		position: relative;
@@ -833,8 +869,11 @@ ul.courses {
 	padding: 40px 20px;
 	@include flexbox();
 	@include flexboxstretch();
+	&:before {
+		display: none;
+	}
 	h4 {
-		max-width: 480px;
+		max-width: 540px;
 		margin: 0 auto;
 		color: $white;
 		font-size: 1.2rem;
@@ -857,8 +896,12 @@ ul.courses {
 			font-size: 3rem;
 			border-top: 1px solid $orange;
 			border-bottom: 1px solid $orange;
+			line-height: 1;
 			em {
 				text-transform: none;
+			}
+			&.morethanfarming {
+				max-width: 430px;
 			}
 		}
 	}
@@ -958,20 +1001,26 @@ ul.courses {
 		.toptext {
 			font-size: 1.7rem;
 		}
+		.bottomtext {
+			&.morethanfarming {
+				max-width: 490px;
+			}
+		}
 		h2 {
 			font-size: 1.7rem;
 		}
 	}
 	/* ::::::::::::::::::::::::::::::: STAT SECTION */
-	
+	.stat {
+		.number.long {
+			font-size: 4.5rem;
+		}
+	}
 	.stat_two {
-		&.testimonialisnext {
+		&.pooutisnext {
 			padding-bottom: 200px;
 			min-height: 500px;
 		}
-	}	
-	.stat_three {
-		 padding: 50px 20px;
 	}
 	/* ::::::::::::::::::::::::::::::: TESTIMONIAL SECTION */	
 	.section_imgtestimonial {
@@ -1050,7 +1099,7 @@ ul.courses {
 	}
 	/* ::::::::::::::::::::::::::::::: INTRO SECTION */
 	.section_intro {
-		padding: 50px 30px 70px;
+		padding: 50px 30px;
 	}
 	/* ::::::::::::::::::::::::::::::: SECTION TESTIMONIAL */
 	.section_imgtestimonial {
@@ -1094,11 +1143,14 @@ ul.courses {
 			font-size: 1rem;
 		}
 	}
-	
-	.stat_three {
-		.number {
-			font-size: 12vw;
+	.stat {
+		.number.long {
+			font-size: 5.5rem;
 		}
+	}
+	.stat_one {
+		background-size: 160%;
+		padding: 80px 20px 40%;
 	}
 	/* ::::::::::::::::::::::::::::::: TUTION SECTION */
 	.section_tuition img.badge {
@@ -1141,6 +1193,11 @@ ul.courses {
 		h2 {
 			font-size: 1.9rem;
 			letter-spacing: 2px;
+		}
+		.bottomtext {
+			&.morethanfarming {
+				max-width: 600px;
+			}
 		}
 	}
 	/* ::::::::::::::::::::::::::::::: TUTION SECTION */
@@ -1350,8 +1407,19 @@ ul.courses {
 	
 	
 	/* ::::::::::::::::::::::::::::::: STAT SECTION */
+	.stat {
+		.number.long {
+			font-size: 7.5rem;
+		}
+	}
+	.stat_one {
+		padding: 80px 20px 330px;	
+	}
+	.stat_two {
+		padding: 100px 20px;	
+	}
 	.stat_three {
-		padding: 180px 20px 50px;
+		padding: 100px 20px;	
 	}
 	/* ::::::::::::::::::::::::::::::: TESTIMONIAL SECTION */
 	.section_texttestimonial_right {
@@ -1398,6 +1466,11 @@ ul.courses {
 		h2 {
 			font-size: 2rem;
 			padding: 0 20px;
+		}
+		.bottomtext {
+			&.morethanfarming {
+				max-width: 660px;
+			}
 		}
 	}
 	.dropdown {
@@ -1485,13 +1558,14 @@ ul.courses {
 }
 @media screen and (min-width:1250px) {
 	/* ::::::::::::::::::::::::::::::: STAT SECTION */
-	.stat_three {
-		background-size: 100%;
-		.number {
+	.stat {
+		.number.long {
 			font-size: 10rem;
 		}
 	}	
-	
+	.stat_one {
+		background-size: 100%;	
+	}
 }
 
 @media screen and (min-width: 1300px) {

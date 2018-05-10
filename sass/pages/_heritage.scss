@@ -1,78 +1,11 @@
-.heritage {
-	.stat_one {
-		background: url(../images/heritage_farmoperator.jpg) no-repeat bottom center;
-		background-size: 113%;
-		padding: 40px 20px 40%;
-		.text {
-			max-width: 510px;
-			margin: 0 auto;
-		}
-	}
-	.stat_two {
-		background: $orange url(../images/homebackground_stat2.jpg) no-repeat bottom center;
-		background-size: cover;
-	}
-	.stat_three {
-		background: url(../images/heritage_farmlandacres.jpg) no-repeat center bottom;
-		background-size: 200%;
-		padding: 40px 20px 40%;
-	}
-	.riskmanagement {
-		background: url(../images/heritage_riskmanagement.jpg) no-repeat center bottom;
-		background-size: 140%;
-	}
-	.sustainability {
-		background: url(../images/heritage_sustainability.jpg) no-repeat bottom center;
-		background-size: 140%;
-		padding-top: 0;
-	}
-	.agfinance {
-		background: url(../images/heritage_finance.jpg) no-repeat bottom center;
-		background-size: 140%;
-		.col2 {
-			padding-top: 10px;
-		}
-	}
-}
 
-@media screen and (min-width:450px) {
-	.heritage {
-		.stat_three {
-			padding: 50px 20px 40%;
-		}
-	}
-}
 @media screen and (min-width:550px) {
 	.heritage {
-		.stat_three {
-			background-size: 170%;
-		}
 		.section_texttestimonial_right {
 			.testimonial_image {
 				right: auto;
 				left: 37px;
 			}	
-		}
-	}
-}
-@media screen and (min-width:750px) {
-	.heritage {
-		.stat_one {
-			padding: 70px 20px 37%;
-		}
-		.stat_three {
-			background-size: 100%;
-			padding-bottom: 23%;
-		}
-		.riskmanagement {
-			background-size: 100%;
-			padding: 100px 20px;
-		}
-		.sustainability {
-			background-size: 100%;
-		}
-		.agfinance {
-			background-size: 100%;
 		}
 	}
 }
@@ -88,9 +21,6 @@
 }
 @media screen and (min-width:1250px) {
 	.heritage {
-		.stat_one {
-			padding: 70px 20px 31%;
-		}
 		.section_texttestimonial_right {
 			.testimonial_image {
 				right: -30px;

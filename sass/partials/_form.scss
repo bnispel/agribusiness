@@ -54,7 +54,6 @@ form {
 		background-size: 13px 6px;
 	}
 }
-
 fieldset {
 	position: absolute;
 }
@@ -126,6 +125,11 @@ select.unselect {
 .controls {
 	clear: both;
 	padding-top: 15px;
+	.step2 {
+		.next {
+			display: none;
+		}
+	}
 }
 /* :::::::::::::::::::::::::::::::::::::::::: FORM BUTTONS */
 .next, .back {
@@ -136,7 +140,6 @@ select.unselect {
 	letter-spacing: 3px;
 	position: relative;
 	padding: 0 10px 0 35px;
-	@include transition(.2s);
 	cursor: pointer;
 	&:before {
 		content: '';

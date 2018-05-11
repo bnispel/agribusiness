@@ -206,10 +206,6 @@ ul.courses {
 	width: 100%;
 	z-index: 999;
 	@include transition(.2s);
-	opacity: 0;
-	animation: fadein 1s;
-	animation-delay: 1.5s;
-	animation-fill-mode: forwards;
 	.logo {
 		width: 125px;
 		height: 96px;
@@ -227,15 +223,18 @@ ul.courses {
 		}
 	}
 }
-.navigation_wrapper.stick {
+.navigation_wrapper.stickynav {
 	padding: 16px 20px 7px;	
 	position: fixed;
 	top: -150px;
 	opacity: 1;
 	background: $starkwhite;
 	@include dropshadow();
-	animation: slidein .4s;
-	animation-fill-mode: forwards;
+	&.stick {
+		top: 0;
+		animation: slidein .4s;
+		animation-fill-mode: forwards;
+	}
 	.mobile_menu_button { 
 		top: 18px;	
 	}
@@ -279,6 +278,7 @@ ul.courses {
 	}
 	
 }
+
 /* :::::::::::::::::::::::::: MOBILE MENU BUTTON */
 .mobile_menu_button {
 	position: absolute;
@@ -344,7 +344,7 @@ ul.courses {
 		transform: rotate(-90deg);
 	}
 }
-.stick .menubtn_bars, .mobile_open .menubtn_bars {
+.stickynav .menubtn_bars, .mobile_open .menubtn_bars {
 	.menubtn_bars_inside, .menubtn_bars_inside:before, .menubtn_bars_inside:after {
 		background-color: $black;
 	}
@@ -767,8 +767,8 @@ ul.courses {
 	.stat_source {
 		color: $white;
 	}
-	&.pooutisnext {
-		padding-bottom: 70px;
+	&.popoutisnext {
+		padding-bottom: 180px;
 	}
 }
 .stat_three {
@@ -783,6 +783,9 @@ ul.courses {
 	.number {
 		line-height: 1;
 		font-size: 12vw;
+	}
+	&.popoutisnext {
+		padding-bottom: 180px;
 	}
 }
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: CTA SECTIONS */
@@ -1022,9 +1025,9 @@ ul.courses {
 			font-size: 4.5rem;
 		}
 	}
-	.stat_two {
-		&.pooutisnext {
-			padding-bottom: 200px;
+	.stat_two, .stat_three {
+		&.popoutisnext {
+			padding-bottom: 275px;
 			min-height: 500px;
 		}
 	}
@@ -1324,7 +1327,7 @@ ul.courses {
 			display: block;
 		}
 	}
-	.navigation_wrapper.stick .navigation {
+	.navigation_wrapper.stickynav .navigation {
 		.logo {
 			width: 180px;
 			height: 60px;
@@ -1637,6 +1640,12 @@ ul.courses {
 		padding: 30px 0;
 		z-index: 9999;
 		@include transition(.2s);
+		&.mobile_open {
+			top: 0;
+		}
+		.button:before {
+			display: none;
+		}
 		.dropdown a {
 			color: $white;
 			padding: 10px 20px;
@@ -1718,7 +1727,7 @@ ul.courses {
 			}
 		}	
 	}	
-	stick.mobile_open, .mobile_open {
+	.mobile_open {
 		.mobile_menu_button {
 			z-index: 99999;
 		}

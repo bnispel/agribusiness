@@ -1,8 +1,4 @@
 /* :::::::::::::::::::::::::::::::::::::::::::::: GLOBAL */
-.navigation_wrapper {
-	opacity: 1;
-	animation: none;
-}
 .header {
 	opacity: 1;
 	animation: none;
@@ -12,12 +8,40 @@
 	background-size: cover;
 	opacity: 1;
 }
+/* :::::::::::::::::::::::::::::::::::::::::::::: FORMS */
+form {
+	label {
+		position: static;
+	}
+}
+/* :::::::::::::::::::::::::::::::::::::::::::::: HOME */
 .home {
 	.header {
 		padding-top: 360px;
 	}
 }
-/* :::::::::::::::::::::::::::::::::::::::::::::: HOME */
+@media screen and (min-width:850px) {
+	.focuspoint_three .section_content {
+		width: 600px;
+		float: right;
+	}
+	.focuspoint_four {
+		&:after {
+			content: '';
+			display: block;
+			width: 1px;
+			clear: both;
+		}
+		.section_content {
+			width: 50%;
+			float: left;
+		}
+		.section_image {
+			width: 50%;
+			float: right;
+		}
+	}
+}
 @media screen and (min-width: 950px) {
 	.navigation .dropdown {
 		.pagename {
@@ -30,21 +54,4 @@
 			}
 		}
 	}
-}
-@media screen and (min-width: 1250px) {
-	.focuspoint_three .section_content {
-		width: 600px;
-		float: right;
-	}
-	.focuspoint_four {
-		.section_content {
-			width: 50%;
-			float: left;
-		}
-		.section_image {
-			width: 50%;
-			float: right;
-		}
-	}
-	
 }

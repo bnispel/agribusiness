@@ -8,7 +8,6 @@
 		margin-bottom: 8px;
 	}
 }
-
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: HEADER AREA */
 .home {
 	/* :::::::::::::::::::::::::::::: PAGE HEADER */
@@ -217,8 +216,6 @@
 		bottom: 0;
 	}
 }
-
-
 /* :::::::::::::::::::::::::::::::::: ANIMATIONS */
 
 .section_texttestimonial_top, .section_texttestimonial_right {
@@ -405,9 +402,6 @@
 		}
 	}
 	.focuspoint_three {
-		@include flexbox();
-		-webkit-flex-direction: row-reverse;
-		flex-direction: row-reverse;
 		padding-top: 100px;
 		overflow: visible;
 		.number {
@@ -430,6 +424,30 @@
 		h2 {
 			margin-left: 0;
 			max-width: 351px;
+		}
+	}
+	.no-flexboxtweener {
+		.focuspoint_three {
+			@include flexbox();
+			box-direction: reverse;
+			-webkit-flex-direction: row-reverse;
+			flex-direction: row-reverse;
+		}
+	}
+	.flexboxtweener {
+		.focuspoint_three .section_content {
+			width: 600px;
+			float: right;
+		}
+		.focuspoint_four {
+			.section_content {
+				width: 50%;
+				float: left;
+			}
+			.section_image {
+				width: 50%;
+				float: right;
+			}
 		}
 	}
 	.focuspoint_four {

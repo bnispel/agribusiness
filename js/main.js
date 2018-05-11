@@ -59,6 +59,7 @@ $(document).ready(function() {
     /* Form Steps
 /*-----------------------------------------------------------------*/
 $(document).ready(function(){			  
+	/* Floating label JS */
 	$(".floatlabel").focus(function(){
 		$(this).parent().addClass("infield");
 
@@ -66,7 +67,6 @@ $(document).ready(function(){
 	       $(this).parent().removeClass("infield");
 	  })
 	function checkForInput(element) {
-	  // element is passed to the function ^
 	  const $label = $(element).parent();  
 	  if ( $(element).val().length > 0 ) {
 	    $label.addClass('focus');
@@ -75,15 +75,17 @@ $(document).ready(function(){
 	  }
 	}
 	
-	// The lines below are executed on page load
 	$('.floatlabel').each(function() {
 	  checkForInput(this);
 	});
 	
-	// The lines below (inside) are executed on change & keyup
 	$('.floatlabel').on('change keyup', function() {
 	  checkForInput(this);  
 	});
+	
+	
+	
+	
 	
     var current = 1;
      
@@ -98,6 +100,36 @@ $(document).ready(function(){
     widget.not(':eq(0)').hide();
     hideButtons(current);
     setProgress(current);
+  
+  /* tab in phone field trigger next step */
+	$("#phone").keydown(function (e) {   
+	   if (e.which == 9)
+	        if(current < widget.length){
+            // Check validation
+            if($(".form").valid()){
+                widget.fadeIn(1000);
+                widget.not(':eq('+(current++)+')').hide();
+                setProgress(current);
+            }
+        }
+        hideButtons(current);
+	});
+	
+	/* Hitting enter submits the form, if valid. */
+	$(".step-1 input").keydown(function (e) {   
+	   if (e.which == 13)
+	   		
+	       if(current < widget.length){
+            // Check validation
+            if($(".form").valid()){
+                widget.fadeIn(1000);
+                widget.not(':eq('+(current++)+')').hide();
+                setProgress(current);
+            }
+            e.preventDefault();
+        }
+        hideButtons(current);
+	});
   
     // Next button click action
     btnnext.click(function(){
@@ -268,7 +300,7 @@ $("#locationFirstChoice").change(function() {
  
     var $dropdown = $(this);
      
-    $.getJSON("jsondata/datalocation.json", function(data) {
+    $.getJSON("../jsondata/datalocation.json", function(data) {
  
         var key = $dropdown.val();
         var vals = [];
@@ -415,4 +447,15 @@ $("#programFirstChoice").change(function() {
 /*!
  * paroller.js v (https://tgomilar.github.io/paroller.js)
  */
-!function(r){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.exports=r(require("jquery")):r(jQuery)}(function($){"use strict";var r={bgVertical:function(r,t){return r.css({"background-position":"center "+-t+"px"})},bgHorizontal:function(r,t){return r.css({"background-position":-t+"px center"})},vertical:function(r,t,o){return"none"===o?o="":!0,r.css({"-webkit-transform":"translateY("+t+"px)"+o,"-moz-transform":"translateY("+t+"px)"+o,transform:"translateY("+t+"px)"+o,transition:"transform linear","will-change":"transform"})},horizontal:function(r,t,o){return"none"===o?o="":!0,r.css({"-webkit-transform":"translateX("+t+"px)"+o,"-moz-transform":"translateX("+t+"px)"+o,transform:"translateX("+t+"px)"+o,transition:"transform linear","will-change":"transform"})}};$.fn.paroller=function(t){var o=$(window).height(),n=$(document).height(),t=$.extend({factor:0,type:"background",direction:"vertical"},t);return this.each(function(){var a=!1,e=$(this),i=e.offset().top,c=e.outerHeight(),l=e.data("paroller-factor"),s=e.data("paroller-type"),u=e.data("paroller-direction"),f=l?l:t.factor,d=s?s:t.type,h=u?u:t.direction,p=Math.round(i*f),g=Math.round((i-o/2+c)*f),m=e.css("transform");"background"==d?"vertical"==h?r.bgVertical(e,p):"horizontal"==h&&r.bgHorizontal(e,p):"foreground"==d&&("vertical"==h?r.vertical(e,g,m):"horizontal"==h&&r.horizontal(e,g,m));var b=function(){a=!1};$(window).on("scroll",function(){if(!a){var t=$(this).scrollTop();n=$(document).height(),p=Math.round((i-t)*f),g=Math.round((i-o/2+c-t)*f),"background"==d?"vertical"==h?r.bgVertical(e,p):"horizontal"==h&&r.bgHorizontal(e,p):"foreground"==d&&n>=t&&("vertical"==h?r.vertical(e,g,m):"horizontal"==h&&r.horizontal(e,g,m)),window.requestAnimationFrame(b),a=!0}}).trigger("scroll")})}});
+ 
+ function myFunction(x) {
+    if (x.matches) { // If media query matches
+        !function(r){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.exports=r(require("jquery")):r(jQuery)}(function($){"use strict";var r={bgVertical:function(r,t){return r.css({"background-position":"center "+-t+"px"})},bgHorizontal:function(r,t){return r.css({"background-position":-t+"px center"})},vertical:function(r,t,o){return"none"===o?o="":!0,r.css({"-webkit-transform":"translateY("+t+"px)"+o,"-moz-transform":"translateY("+t+"px)"+o,transform:"translateY("+t+"px)"+o,transition:"transform linear","will-change":"transform"})},horizontal:function(r,t,o){return"none"===o?o="":!0,r.css({"-webkit-transform":"translateX("+t+"px)"+o,"-moz-transform":"translateX("+t+"px)"+o,transform:"translateX("+t+"px)"+o,transition:"transform linear","will-change":"transform"})}};$.fn.paroller=function(t){var o=$(window).height(),n=$(document).height(),t=$.extend({factor:0,type:"background",direction:"vertical"},t);return this.each(function(){var a=!1,e=$(this),i=e.offset().top,c=e.outerHeight(),l=e.data("paroller-factor"),s=e.data("paroller-type"),u=e.data("paroller-direction"),f=l?l:t.factor,d=s?s:t.type,h=u?u:t.direction,p=Math.round(i*f),g=Math.round((i-o/2+c)*f),m=e.css("transform");"background"==d?"vertical"==h?r.bgVertical(e,p):"horizontal"==h&&r.bgHorizontal(e,p):"foreground"==d&&("vertical"==h?r.vertical(e,g,m):"horizontal"==h&&r.horizontal(e,g,m));var b=function(){a=!1};$(window).on("scroll",function(){if(!a){var t=$(this).scrollTop();n=$(document).height(),p=Math.round((i-t)*f),g=Math.round((i-o/2+c-t)*f),"background"==d?"vertical"==h?r.bgVertical(e,p):"horizontal"==h&&r.bgHorizontal(e,p):"foreground"==d&&n>=t&&("vertical"==h?r.vertical(e,g,m):"horizontal"==h&&r.horizontal(e,g,m)),window.requestAnimationFrame(b),a=!0}}).trigger("scroll")})}});
+    }
+}
+
+var x = window.matchMedia("(min-width: 750px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
+ 
+ 

@@ -44,7 +44,7 @@ h2 {
 }
 h3 {
 	font-size: 1.7rem;
-	font-weight: 500;
+	font-weight: 700;
 	letter-spacing: 2px;
 	line-height: 1.2;
 	text-transform: uppercase;
@@ -642,7 +642,7 @@ ul.courses {
 	padding-bottom: 20px;
 	position: relative;
 	.section {
-		margin-top: -270px;
+		margin-top: -130px;
 	}
 	img {
 		display: block;
@@ -841,7 +841,7 @@ ul.courses {
 		margin-bottom: 0;
 	}
 	.number {
-		font-size: 4.5rem;
+		font-size: 3.3rem;
 		color: $black-60;
 		font-style: normal;
 		font-family: $highlightfont_alt;
@@ -880,6 +880,7 @@ ul.courses {
 		text-transform: uppercase;
 		display: block;
 		padding: 0;
+		font-weight: 700;
 		margin-bottom: 25px;
 		span {
 			text-transform: uppercase;
@@ -978,7 +979,7 @@ ul.courses {
 }
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: IMAGE POPOUT SECTIONS */
 .popout_image {
-	padding: 40px 20px 0px;
+	padding: 40px 20px 30px;
 	.section {
 		margin: -120px auto 0;
 		max-width: 900px;
@@ -994,6 +995,9 @@ ul.courses {
 	/* ::::::::::::::::::::::::::::::: TEXT FORMATTING */
 	h2 {
 		font-size: 4rem;
+	}
+	h3 {
+		font-weight: 500;
 	}
 	/* ::::::::::::::::::::::::::::::: HEADER SECTION */
 	.header {
@@ -1079,7 +1083,7 @@ ul.courses {
 	}
 }
 
-@media screen and (min-width:750px) {
+@media screen and (min-width:769px) {
 	/* ::::::::::::::::::::::::::::::: TEXT FORMATTING */
 	h2 {
 		font-size: 4rem;
@@ -1164,6 +1168,7 @@ ul.courses {
 		@include flexboxstretch();
 		h4 {
 			font-size: 1.7rem;
+			font-weight: 500;
 			.main_head {
 				font-size: 2.7rem;
 				padding: 7px 0 0;
